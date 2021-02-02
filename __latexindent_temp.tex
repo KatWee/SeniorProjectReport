@@ -231,117 +231,120 @@ Therefore, this project aims to improve the fairness of the scheduler by reducin
 
 \section{Objectives}
 \begin{itemize}
-  \item  To study about job scheduling in Apache Mesos
-  \item  To study how to develop an algorithm to improve performance of scheduler in large-scale clustered environments.
-  \item  ·	To evaluate result and compare with Apache Mesos scheduler by using difference job types in the list (short job, long job, MPI)
+\item  To study about job scheduling in Apache Mesos
+\item  To study how to develop an algorithm to improve performance of scheduler in large-scale clustered environments.
+\item  ·	To evaluate result and compare with Apache Mesos scheduler by using difference job types in the list (short job, long job, MPI)
 \end{itemize}
 
 
 \section{Scope}
 \begin{itemize}
-  \item  This project focuses on the reduction of job failed. 
-  \item  Design and develop an add-on architecture on top of the Apache Mesos scheduler, to track and distribute the incoming tasks.
-  \item  What are the limitations of existing approaches? 
+\item  This project focuses on the reduction of job failed. 
+\item  Design and develop an add-on architecture on top of the Apache Mesos scheduler, to track and distribute the incoming tasks.
+\item  What are the limitations of existing approaches? 
 \end{itemize}
 
 \newpage
-
 \section{Tasks and Schedule}
 \begin{table}[!h]
-  \caption{Semester 1’s Gantt chart}\label{tbl:method1}
-  \noindent\begin{tabular}{p{0.30\textwidth}*{16}{|p{0.01\textwidth}}|}
-    % The top line
-    \textbf{Task/Week} & \multicolumn{4}{c|}{August} & \multicolumn{4}{c|}{September}  & \multicolumn{4}{c|}{October} & \multicolumn{4}{c|}{November}\\
-    % The second line, with its 4 months of four quarters
-    \rpt[4]{& 1 & 2 & 3 & 4} \\
-    \hline
-    % using the on macro to fill in twenty cells as `on'
-    \textbf{1.Idea Document} & \multicolumn{16}{c|}{} \\
-    \hline
-    1.1 Find interesting problems \on[1] \off[15] \\
-    \hline
-    1.2 Brainstorm ideas and choose topic \on[2] \off[14] \\
-    \hline
-    1.3 Project discussion with advisor \off[1]\on[1] \off[14] \\
-    \hline
-    1.4 Write idea document report \off[1]\on[1] \off[14] \\
-    \hline
-    \textbf{2.Proposal} & \multicolumn{16}{c|}{} \\
-    \hline
-    2.1 Explore related work and technologies \off[1]\on[2] \off[13] \\
-    \hline
-    2.2 Task breakdown \off[2]\on[1] \off[13] \\
-    \hline
-    2.3 Gantt chart \off[2]\on[1] \off[13] \\
-    \hline
-    2.4 Write proposal \off[2]\on[2] \off[12] \\
-    \hline
-    2.5 Present proposal \off[3]\on[2] \off[11] \\
-    \hline
-    \textbf{3.Semester Report} & \multicolumn{16}{c|}{} \\
-    \hline
-    3.1 Literature review \off[4]\on[4] \off[8] \\
-    \hline
-    3.2 Design architecture diagram \off[6]\on[3] \off[7] \\
-    \hline
-    3.3 Design sequence diagram \off[8]\on[3] \off[5] \\
-    \hline
-    3.4 Write semester diagram \off[11]\on[2] \off[3] \\
-    \hline
-    3.5 Present Semester report \off[13]\on[1] \off[2] \\
-    \hline
-    \textbf{4.Setup project \& preparation} & \multicolumn{16}{c|}{} \\
-    \hline
-    4.1 Setup cluster \& framework application \off[11]\on[3] \off[2] \\
-    \hline
-    4.2 Observe sharing and waiting time in queue for each framework \off[11]\on[5]\\
-    \hline
-    4.3 Gathering server logs \off[11]\on[5]\\
-    \hline
-  \end{tabular}
+\caption{Semester 1’s Gantt chart}\label{tbl:method1}
+\noindent\begin{tabular}{p{0.30\textwidth}*{16}{|p{0.01\textwidth}}|}
+% The top line
+\textbf{Task/Week} & \multicolumn{4}{c|}{August} 
+           & \multicolumn{4}{c|}{September} 
+           & \multicolumn{4}{c|}{October} 
+           & \multicolumn{4}{c|}{November}  \\
+% The second line, with its 4 months of four quarters
+\rpt[4]{& 1 & 2 & 3 & 4} \\
+\hline
+% using the on macro to fill in twenty cells as `on'
+\textbf{1.Idea Document} & \multicolumn{16}{c|}{} \\
+\hline
+1.1 Find interesting problems \on[1] \off[15] \\
+\hline
+1.2 Brainstorm ideas and choose topic \on[2] \off[14] \\
+\hline
+1.3 Project discussion with advisor \off[1]\on[1] \off[14] \\
+\hline
+1.4 Write idea document report \off[1]\on[1] \off[14] \\
+\hline
+\textbf{2.Proposal} & \multicolumn{16}{c|}{} \\
+\hline
+2.1 Explore related work and technologies \off[1]\on[2] \off[13] \\
+\hline
+2.2 Task breakdown \off[2]\on[1] \off[13] \\
+\hline
+2.3 Gantt chart \off[2]\on[1] \off[13] \\
+\hline
+2.4 Write proposal \off[2]\on[2] \off[12] \\
+\hline
+2.5 Present proposal \off[3]\on[2] \off[11] \\
+\hline
+\textbf{3.Semester Report} & \multicolumn{16}{c|}{} \\
+\hline
+3.1 Literature review \off[4]\on[4] \off[8] \\
+\hline
+3.2 Design architecture diagram \off[6]\on[3] \off[7] \\
+\hline
+3.3 Design sequence diagram \off[8]\on[3] \off[5] \\
+\hline
+3.4 Write semester diagram \off[11]\on[2] \off[3] \\
+\hline
+3.5 Present Semester report \off[13]\on[1] \off[2] \\
+\hline
+\textbf{4.Setup project \& preparation} & \multicolumn{16}{c|}{} \\
+\hline
+4.1 Setup cluster \& framework application \off[11]\on[3] \off[2] \\
+\hline
+4.2 Observe sharing and waiting time in queue for each framework \off[11]\on[5]\\
+\hline
+4.3 Gathering server logs \off[11]\on[5]\\
+\hline
+\end{tabular}
 \end{table}
 
 \newpage
-
 \begin{table}[!h]
-  \caption{Semester 2’s Gantt chart}\label{tbl:method1}
-  \noindent\begin{tabular}{p{0.17\textwidth}*{20}{|p{0.01\textwidth}}|}
-    % The top line
-    \textbf{Task/Week} & \multicolumn{4}{c|}{January} & \multicolumn{4}{c|}{February} & \multicolumn{4}{c|}{March} & \multicolumn{4}{c|}{April}& \multicolumn{4}{c|}{May}  \\
-    % The second line, with its 4 months of four quarters
-    \rpt[5]{& 1 & 2 & 3 & 4} \\
-    \hline
-    % using the on macro to fill in twenty cells as `on'
-    \textbf{5.Implementation} & \multicolumn{20}{c|}{} \\
-    \hline
-    5.1 Implement new on top scheduler for the whole cluster scheduling \on[8] \off[12] \\
-    \hline
-    5.2 Train model for scheduler prediction \on[8] \off[12] \\
-    \hline
-    \textbf{6.Evaluation} & \multicolumn{20}{c|}{} \\
-    \hline
-    6.1 Evaluate new on top scheduler with many situations \off[8] \on[2] \off[10] \\
-    \hline
-    6.2 Evaluate model for scheduler prediction \off[8] \on[2] \off[10] \\
-    \hline
-    6.3 Improve way to distributed framework \off[10] \on[3] \off[7] \\
-    \hline
-    6.4 Tune model for scheduler prediction \off[10] \on[3] \off[7] \\
-    \hline
-    \textbf{7.Final Report} & \multicolumn{20}{c|}{} \\
-    \hline
-    7.1 Write final report \off[12] \on[5] \off[3] \\
-    \hline
-    7.2 Present final report \off[17] \on[1] \off[2] \\
-    \hline
-  \end{tabular}
+\caption{Semester 2’s Gantt chart}\label{tbl:method1}
+\noindent\begin{tabular}{p{0.17\textwidth}*{20}{|p{0.01\textwidth}}|}
+% The top line
+\textbf{Task/Week} & \multicolumn{4}{c|}{January} 
+           & \multicolumn{4}{c|}{February} 
+           & \multicolumn{4}{c|}{March} 
+           & \multicolumn{4}{c|}{April}
+           & \multicolumn{4}{c|}{May}  \\
+% The second line, with its 4 months of four quarters
+\rpt[5]{& 1 & 2 & 3 & 4} \\
+\hline
+% using the on macro to fill in twenty cells as `on'
+\textbf{5.Implementation} & \multicolumn{20}{c|}{} \\
+\hline
+5.1 Implement new on top scheduler for the whole cluster scheduling \on[8] \off[12] \\
+\hline
+5.2 Train model for scheduler prediction \on[8] \off[12] \\
+\hline
+\textbf{6.Evaluation} & \multicolumn{20}{c|}{} \\
+\hline
+6.1 Evaluate new on top scheduler with many situations \off[8] \on[2] \off[10] \\
+\hline
+6.2 Evaluate model for scheduler prediction \off[8] \on[2] \off[10] \\
+\hline
+6.3 Improve way to distributed framework \off[10] \on[3] \off[7] \\
+\hline
+6.4 Tune model for scheduler prediction \off[10] \on[3] \off[7] \\
+\hline
+\textbf{7.Final Report} & \multicolumn{20}{c|}{} \\
+\hline
+7.1 Write final report \off[12] \on[5] \off[3] \\
+\hline
+7.2 Present final report \off[17] \on[1] \off[2] \\
+\hline
+\end{tabular}
 \end{table}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  Literature Review %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Background Knowledge and Literature Review}
-
 \section{Knowledge Background}
 In 2009, Apache Mesos \cite{mesos} was a research project at the University of California in Berkeley.  Benjamin, et al. wanted to improve datacenter efficiency by allowing multiple applications to share a single computing cluster across the many servers that make up a modern datacenter.  So, multiple applications can share the processor, memory, and hard drive with any laptop or workstation.  In 2010, the Mesos project entered the Apache Incubator, an arm of the Apache Software Foundation, so this project can gain the full support of the ASF’s efforts.  In 2013, The Apache Mesos project graduated from the incubator and founded Mesosphere.  Mesosphere’s flagship product, the Datacenter Operating System (DCOS), commercializes the open-source project by providing a turnkey solution to enterprises looking to deploy applications and scale infrastructure as effortlessly as other companies using Mesos, such as Airbnb, Apple, and Netflix. 
 
@@ -350,32 +353,28 @@ Meanwhile, most such operating systems only fairly divide and account for CPU cy
 In data centers and clouds, where applications could be co-scheduled on the same physical nodes, resource fairness needs to extend to multiple resource types such as memory, disk I/O, and network bandwidth.  Ali, et al. considered the problem of fair resource allocation in a system containing different resource types, where each user may have different demands for each resource and researched about a new generalization of max-min fairness to multiple resource types called Dominant Resource Fairness (DRF). \cite{dominantResourceFairness}
 
 \newpage
-
 \section{Theoretical and Core Concepts}
 
 \subsection{Tasks Failures Detection}
 Hadoop usually uses JobTracker to detect failures of the TaskTracker nodes.  It detects with heartbeat-based failure detection.  The TaskTracker will send heartbeat message to JobTracker and JobTracker will declare a TaskTracker as dead only when it does not receive heartbeat for a limited time.  It cannot quickly detect the failures and it may assign task to dead nodes.  This can increase the number of failure tasks in Hadoop. \cite{adaptiveScheduling}
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=12cm]{./image/tasktracker.png}}
-  \caption{TaskTracker Failure Detection Model in Hadoop Framework \cite{adaptiveScheduling}}\label{fig:tasktracker}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=12cm]{./image/tasktracker.png}}
+\caption{TaskTracker Failure Detection Model in Hadoop Framework \cite{adaptiveScheduling}}\label{fig:tasktracker}
 \end{figure}
 
 For example, active TaskTracker send heartbeat messages to JobTracker every 3 seconds.  While JobTracker check the timeout condition every 200 seconds.  And there are network delays or messages losses, so some heartbeat may arrive late or loss.  The JobTracker may consider that TaskTracker as dead node even it is available as shown in \textbf{Figure}~\ref{fig:tasktracker}. that heartbeat message m2 does not arrive and the JobTracker consider this TaskTracker as dead.
 
 \newpage
-
 \subsection{Container Technology}
-
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=13cm]{./image/vmVSContainer.png}}
-  \caption{Virtual machine vs Container \cite{docker}}\label{fig:vmVSContainer}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=13cm]{./image/vmVSContainer.png}}
+\caption{Virtual machine vs Container \cite{docker}}\label{fig:vmVSContainer}
 \end{figure}
-
 Container Technology is a method to package up code and all its dependencies, so the application runs quickly and reliably from one computing environment to another, with container software having names including the popular choices of Docker, Apache Mesos, RKT, and Kubernetes.  The virtual machine contains the entire operating system.  Therefore, the physical server that runs several virtual machines is running several operating systems’ simultaneously as shown in \textbf{Figure}~\ref{fig:vmVSContainer}. \cite{docker}
 
 There is a lot of overhead on virtual machine.  In contrast, with container technology, the server runs a single operating system.  Each container can share this single operating system with other containers on server.  Containers require less resource of server with less overhead and more efficient than virtual machines. \cite{container}   Containers are set up to accomplish work in a multiple container architecture (container cluster).  They also enable a program to be broken down into smaller pieces, which are known as microservices.  So, the program can work on each of the containers separately.
@@ -394,24 +393,22 @@ Nowadays, there are collections of vast unlabeled and unstructured data gatherin
 Deep learning models can achieve high accuracy, sometimes exceeding human-level performance. “Deep” refers to the powerful number of hidden layers in the neural network.  However, it needs lots of labeled data and high-performance machines to analyze. The organized layers of interconnected nodes can be tens or hundreds of hidden layers. \cite{deepLearning2} as shown in \textbf{Figure}~\ref{fig:NN}.
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=10cm]{./image/NN.png}}
-  \caption{Neural networks.}\label{fig:NN}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/NN.png}}
+\caption{Neural networks.}\label{fig:NN}
 \end{figure}
 
 \newpage
-
 \section{Technologies survey}  
-
 \subsection{Apache Mesos}
 Mesos consists of a master, agent daemons running on each cluster node, and Mesos frameworks that run task on these agents as shown in \textbf{Figure}~\ref{fig:MesosArc}. Architecture consist of three components: masters, slaves, and the frameworks that run on them. Mesos relies on Apache ZooKeeper, a distributed database used specifically for coordinating leader election within the cluster, and for leader detection by other Mesos masters, slaves, and frameworks. \cite{mesosInAction}
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=10cm]{./image/MesosArc.png}}
-  \caption{The Mesos architecture consists of one or more masters, slaves, and frameworks. \cite{mesosInAction}}\label{fig:MesosArc}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/MesosArc.png}}
+\caption{The Mesos architecture consists of one or more masters, slaves, and frameworks. \cite{mesosInAction}}\label{fig:MesosArc}
 \end{figure}
 
 \begin{enumerate}
@@ -419,31 +416,31 @@ Mesos consists of a master, agent daemons running on each cluster node, and Meso
   \item \textbf{Slaves: } The machines in a cluster responsible for executing a framework’s tasks.
   \item \textbf{Frameworks: } Mesos application that’s responsible for scheduling and executing tasks on a cluster. A framework is made up of two components: a scheduler and an executor. 
   \begin{itemize}
-      \item \textbf{Schedulers} A scheduler is a long-running service responsible for connecting to a Mesos master and accepting or rejecting resource offers. Mesos delegates the responsibility of scheduling to the framework, instead of attempting to schedule all the work for a cluster itself. The scheduler can then accept or reject a resource offer based on whether it has any tasks to run at the time of the offer. 
-      \item \textbf{Executor} An executor is a process launched on a Mesos slave that runs a framework’s tasks on a slave.
-  \end{itemize}
+     \item \textbf{Schedulers} A scheduler is a long-running service responsible for connecting to a Mesos master and accepting or rejecting resource offers. Mesos delegates the responsibility of scheduling to the framework, instead of attempting to schedule all the work for a cluster itself. The scheduler can then accept or reject a resource offer based on whether it has any tasks to run at the time of the offer. 
+     \item \textbf{Executor} An executor is a process launched on a Mesos slave that runs a framework’s tasks on a slave.
+   \end{itemize}
 \end{enumerate}
 
 Dominant resource is a resource of specific type (CPU, memory, disk, ports) which is most demanded by given framework among other resources it needs. DRF computes the share of resource allocated to a framework (dominant share) and tries to maximize the smallest dominant share in the system. for next round offers the resources first to the one with smallest dominant share, then to the second smallest one and so on. \cite{drf} Example with 9 CPUs and 18 GB RAM to two frameworks running task that require <1 CPU, 4GB> and <3CPUs, 1GB> shown in \textbf{Table}~\ref{tbl:DRFTwoFramework}.
 
 \begin{table}[!h]
-  \caption{Example of running 2 frameworks.}\label{tbl:DRFTwoFramework}
-  \begin{tabular}{|c|c|c|c|c|c|c|}
-    \hline
-    \multirow{2}{*}{Schedule} & \multicolumn{2}{c|}{Framework A}& \multicolumn{2}{c|}{Framework B}& \multicolumn{2}{c|}{total}\\ 
-    \cline{2-7} & Resource Share & Dominant Share & Resource Share & Dominant Share & CPU & RAM \\ 
-    \hline
-    B  & <0, 0> & 0 & <3/9, 1/18> & 1/3 & 3/9 & 1/18 \\ 
-    \hline
-    A  & <1/9>, <4/18> & \textbf{2/9} & <3/9, 1/18> & 1/3 & 4/9 & 5/18 \\ 
-    \hline
-    A  & <2/9>, <8/18> & 4/9 & <3/9>, <1/18> & \textbf{1/3} & 5/9 & 8/18 \\ 
-    \hline
-    B  & <2/9>, <8/18> & \textbf{4/9} & <6/9>, 2/18> & 2/3 & 8/9 & 10/18 \\ 
-    \hline
-    A  & <3/9>, <12/18> & 2/3 & <6/9>, 2/18> & 2/3 & 1 & 14/18 \\ 
-    \hline
-  \end{tabular}
+\caption{Example of running 2 frameworks.}\label{tbl:DRFTwoFramework}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{Schedule} & \multicolumn{2}{c|}{Framework A}& \multicolumn{2}{c|}{Framework B}& \multicolumn{2}{c|}{total}\\ 
+\cline{2-7} & Resource Share & Dominant Share & Resource Share & Dominant Share & CPU & RAM \\ 
+\hline
+B  & <0, 0> & 0 & <3/9, 1/18> & 1/3 & 3/9 & 1/18 \\ 
+\hline
+A  & <1/9>, <4/18> & \textbf{2/9} & <3/9, 1/18> & 1/3 & 4/9 & 5/18 \\ 
+\hline
+A  & <2/9>, <8/18> & 4/9 & <3/9>, <1/18> & \textbf{1/3} & 5/9 & 8/18 \\ 
+\hline
+B  & <2/9>, <8/18> & \textbf{4/9} & <6/9>, 2/18> & 2/3 & 8/9 & 10/18 \\ 
+\hline
+A  & <3/9>, <12/18> & 2/3 & <6/9>, 2/18> & 2/3 & 1 & 14/18 \\ 
+\hline
+\end{tabular}
 \end{table}
 
 \subsection{Zookeeper}
@@ -458,10 +455,10 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 Chronos is the Mesos Cron system. It handles time-based scheduling of jobs on a Mesos cluster. Chronos can be used to schedule commands or scripts. The Chronos feature set is easily and reliably to create standalone schedule-based jobs, as well as complex dependency-based jobs and pipelines, simply by specifying the schedule and resources that the job requires. This guarantees that time-based jobs are running on time while continuing to use datacenter resources as efficiently as possible. In \textbf{Figure}~\ref{fig:chronos}, it shows about the differences between running Cron jobs on a single machine and running them on a Mesos cluster.\cite{mesosInAction}
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=10cm]{./image/chronos.png}}
-  \caption{Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs. \cite{mesosInAction}}\label{fig:chronos}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/chronos.png}}
+\caption{Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs. \cite{mesosInAction}}\label{fig:chronos}
 \end{figure}
 
 \subsection{Marathon}
@@ -470,29 +467,27 @@ Marathon is a popular open source Mesos framework developed by Mesosphere. Marat
 Marathon also allows users to specify dependencies on other services and applications during deployment, so an application instance can’t start before its database instance is up and passing health checks. Marathon contains a list of features that should satisfy the needs of most application management scenarios such as managing applications and groups of applications with dependencies and health checks, rolling application upgrades with specific capacity requirements, a powerful web interface and REST API, and high availability (using ZooKeeper for leader election and coordination).\cite{mesosInAction}
 
 \newpage
-
 \subsection{Spark}
 Apache Spark, unified analytics engine for large-scale data processing, runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud. It can access diverse data sources. Spark perform task faster and more efficiently than Hadoop’s MapReduce, both in memory and on disk in many cases. Spark also provide API for several programming language, including Python, Scala and Java and support streaming workloads, interactive queries and machine learning libraries, in addition to MapReduce-like batch processing.  Spark can run locally. But that is useful only for development purpose, the number of CPU cores limits the number of executors. When setting up a production Spark cluster, there are two option.
 
 When setting up statically partitioned cluster on an Infrastructure as a Service (IaaS) provider. It will be wasting money due to cloud instances sitting idle. Find-grained resource sharing can help increase system’s utilization. For example, if there are two applications likes in \textbf{Figure}~\ref{fig:spark}, Spark and Jenkins that need to run on multiple servers. Each of these system atop a general-purpose cluster manager like Mesos that allows for this sort of fine-grained resource sharing. It can share compute resources and run multiple workloads on a single Mesos slave. This will lead to better resource utilization across many machines within a modern datacenter.\cite{mesosInAction}
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=13cm]{./image/spark.png}}
-  \caption{Mesos managing cluster resources for two applications. \cite{mesosInAction}}\label{fig:spark}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=13cm]{./image/spark.png}}
+\caption{Mesos managing cluster resources for two applications. \cite{mesosInAction}}\label{fig:spark}
 \end{figure}
 
 \newpage
-
 \subsection{Apache Kafka}
 Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In \textbf{Figure}~\ref{fig:kafka}, producers are processes that send message to Kafka. Then, Kafka stores these messages in key-value. The data can be partitioned into different topic. And Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. And partitions are replicated to multiple servers.\cite{kafka}
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=6cm]{./image/kafka.png}}
-  \caption{Overview of Kafka. \cite{kafka}}\label{fig:kafka}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=6cm]{./image/kafka.png}}
+\caption{Overview of Kafka. \cite{kafka}}\label{fig:kafka}
 \end{figure}
 
 \section{Related Research}
@@ -500,7 +495,7 @@ The current data center management is a representative large-scale resource mana
 
 Many researchers have conducted relevant work. For example, in 2016, Li Y et al \cite{fishSwarm} introduced the fish swarm intelligence algorithm to dynamically adjusting the Mesos cluster resources to improve the Mesos load imbalance and resource utilization. The DRF scheduling algorithm of Mesos is extended, and in 2018, Wenbin Liu et al. proposed A X-DRF algorithm \cite{xdrf} based on building classifies the performance of physical machines and job type judgment classification is proposed to solve the problem of machine performance in literature, but the task type is not considered and not consider the waiting time. Compared with the original DRF algorithm, the X-DRF algorithm has higher system resource utilization rate, which is in line with the actual production rules of data centers, and provides new ideas for heterogeneous cluster multi- resource management for data center managers. In 2019, Pankaj Saha et al. developed Tromino \cite{tromino}, a policy driven queue manager. Tromino allows task from individual frameworks to be scheduled based on each framework’s overall resources requirement and current resources consumption. Tromino reduce the impact of unfairness due to framework specific configuration and unfair waiting time due to higher resource demand in a pending task queue.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Methodology and Design}
@@ -514,10 +509,10 @@ This project aims to design separated architecture from previous Apache Mesos to
 
 \subsection{Sequence diagram} 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=14cm]{./image/SequenceDiagram.png}}
-  \caption{Sequence diagram of Apache Mesos}\label{fig:SequenceDiagram}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=14cm]{./image/SequenceDiagram.png}}
+\caption{Sequence diagram of Apache Mesos}\label{fig:SequenceDiagram}
 \end{figure}
 
 According to \textbf{Figure}~\ref{fig:SequenceDiagram} shows sequence diagram that user submits a job via command line or Application Programming Interface (API), and also specifies their framework, resources requirement, configuration script, and command to the meta-scheduler. Meta-scheduler, called NKR-scheduler, keeps track of incoming task from user and distributes each task to the queue. NKR-scheduler periodically fetches cluster and task information from Mesos Master to make a decision for scheduling task based on policy.  After NKR-scheduler finishes a decision making, then it will dispatch task directly to corresponding framework.
@@ -526,50 +521,50 @@ According to \textbf{Figure}~\ref{fig:SequenceDiagram} shows sequence diagram th
 Hypothesis testing is to verify reduction of failure task in each framework. This project separates into 2 experiments because it considers both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. This project uses three frameworks which are Marathon, Chronos, along with spark for the test.  Comparing results from execute these frameworks with normal clustering setting, and our NKR-scheduler which apply one or two policies.
 
 \begin{table}[!h]
-  \caption{Variable description.}\label{tbl:VariableDescription}
-  \begin{tabular}{|l|l|}
-    \hline
-    \textbf{Variable} & \textbf{Description}\\
-    \hline
-    \textbf{Dominant share} & The resource that each framework now uses in cluster\\
-    \hline
-    \textbf{Demand awareness} & resource requirement of each framework \\
-    \hline
-  \end{tabular}
+\caption{Variable description.}\label{tbl:VariableDescription}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Variable} & \textbf{Description}\\
+\hline
+\textbf{Dominant share} & The resource that each framework now uses in cluster\\
+\hline
+\textbf{Demand awareness} & resource requirement of each framework \\
+\hline
+\end{tabular}
 \end{table}
 
 \textbf{Experiment 1:} Framework with different arrival rate and all tasks are identical in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment1}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Both policies.
 
 \begin{table}[!h]
-  \caption{Variable description.}\label{tbl:Experiment1}
-  \begin{tabular}{|l|l|l|}
-    \hline
-    & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
-    \hline
-    \textbf{Marathon} & 100 & 5\\
-    \hline
-    \textbf{Chronos} & 100 & 2 \\
-    \hline
-    \textbf{Spark} & 100 & 1 \\
-    \hline
-\end{tabul}ar}
+\caption{Variable description.}\label{tbl:Experiment1}
+\begin{tabular}{|l|l|l|}
+\hline
+ & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
+\hline
+\textbf{Marathon} & 100 & 5\\
+\hline
+\textbf{Chronos} & 100 & 2 \\
+\hline
+\textbf{Spark} & 100 & 1 \\
+\hline
+\end{tabular}
 \end{table}
 
 \textbf{Experiment 2:} Framework with different arrival rate and all tasks are vary in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment2}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Both policies.
 
 \begin{table}[!h]
-  \caption{Variable description.}\label{tbl:Experiment2}
-  \begin{tabular}{|l|l|l|}
-    \hline
-    & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
-    \hline
-    \textbf{Marathon} & 100 & 5\\
-    \hline
-    \textbf{Chronos} & 100 & 2 \\
-    \hline
-    \textbf{Spark} & 100 & 1 \\
-    \hline
-  \end{tabular}
+\caption{Variable description.}\label{tbl:Experiment2}
+\begin{tabular}{|l|l|l|}
+\hline
+ & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
+\hline
+\textbf{Marathon} & 100 & 5\\
+\hline
+\textbf{Chronos} & 100 & 2 \\
+\hline
+\textbf{Spark} & 100 & 1 \\
+\hline
+\end{tabular}
 \end{table}
 
 \section{System Architecture}
@@ -577,33 +572,33 @@ Hypothesis testing is to verify reduction of failure task in each framework. Thi
 \subsection{Architecture diagram}  
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=10cm]{./image/ArchitectureDiagram.png}}
-  \caption{Architecture diagram.}\label{fig:ArchitectureDiagram}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/ArchitectureDiagram.png}}
+\caption{Architecture diagram.}\label{fig:ArchitectureDiagram}
 \end{figure}
 
 According to \textbf{Figure}~\ref{fig:ArchitectureDiagram} shows architecture diagram, there are many components that this project implements. NKR-scheduler consists of three major elements 1) Client Receiver, 2) Queue, and 3) Scheduler and the other components describe below in \textbf{Table}~\ref{tbl:ArchitectureDiagramTable}.
 
 \begin{table}[!h]
-  \caption{Description of Architecture diagram.}\label{tbl:ArchitectureDiagramTable}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.8\textwidth}|}
-    \hline
-    \textbf{Components} & \textbf{Description}\\
-    \hline
-    \textbf{Client Receiver} & Interface for user to submit task to cluster.\\
-    \hline
-    \textbf{Queue} & The list that stores task, and information about resources requirement in each framework that register into the Apache Mesos.\\
-    \hline
-    \textbf{Scheduler} & The adaptive policy that configured by user and keeps track information about cluster from Apache Mesos.\\
-    \hline
-    \textbf{Elasticsearch} & Elasticsearch stores previous data from Apache Mesos and periodically train a new model.\\
-    \hline
-    \textbf{Monitor} & Monitor keeps track abnormality and another metrics.\\
-    \hline
-    \textbf{Model} & It stores model for predicting in case user want to use AI to schedule tasks.\\
-    \hline
-  \end{tabular}
+\caption{Description of Architecture diagram.}\label{tbl:ArchitectureDiagramTable}
+\begin{tabular}{@{}|p{0.2\textwidth}|p{0.8\textwidth}|}
+\hline
+\textbf{Components} & \textbf{Description}\\
+\hline
+\textbf{Client Receiver} & Interface for user to submit task to cluster.\\
+\hline
+\textbf{Queue} & The list that stores task, and information about resources requirement in each framework that register into the Apache Mesos.\\
+\hline
+\textbf{Scheduler} & The adaptive policy that configured by user and keeps track information about cluster from Apache Mesos.\\
+\hline
+\textbf{Elasticsearch} & Elasticsearch stores previous data from Apache Mesos and periodically train a new model.\\
+\hline
+\textbf{Monitor} & Monitor keeps track abnormality and another metrics.\\
+\hline
+\textbf{Model} & It stores model for predicting in case user want to use AI to schedule tasks.\\
+\hline
+\end{tabular}
 \end{table}
 
 \subsection{Policy}  
@@ -611,59 +606,59 @@ This project designs two policies for the Meta-scheduler: 1) First Demand Policy
 
 \begin{enumerate}
   \item \textbf{First Demand Share Policy} We explain how FDP policy work by considering, a cluster with a total of 8 CPU and 64 GB of memory, where two frameworks (A and B) are shared completing shared resources. Each framework be able to have a different number of tasks in their list. In example, framework a has 4 tasks each task consumes (2 CPU, 0.5GB memory) as a resource demand, and Framework B has 2 tasks with (0.5 CPU, 1 GB memory) and task still running on cluster. Framework A has 1 task (2CPU, 0.5 GB memory), and Framework B has 2 task (1CPU, 2 GB memory) the dominants share of framework A = max (2/8,0.5/64) = 25\% and Framework B = 12.5\%. In this case if we apply normal scheduling policy it will dispatch task from framework B as shows in \textbf{Figure}~\ref{fig:flowDiagram}.
+  
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/flowDiagram.png}}
+\caption{Architecture diagram.}\label{fig:flowDiagram}
+\end{figure}
 
-  \begin{figure}[!h]\centering
-    \setlength{\fboxrule}{0mm} % can define this in the preamble
-    \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=10cm]{./image/flowDiagram.png}}
-    \caption{Architecture diagram.}\label{fig:flowDiagram}
-  \end{figure}
+In FDP policy, we consider both the demands of each framework and their dominant share that come from cluster monitor. Scheduling based just on the demand may cause unfairness. A framework could end up consuming the entire cluster due to its higher demand while another framework that has significantly fewer number of tasks to execute could starve for resources. Therefore, we combine both as a factor and use decision matrix in each cycle to decide which task to be dispatched. We present how to calculate each parameter in \textbf{Table}~\ref{tbl:Parameter}. according to \textbf{Table}~\ref{tbl:DecisionMatrix}, We can see highly total factor in framework A, therefore program assign a higher priority and let its corresponding dispatcher release a task
 
-  In FDP policy, we consider both the demands of each framework and their dominant share that come from cluster monitor. Scheduling based just on the demand may cause unfairness. A framework could end up consuming the entire cluster due to its higher demand while another framework that has significantly fewer number of tasks to execute could starve for resources. Therefore, we combine both as a factor and use decision matrix in each cycle to decide which task to be dispatched. We present how to calculate each parameter in \textbf{Table}~\ref{tbl:Parameter}. according to \textbf{Table}~\ref{tbl:DecisionMatrix}, We can see highly total factor in framework A, therefore program assign a higher priority and let its corresponding dispatcher release a task
+\begin{table}[!h]
+\caption{Parameter Formula and Description.}\label{tbl:Parameter}
+\begin{tabular}{@{}|p{0.3\textwidth}|p{0.3\textwidth}|p{0.4\textwidth}|}
+\hline
+\textbf{Parameter name} & \textbf{Formula} & \textbf{Description} \\ 
+\hline
+\multirow{4}{*}{\textbf{Demand Dominant (DD)}} & \multirow{4}{*}{$DD_i = \max_{j=1}^{m}(\frac{n_ird_{i,j}}{r_j})$} & $m$ available types of resources\\ 
+\cline{3-3} & & $n_i$ number of tasks on list $i$\\ 
+\cline{3-3} & & $rd_{i,j}$ resource demand of type j being demand by framework $rd_i $\\ 
+\cline{3-3} & & $r_j$ total resource of type $j$\\ 
+\hline
+\multirow{3}{*}{\textbf{Demand Share (DS)}} & \multirow{3}{*}{$DS_i = \max_{j=1}^{m}(\frac{n_i}{r_j})$} & $m$ available types of resources \\ 
+\cline{3-3} & & $n_i$ number of tasks on list $i$ \\
+\cline{3-3} & & $r_j$ total resource of type $j$ \\ 
+\hline
+\end{tabular}
+\end{table}
 
-  \begin{table}[!h]
-    \caption{Parameter Formula and Description.}\label{tbl:Parameter}
-    \begin{tabular}{@{}|p{0.3\textwidth}|p{0.3\textwidth}|p{0.4\textwidth}|}
-      \hline
-      \textbf{Parameter name} & \textbf{Formula} & \textbf{Description} \\ 
-      \hline
-      \multirow{4}{*}{\textbf{Demand Dominant (DD)}} & \multirow{4}{*}{$DD_i = \max_{j=1}^{m}(\frac{n_ird_{i,j}}{r_j})$} & $m$ available types of resources\\ 
-      \cline{3-3} & & $n_i$ number of tasks on list $i$\\ 
-      \cline{3-3} & & $rd_{i,j}$ resource demand of type j being demand by framework $rd_i $\\ 
-      \cline{3-3} & & $r_j$ total resource of type $j$\\ 
-      \hline
-      \multirow{3}{*}{\textbf{Demand Share (DS)}} & \multirow{3}{*}{$DS_i = \max_{j=1}^{m}(\frac{n_i}{r_j})$} & $m$ available types of resources \\ 
-      \cline{3-3} & & $n_i$ number of tasks on list $i$ \\
-      \cline{3-3} & & $r_j$ total resource of type $j$ \\ 
-      \hline
-    \end{tabular}
-  \end{table}
+\begin{table}[!h]
+\caption{Decision Matrix.}\label{tbl:DecisionMatrix}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{Framework} & \textbf{DD} & \textbf{(1-DS)} & \textbf{TOTAL}\\
+\hline
+\textbf{A} & 1 & 0.75 & 1.75\\
+\hline
+\textbf{B} & 0.125 & 0.875 & 1\\
+\hline
+\end{tabular}
+\end{table}
 
-  \begin{table}[!h]
-    \caption{Decision Matrix.}\label{tbl:DecisionMatrix}
-      \begin{tabular}{|l|l|l|l|}
-      \hline
-      \textbf{Framework} & \textbf{DD} & \textbf{(1-DS)} & \textbf{TOTAL}\\
-      \hline
-      \textbf{A} & 1 & 0.75 & 1.75\\
-      \hline
-      \textbf{B} & 0.125 & 0.875 & 1\\
-      \hline
-    \end{tabular}
-  \end{table}
+\item \textbf{Success rate prediction}There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, etc. These metrics are able to identify anomalies (task failed, task killed, etc.) by using the pipeline provided in Topic \ref{dataPipeline}
 
-  \item \textbf{Success rate prediction}There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, etc. These metrics are able to identify anomalies (task failed, task killed, etc.) by using the pipeline provided in Topic \ref{dataPipeline}
+Firstly, the log data need to be pre-processed by transforming and cleansing.  Secondly, the log data are clustered by K-means algorithm to separate the data that point into different metric groups or different machines.  The success rate prediction of given task will use the Random Forest. Random Forest is a set of interconnected decision tree that uses the majority voting to provide classification or regression result. It is robust to noise and able to provide highly accurate prediction. \cite{AdaptiveScheduling} In each cluster, the model will be trained by active and terminated tasks information. 
 
-  Firstly, the log data need to be pre-processed by transforming and cleansing.  Secondly, the log data are clustered by K-means algorithm to separate the data that point into different metric groups or different machines.  The success rate prediction of given task will use the Random Forest. Random Forest is a set of interconnected decision tree that uses the majority voting to provide classification or regression result. It is robust to noise and able to provide highly accurate prediction. \cite{AdaptiveScheduling} In each cluster, the model will be trained by active and terminated tasks information. 
+In each cluster, data will be divided into 80\% training dataset and remaining 20\% testing dataset. The measure metric is accuracy, precision, recall and error. When users submit task, NKR-scheduler will request metric information from Mesos, allocate resource to run tasks, profile the task to cluster and use that cluster’s model to predict success rates of this task shown in \textbf{Figure}~\ref{fig:flowDiagramPredict}.
 
-  In each cluster, data will be divided into 80\% training dataset and remaining 20\% testing dataset. The measure metric is accuracy, precision, recall and error. When users submit task, NKR-scheduler will request metric information from Mesos, allocate resource to run tasks, profile the task to cluster and use that cluster’s model to predict success rates of this task shown in \textbf{Figure}~\ref{fig:flowDiagramPredict}.
-
-  \begin{figure}[!h]\centering
-    \setlength{\fboxrule}{0mm} % can define this in the preamble
-    \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=15cm]{./image/flowDiagramPredict.png}}
-    \caption{Flow Diagram of Predicting success rate.}\label{fig:flowDiagramPredict}
-  \end{figure}
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=15cm]{./image/flowDiagramPredict.png}}
+\caption{Flow Diagram of Predicting success rate.}\label{fig:flowDiagramPredict}
+\end{figure}
 
 \end{enumerate}
 
@@ -672,44 +667,44 @@ This project designs two policies for the Meta-scheduler: 1) First Demand Policy
 This project implement database as a Elasticsearch and keep log every minute. It allows storing, searching, and analyzing big volumes of data quickly and schema-less. It uses a default configuration to index the data. Database schema shows in \textbf{Figure}~\ref{fig:database} and describe each field in \textbf{Table}~\ref{tbl:fieldName}
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=13cm]{./image/database.png}}
-  \caption{database schema.}\label{fig:database}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=13cm]{./image/database.png}}
+\caption{database schema.}\label{fig:database}
 \end{figure}
 
 \begin{table}[!h]
-  \caption{Field name and description.}\label{tbl:fieldName}
-    \begin{tabular}{|p{0.2\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|p{0.4\textwidth}|}
-    \hline
-    \textbf{Index Name} & \multicolumn{3}{p{0.7\textwidth}|}{\textbf{Description}}  \\ 
-    \hline
-    \textbf{Resources index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about the total resources available in the cluster and their current usage.} \\ 
-    \hline
-    \multirow{5}{*}{\textbf{System index}} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about the resources available on this master node and their current usage.} \\ 
-    \cline{2-4} & \textbf{Field name} & \textbf{Data type} & \textbf{Description} \\ 
-    \cline{2-4} & Load\_15min & Double & Load average for the past 15 minutes \\ 
-    \cline{2-4} & Load\_5min & Double & Load average for the past 5 minutes \\ 
-    \cline{2-4} & Load\_1min & Double & Load average for the past 1 minutes \\ 
-    \hline
-    \textbf{Slave index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about slave events, slave counts, and slave states.} \\ 
-    \hline
-    \multirow{5}{*}{\textbf{Task index}} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about active and terminated tasks. A high rate of lost tasks may indicate that there is a problem with the cluster.} \\ 
-    \cline{2-4} & \textbf{Field name} & \textbf{Data type} & \textbf{Description} \\ 
-    \cline{2-4} & tasks\_error & Double & Number of tasks that were invalid \\ 
-    \cline{2-4} & tasks\_failed & Double & Number of failed tasks \\ 
-    \cline{2-4} & tasks\_finished & Double & Number of finished tasks \\ 
-    \cline{2-4} & tasks\_killed & Double & Number of killed tasks \\ 
-    \cline{2-4} & tasks\_lost & Double & Number of lost tasks \\ 
-    \cline{2-4} & tasks\_running & Double & Number of running tasks \\ 
-    \cline{2-4} & tasks\_staging & Double & Number of staging tasks \\ 
-    \cline{2-4} & tasks\_starting & Double & Number of starting tasks \\ 
-    \hline
-    \textbf{Framework index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about the registered frameworks in the cluster.} \\ 
-    \hline
-    \textbf{Message index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about messages between the master and the slaves and between the framework and the executors. A high rate of dropped messages may indicate that there is a problem with the network.} \\ 
-    \hline
-  \end{tabular}
+\caption{Field name and description.}\label{tbl:fieldName}
+\begin{tabular}{|p{0.2\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|p{0.4\textwidth}|}
+\hline
+\textbf{Index Name} & \multicolumn{3}{p{0.7\textwidth}|}{\textbf{Description}}  \\ 
+\hline
+\textbf{Resources index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about the total resources available in the cluster and their current usage.} \\ 
+\hline
+\multirow{5}{*}{\textbf{System index}} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about the resources available on this master node and their current usage.} \\ 
+\cline{2-4} & \textbf{Field name} & \textbf{Data type} & \textbf{Description} \\ 
+\cline{2-4} & Load\_15min & Double & Load average for the past 15 minutes \\ 
+\cline{2-4} & Load\_5min & Double & Load average for the past 5 minutes \\ 
+\cline{2-4} & Load\_1min & Double & Load average for the past 1 minutes \\ 
+\hline
+\textbf{Slave index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about slave events, slave counts, and slave states.} \\ 
+\hline
+\multirow{5}{*}{\textbf{Task index}} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about active and terminated tasks. A high rate of lost tasks may indicate that there is a problem with the cluster.} \\ 
+\cline{2-4} & \textbf{Field name} & \textbf{Data type} & \textbf{Description} \\ 
+\cline{2-4} & tasks\_error & Double & Number of tasks that were invalid \\ 
+\cline{2-4} & tasks\_failed & Double & Number of failed tasks \\ 
+\cline{2-4} & tasks\_finished & Double & Number of finished tasks \\ 
+\cline{2-4} & tasks\_killed & Double & Number of killed tasks \\ 
+\cline{2-4} & tasks\_lost & Double & Number of lost tasks \\ 
+\cline{2-4} & tasks\_running & Double & Number of running tasks \\ 
+\cline{2-4} & tasks\_staging & Double & Number of staging tasks \\ 
+\cline{2-4} & tasks\_starting & Double & Number of starting tasks \\ 
+\hline
+\textbf{Framework index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about the registered frameworks in the cluster.} \\ 
+\hline
+\textbf{Message index} & \multicolumn{3}{p{0.7\textwidth}|}{ The following metrics provide information about messages between the master and the slaves and between the framework and the executors. A high rate of dropped messages may indicate that there is a problem with the network.} \\ 
+\hline
+\end{tabular}
 \end{table}
 
 \newpage
@@ -720,37 +715,37 @@ This project implement database as a Elasticsearch and keep log every minute. It
 This project uses simulation to create a large dataset, and typical usage of Mesos cluster. This project divides types of framework into 3 parts 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage, but it will cover only 2 types of framework. This project implements a job simulator to submit 5 frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and this project will run application job according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
 
 \begin{table}[!h]
-  \caption{Framework of Apache Mesos.}\label{tbl:MesosFramework}
-    \begin{tabular}{@{}|p{0.45\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|}
-    \hline
-    \textbf{Type} & \textbf{Framework1} & \textbf{Framework2} & \textbf{Framework3}\\
-    \hline
-    1. Application management and batch scheduling & Chronos & Marathon & \\
-    \hline
-    2. Data processing & Spark & Dpark & Kafka\\
-    \hline
-  \end{tabular}
+\caption{Framework of Apache Mesos.}\label{tbl:MesosFramework}
+\begin{tabular}{@{}|p{0.45\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|}
+\hline
+\textbf{Type} & \textbf{Framework1} & \textbf{Framework2} & \textbf{Framework3}\\
+\hline
+1. Application management and batch scheduling & Chronos & Marathon & \\
+\hline
+2. Data processing & Spark & Dpark & Kafka\\
+\hline
+\end{tabular}
 \end{table}
 
 \begin{table}[!h]
-  \caption{Application Data.}\label{tbl:ApplicationData}
-    \begin{tabular}{@{}|p{0.2\textwidth}|p{0.7\textwidth}|}
-    \hline
-    \textbf{Framework} & \textbf{Application job}\\
-    \hline
-    Chronos & Wordcount, Kmeans, Topk, InvertedIndex\\
-    \hline
-    \multirow{2}{*}{Marathon} & Inline Shell Script, Docker based Application \\
-    & https://mesosphere.github.io/marathon/docs/application-basics.html\\
-    \hline
-    \multirow{2}{*}{Spark} & Wordcount, Pi Estimation, Text search\\
-    & http://spark.apache.org/examples.html\\
-    \hline
-    Dpark & Wordcount, Python program for data analysis\\
-    \hline
-    Kafka & Broker, Topic, Producer, Consumer\\
-    \hline
-  \end{tabular}
+\caption{Application Data.}\label{tbl:ApplicationData}
+\begin{tabular}{@{}|p{0.2\textwidth}|p{0.7\textwidth}|}
+\hline
+\textbf{Framework} & \textbf{Application job}\\
+\hline
+Chronos & Wordcount, Kmeans, Topk, InvertedIndex\\
+\hline
+\multirow{2}{*}{Marathon} & Inline Shell Script, Docker based Application \\
+& https://mesosphere.github.io/marathon/docs/application-basics.html\\
+\hline
+\multirow{2}{*}{Spark} & Wordcount, Pi Estimation, Text search\\
+& http://spark.apache.org/examples.html\\
+\hline
+Dpark & Wordcount, Python program for data analysis\\
+\hline
+Kafka & Broker, Topic, Producer, Consumer\\
+\hline
+\end{tabular}
 \end{table}
 
 \newpage
@@ -758,24 +753,24 @@ This project uses simulation to create a large dataset, and typical usage of Mes
 \subsection{Transform data pipeline }
 
 \begin{figure}[!h]\centering
-  \setlength{\fboxrule}{0mm} % can define this in the preamble
-  \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=13cm]{./image/dataPipeline.png}}
-  \caption{Data pipeline.}\label{fig:dataPipeline}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=13cm]{./image/dataPipeline.png}}
+\caption{Data pipeline.}\label{fig:dataPipeline}
 \end{figure}
 
 This project uses log data that mentioned before, and then transforms log data to be a model by using the following step below.
 
 \begin{enumerate}
-  \item \textbf{Database } Collecting logs data and sending out all of data from last week.
-  \item \textbf{Pre-processing}
-    \begin{itemize}
-      \item \textbf{Data cleaning } Dropping entire row that if it has only one attribute missing. 
-      \item \textbf{Integration } Summarizing resource utilization of task, and server.
-      \item \textbf{Normalization } Changing value of data into the same range, without distorting differences in the ranges of values.
-      \item \textbf{Data selection with correlation } Finding correlation of each attribute and selecting high correlation to build a model.
-    \end{itemize}
-  \item \textbf{Data Mining } Because there is plenty of data and cannot see relative of them, so this project plugs them all into K-means clustering algorithm. It will find patterns in data by grouping it into clusters. In each cluster is point to a subset of the same machines, task, or framework to investigate further. Then, input those same metrics into the machine learning model.
+\item \textbf{Database } Collecting logs data and sending out all of data from last week.
+\item \textbf{Pre-processing}
+ \begin{itemize}
+   \item \textbf{Data cleaning } Dropping entire row that if it has only one attribute missing. 
+   \item \textbf{Integration } Summarizing resource utilization of task, and server.
+   \item \textbf{Normalization } Changing value of data into the same range, without distorting differences in the ranges of values.
+   \item \textbf{Data selection with correlation } Finding correlation of each attribute and selecting high correlation to build a model.
+ \end{itemize}
+ \item \textbf{Data Mining } Because there is plenty of data and cannot see relative of them, so this project plugs them all into K-means clustering algorithm. It will find patterns in data by grouping it into clusters. In each cluster is point to a subset of the same machines, task, or framework to investigate further. Then, input those same metrics into the machine learning model.
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Experiments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
