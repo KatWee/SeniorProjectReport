@@ -3,7 +3,6 @@
 %%%%%% for a few times to generate the output pdf file
 \documentclass[12pt,oneside,openright,a4paper]{cpe-english-project}
 
-
 \defaultfontfeatures{Mapping=tex-text,Scale=1.0,LetterSpace=0.0}
 \setmainfont[Scale=1.0,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{Times New Roman}
 %\setmathfont(Digits)[Scale=1.0,LetterSpace=0,FakeStretch=1.0]{Times New Roman}
@@ -57,13 +56,13 @@
 \def\thaiworktype{ปริญญานิพนธ์} %  Project or research project % 
 \def\thaidisstitleone{หัวข้อปริญญานิพนธ์บรรทัดแรก}
 \def\thaidisstitletwo{หัวข้อปริญญานิพนธ์บรรทัดสอง}
-\def\thaidissauthor{นายสมศักดิ์ คอมพิวเตอร์}
-\def\thaidissauthortwo{นางสาวสมศรี คอมพิวเตอร์2} %Optional
-\def\thaidissauthorthree{นางสาวสมปอง คอมพิวเตอร์3} %Optional
+\def\thaidissauthor{นางสาวภาสินี สันติวรนันท์}
+\def\thaidissauthortwo{นายศุภพัฒน์ ศรีอ่อน} %Optional
+\def\thaidissauthorthree{นางสาวปรัษฐา วีระพงษ์} %Optional
 
-\def\thaidissadvisor{รศ.ดร.ที่ปรึกษา วิทยานิพนธ์}
+\def\thaidissadvisor{ผศ.ดร.ราชวิชช์ สโรชวิกสิต}
 %% Leave this empty if you have no co-advisor
-\def\thaidisscoadvisor{รศ.ดร.ที่ปรึกษา วิทยานิพนธ์ร่วม} %Optional
+\def\thaidisscoadvisor{} %Optional
 \def\thaidissdegree{วิศวกรรมศาสตรบัณฑิต}
 
 % Change the line spacing here...
@@ -207,34 +206,25 @@ MANET & Mobile Ad Hoc Network
 
 \chapter{Introduction}
 
-\section{Background} 
+\section{Problem Statement and Approach} 
 
-Explain the background of your works for readers. You can refer to figure by like this.. Figure~\ref{fig:x1}.
-\begin{figure}[!h]
-\caption{This is the figure x11}\label{fig:x1}
-\end{figure}
+Nowadays, several different types of applications, which are short or long-lived jobs, container orchestration, or MPI jobs, are executed in clouds or large computer clusters. Multiple users can demand difference resources to execute their tasks. Apache Mesos is a Middleware for the data center by introducing an abstraction layer that provides an entire data centers as a single large server. Instead of focusing on one application that running on a specific server. Mesos resource-isolation allows multi-tenant — the ability to run multiple applications on a single machine. Default sharing for multiple resources in this multi-tenant environment is defined by the Dominant Resource Fairness (DRF). Mesos receives the resources based on their current usage, which are responsible for scheduling their tasks within the allocation. In multiple schedulers can cause the fairness-imbalance in a multi-user environment, liked a greedy scheduler. It consumes more than its share of resources. Running multiple small tasks is better than launching large ones in terms of time spent waiting for enough resources. 
 
+Therefore, this project aims to improve the fairness of the scheduler by reducing the unfair waiting time due to higher resource demand in a pending task list and use log data to improve the whole cluster.
 
-\section{Motivations}
-Explain the motivations of your works.  
-\begin{itemize}
-\item   What are the problems you are addressing? 
-\item  Why they are important?
-\item  What are the limitations of existing approaches? 
-\end{itemize}
-You may combine this section with the background section.
-
-
-\section{Problem Statements}
 
 \section{Objectives}
-
-\section{Scope of Work}
-
-Explain the scope of your works. 
 \begin{itemize}
-\item   What are the problems you are addressing? 
-\item  Why they are important?
+\item  To study about job scheduling in Apache Mesos
+\item  To study how to develop an algorithm to improve performance of scheduler in large-scale clustered environments.
+\item  ·	To evaluate result and compare with Apache Mesos scheduler by using difference job types in the list (short job, long job, MPI)
+\end{itemize}
+
+
+\section{Scope}
+\begin{itemize}
+\item  This project focuses on the reduction of job failed. 
+\item  Design and develop an add-on architecture on top of the Apache Mesos scheduler, to track and distribute the incoming tasks.
 \item  What are the limitations of existing approaches? 
 \end{itemize}
 
