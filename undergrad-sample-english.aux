@@ -2,11 +2,14 @@
 \@writefile{toc}{\contentsline {chapterx}{\mdseries  ABSTRACT}{ii}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapterx}{\mdseries  THAI ABSTRACT}{iii}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapterx}{\mdseries  ACKNOWLEDGMENTS}{iv}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapterx}{\mdseries  CONTENTS}{v}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF TABLES}{vi}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF FIGURES}{vii}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF SYMBOLS}{viii}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{ix}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapterx}{\mdseries  CONTENTS}{vi}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF TABLES}{vii}{}\protected@file@percent }
+\citation{adaptiveScheduling}
+\citation{docker}
+\citation{mesosInAction}
+\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF FIGURES}{viii}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF SYMBOLS}{ix}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapterx}{\mdseries  LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{x}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapterxx}{\mdseries  \bf  CHAPTER}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {1.}\hskip -0.5em Introduction}}}{1}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {0em}}
@@ -19,70 +22,97 @@
 \newlabel{tbl:method1}{{1.1}{2}}
 \@writefile{lot}{\contentsline {table}{\numberline {1.2}{\ignorespaces Semester 2’s Gantt chart}}{3}{}\protected@file@percent }
 \newlabel{tbl:method1}{{1.2}{3}}
-\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {2.}\hskip -0.5em Background Theory and Related Work}}}{4}{}\protected@file@percent }
+\citation{mesos}
+\citation{policiesAndMetrics}
+\citation{dominantResourceFairness}
+\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {2.}\hskip -0.5em Background Knowledge and Literature Review}}}{4}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {0em}}
 \@writefile{lot}{\addvspace {0em}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Recommender Systems}{4}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces test table method1}}{4}{}\protected@file@percent }
-\newlabel{tbl:method1}{{2.1}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Text Processing Algorithms}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Algorithm I}{4}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The network model}}{4}{}\protected@file@percent }
-\newlabel{fig:model2}{{2.1}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Algorithm II}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Development Tools}{4}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {3.}\hskip -0.5em Proposed Work}}}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Knowledge Background}{4}{}\protected@file@percent }
+\citation{adaptiveScheduling}
+\citation{adaptiveScheduling}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Theoretical and Core Concepts}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Tasks Failures Detection}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces TaskTracker Failure Detection Model in Hadoop Framework \cite  {adaptiveScheduling}}}{5}{}\protected@file@percent }
+\newlabel{fig:tasktracker}{{2.1}{5}}
+\citation{docker}
+\citation{docker}
+\citation{container}
+\citation{ml}
+\citation{ann}
+\citation{deepLearning}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Container Technology}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Virtual machine vs Container \cite  {docker}}}{6}{}\protected@file@percent }
+\newlabel{fig:vmVSContainer}{{2.2}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Overview of machine learning}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.4}Overview of machine learning}{6}{}\protected@file@percent }
+\citation{deepLearning2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.5}Deep learning}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Neural networks.}}{7}{}\protected@file@percent }
+\newlabel{fig:NN}{{2.3}{7}}
+\citation{mesosInAction}
+\citation{mesosInAction}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Technologies survey}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Apache Mesos}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces The Mesos architecture consists of one or more masters, slaves, and frameworks. \cite  {mesosInAction}}}{8}{}\protected@file@percent }
+\newlabel{fig:MesosArc}{{2.4}{8}}
+\citation{drf}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Example of running 2 frameworks.}}{9}{}\protected@file@percent }
+\newlabel{tbl:DRFTwoFramework}{{2.1}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Technologies survey}{9}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces test table method1}}{9}{}\protected@file@percent }
+\newlabel{tbl:method1}{{2.2}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Text Processing Algorithms}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Algorithm I}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Algorithm II}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Development Tools}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces The network model}}{10}{}\protected@file@percent }
+\newlabel{fig:model2}{{2.5}{10}}
+\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {3.}\hskip -0.5em Proposed Work}}}{11}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {0em}}
 \@writefile{lot}{\addvspace {0em}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}System Architecture}{5}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces test table x1}}{5}{}\protected@file@percent }
-\newlabel{tbl:symbols}{{3.1}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}System Specifications and Requirements}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Hardware Module 1}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Component 1}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Logical Circuit Diagram}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Hardware Module 2}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Component 1}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Component 2}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Path Finding Algorithm}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}Database Design}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.7}GUI Design}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {4.}\hskip -0.5em Implementation Results}}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}System Architecture}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces test table x1}}{11}{}\protected@file@percent }
+\newlabel{tbl:symbols}{{3.1}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}System Specifications and Requirements}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Hardware Module 1}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Component 1}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Logical Circuit Diagram}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Hardware Module 2}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Component 1}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Component 2}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Path Finding Algorithm}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Database Design}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}GUI Design}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {4.}\hskip -0.5em Implementation Results}}}{12}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {0em}}
 \@writefile{lot}{\addvspace {0em}}
 \citation{*}
 \bibstyle{kmutt}
 \bibdata{string,cpe}
-\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {5.}\hskip -0.5em Conclusions}}}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\normalsize  \bf  \MakeUppercase  {{\numberline {5.}\hskip -0.5em Conclusions}}}{13}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {0em}}
 \@writefile{lot}{\addvspace {0em}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Problems and Solutions}{7}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Future Works}{7}{}\protected@file@percent }
-\bibcite{bao03}{1}
-\bibcite{barowski05}{2}
-\bibcite{bettstetter03}{3}
-\bibcite{bianchi00}{4}
-\bibcite{eun01}{5}
-\bibcite{gupta98}{6}
-\bibcite{hon02}{7}
-\bibcite{kim01}{8}
-\bibcite{norros95}{9}
-\bibcite{santi05b}{10}
-\bibcite{shen04}{11}
-\bibcite{singh02}{12}
-\bibcite{subramanian00}{13}
-\bibcite{takagi84}{14}
-\bibcite{yu04}{15}
-\@writefile{toc}{\contentsline {chapter}{\mdseries  \bf  \MakeUppercase  {REFERENCES}}{8}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\mdseries  \bf  \MakeUppercase  {Appendix}}{9}{}\protected@file@percent }
-\citation{norros95}
-\citation{kim01}
-\citation{eun01}
-\@writefile{toc}{\contentsline {apdx}{A\hskip 1em First appendix title}{10}{}\protected@file@percent }
-\newlabel{eq:norros}{{A.1}{10}}
-\newlabel{eq:loss_mva}{{A.2}{10}}
-\newlabel{eq:mx}{{A.3}{10}}
-\newlabel{eq:alpha}{{A.4}{10}}
-\citation{eun01}
-\@writefile{toc}{\contentsline {apdx}{B\hskip 1em Second appendix title}{12}{}\protected@file@percent }
-\gdef \@abspage@last{22}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Problems and Solutions}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Future Works}{13}{}\protected@file@percent }
+\bibcite{container}{1}
+\bibcite{docker}{2}
+\bibcite{ml}{3}
+\bibcite{ann}{4}
+\bibcite{dominantResourceFairness}{5}
+\bibcite{mesos}{6}
+\bibcite{zooKeeper}{7}
+\bibcite{mesosInAction}{8}
+\bibcite{drf}{9}
+\bibcite{fishSwarm}{10}
+\bibcite{fairSchedulingAlgorithm}{11}
+\bibcite{deepLearning}{12}
+\bibcite{elasticsearch}{13}
+\bibcite{tromino}{14}
+\bibcite{docker2}{15}
+\bibcite{adaptiveScheduling}{16}
+\bibcite{deepLearning2}{17}
+\bibcite{policiesAndMetrics}{18}
+\bibcite{kafka}{19}
+\@writefile{toc}{\contentsline {chapter}{\mdseries  \bf  \MakeUppercase  {REFERENCES}}{14}{}\protected@file@percent }
+\gdef \@abspage@last{25}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  2 FEB 2021 15:41
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  2 FEB 2021 18:50
 entering extended mode
 **./undergrad-sample-english.tex
 (undergrad-sample-english.tex
@@ -291,6 +291,14 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ))
 \c@loopcntr=\count288
 
+(C:\Users\Kat\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/01/29 v2.7 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count289
+\multirow@dima=\skip56
+\bigstrutjot=\dimen165
+)
+
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             New Roman' with options
 (fontspec)             [Mapping=tex-text,Scale=1.0,LetterSpace=0.0,Ligatures=Te
@@ -346,10 +354,10 @@ tterspace=0;extend=1.0;+smcp;mapping=tex-text;"
 (fontspec)             =1.0\fontdimen 4\font 
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 22.
-\c@theorem=\count289
-\c@lemma=\count290
-\c@corollary=\count291
+(Font)              scaled to size 10.0pt on input line 25.
+\c@theorem=\count290
+\c@lemma=\count291
+\c@corollary=\count292
 
 (undergrad-sample-english.aux
 
@@ -361,35 +369,35 @@ LaTeX Warning: Label `tbl:method1' multiply defined.
 )
 \openout1 = `undergrad-sample-english.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 118.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-18.
+21.
  (C:\Users\Kat\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 118.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 11
-8.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 121.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
+1.
 
 (C:\Users\Kat\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    ... okay on input line 121.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -430,32 +438,32 @@ File: logo02.jpg Graphic file (type bmp)
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 125
+LaTeX Font Info:    Trying to load font information for U+msa on input line 128
 .
  (C:\Users\Kat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 125
+LaTeX Font Info:    Trying to load font information for U+msb on input line 128
 .
 
 (C:\Users\Kat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 12
-5.
+8.
 
 (C:\Users\Kat\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in alignment at lines 125--125
+Underfull \hbox (badness 10000) in alignment at lines 128--128
 [] [] 
  []
 
 [2]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 130.
+(Font)              scaled to size 10.0pt on input line 133.
 
-Underfull \hbox (badness 10000) in alignment at lines 147--149
+Underfull \hbox (badness 10000) in alignment at lines 150--152
 [][] 
  []
 
@@ -488,7 +496,7 @@ ace=0.0;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(0)/m/n' will be
-(Font)              scaled to size 13.00003pt on input line 158.
+(Font)              scaled to size 13.00003pt on input line 161.
 
 
 Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
@@ -524,7 +532,7 @@ ace=0.0;mapping=tex-text;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(1)/m/n' will be
-(Font)              scaled to size 12.29996pt on input line 159.
+(Font)              scaled to size 12.29996pt on input line 162.
 
 Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
 (fontspec)                New:script=thai' with script 'CustomDefault'.
@@ -570,379 +578,381 @@ Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
 (fontspec)                New:script=thai' with script 'CustomDefault'.
 
 
-Overfull \hbox (12.3461pt too wide) in paragraph at lines 161--162
+Overfull \hbox (12.3461pt too wide) in paragraph at lines 164--165
 \TU/THSarabunNew:script=thai(0)/m/n/10 ระดับความพึงพอใจต่อการให้บริการงาน ทั่วไ
 ปของสานักวิชาพื้นฐานและภาษา ของนักศึกษาที่มาใช้บริการสานักวิชาพื้นฐานและภาษา
  []
 
 
-Overfull \hbox (4.8971pt too wide) in paragraph at lines 161--162
+Overfull \hbox (4.8971pt too wide) in paragraph at lines 164--165
 \TU/THSarabunNew:script=thai(0)/m/n/10 สถาบัน เทคโนโลยีไทย-ญี่ปุ่น จาแนกตามเพศ 
 คณะ และชั้นปีที่ศึกษา เพื่อศึกษาปัญหาและข้อเสนอแนะของ นักศึกษามาเป็นแนวทาง
  []
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(0)/b/n' will be
-(Font)              scaled to size 13.00003pt on input line 167.
+(Font)              scaled to size 13.00003pt on input line 170.
 
-Underfull \hbox (badness 10000) in alignment at lines 164--168
+Underfull \hbox (badness 10000) in alignment at lines 167--171
 [][] 
  []
 
 [3]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 176.
+(Font)              scaled to size 12.0pt on input line 179.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 176.
+(Font)              scaled to size 12.0pt on input line 179.
  [4
 
-] (undergrad-sample-english.toc)
+] (undergrad-sample-english.toc [5
+
+])
 \tf@toc=\write3
 \openout3 = `undergrad-sample-english.toc'.
 
- [5
-
-] (undergrad-sample-english.lot)
+ [6] (undergrad-sample-english.lot)
 \tf@lot=\write4
 \openout4 = `undergrad-sample-english.lot'.
 
 
-[6
+[7
 
 ] (undergrad-sample-english.lof)
 \tf@lof=\write5
 \openout5 = `undergrad-sample-english.lof'.
 
- [7
+ [8
 
 ]
-Overfull \hbox (12.98328pt too wide) in paragraph at lines 195--195
+Overfull \hbox (12.98328pt too wide) in paragraph at lines 198--198
 []|\TU/TimesNewRoman(0)/b/n/10 SYMBOL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 []|\TU/TimesNewRoman(0)/m/n/10 jobs/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 []|\TU/TimesNewRoman(0)/m/n/10 jobs/
  []
 
-[8
+[9
 
-] [9
+] [10
 
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 14.0pt on input line 222.
+(Font)              scaled to size 14.0pt on input line 225.
 [1
 
 ]
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--255
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--258
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 255--256
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 258--259
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 270--270
+Underfull \hbox (badness 2073) in paragraph at lines 273--273
 []|\TU/TimesNewRoman(0)/m/n/10 2.1 Explore related work and
  []
 
 [2]
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--314
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--317
 []|\TU/TimesNewRoman(0)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 314--315
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 317--318
 []|\TU/TimesNewRoman(0)/m/n/10 4| 
  []
 
 
-Overfull \hbox (2.11548pt too wide) in paragraph at lines 317--317
+Overfull \hbox (2.11548pt too wide) in paragraph at lines 320--320
 []|\TU/TimesNewRoman(0)/b/n/10 5.Implementation| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
 []|\TU/TimesNewRoman(0)/m/n/10 5.1 Implement
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 321--321
+Underfull \hbox (badness 6220) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(0)/m/n/10 5.2 Train model
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 325--325
+Underfull \hbox (badness 2828) in paragraph at lines 328--328
 \TU/TimesNewRoman(0)/m/n/10 on top scheduler
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 325--325
+Underfull \hbox (badness 1755) in paragraph at lines 328--328
 \TU/TimesNewRoman(0)/m/n/10 with many situa-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
 []|\TU/TimesNewRoman(0)/m/n/10 6.2 Evaluate
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 327--327
+Underfull \hbox (badness 1354) in paragraph at lines 330--330
 \TU/TimesNewRoman(0)/m/n/10 model for sched-
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 329--329
+Underfull \hbox (badness 1168) in paragraph at lines 332--332
 []|\TU/TimesNewRoman(0)/m/n/10 6.3 Improve way
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
 \TU/TimesNewRoman(0)/m/n/10 to distributed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 []|\TU/TimesNewRoman(0)/m/n/10 6.4 Tune model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 334--334
 \TU/TimesNewRoman(0)/m/n/10 for scheduler
  []
 
 
-Underfull \hbox (badness 3849) in paragraph at lines 337--337
+Underfull \hbox (badness 3849) in paragraph at lines 340--340
 []|\TU/TimesNewRoman(0)/m/n/10 7.2 Present final
  []
 
 [3]
 Chapter 2.
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 13.0pt on input line 363.
-File: ./model2.pdf Graphic file (type pdf)
-<use ./model2.pdf>
 [4
 
 ]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
+(Font)              scaled to size 13.0pt on input line 358.
+File: ./image/tasktracker.png Graphic file (type bmp)
+<./image/tasktracker.png>
+ [5]
+File: ./image/vmVSContainer.png Graphic file (type bmp)
+<./image/vmVSContainer.png>
+ [6]
+File: ./image/NN.png Graphic file (type bmp)
+<./image/NN.png>
+ [7]
+File: ./image/MesosArc.png Graphic file (type bmp)
+<./image/MesosArc.png>
+ [8]
+File: ./model2.pdf Graphic file (type pdf)
+<use ./model2.pdf>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9] [10]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 []|\TU/TimesNewRoman(0)/m/n/10 jobs/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
+Underfull \hbox (badness 10000) in paragraph at lines 495--495
 []|\TU/TimesNewRoman(0)/m/n/10 jobs/
  []
 
-[5
+[11
 
 ]
 Chapter 4.
-[6
+[12
 
 ]
 Chapter 5.
-(undergrad-sample-english.bbl [7
+(undergrad-sample-english.bbl [13
 
-]) [8
+]) [14
 
-] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
-
- []
-
-[10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
-
- []
-
-[12] (undergrad-sample-english.aux)
+] (undergrad-sample-english.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9586 strings out of 412016
- 187878 string characters out of 2845349
- 577373 words of memory out of 3000000
- 29141 multiletter control sequences out of 15000+200000
+ 9674 strings out of 412016
+ 189345 string characters out of 2845349
+ 578278 words of memory out of 3000000
+ 29220 multiletter control sequences out of 15000+200000
  405735 words of font info for 74 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  110i,12n,117p,1141b,500s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on undergrad-sample-english.pdf (22 pages).
+Output written on undergrad-sample-english.pdf (25 pages).

@@ -1,40 +1,46 @@
 \contentsline {chapterx}{\mdseries ABSTRACT}{ii}{}%
 \contentsline {chapterx}{\mdseries THAI ABSTRACT}{iii}{}%
 \contentsline {chapterx}{\mdseries ACKNOWLEDGMENTS}{iv}{}%
-\contentsline {chapterx}{\mdseries CONTENTS}{v}{}%
-\contentsline {chapterx}{\mdseries LIST OF TABLES}{vi}{}%
-\contentsline {chapterx}{\mdseries LIST OF FIGURES}{vii}{}%
-\contentsline {chapterx}{\mdseries LIST OF SYMBOLS}{viii}{}%
-\contentsline {chapterx}{\mdseries LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{ix}{}%
+\contentsline {chapterx}{\mdseries CONTENTS}{vi}{}%
+\contentsline {chapterx}{\mdseries LIST OF TABLES}{vii}{}%
+\contentsline {chapterx}{\mdseries LIST OF FIGURES}{viii}{}%
+\contentsline {chapterx}{\mdseries LIST OF SYMBOLS}{ix}{}%
+\contentsline {chapterx}{\mdseries LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{x}{}%
 \contentsline {chapterxx}{\mdseries \bf CHAPTER}{1}{}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {1.}\hskip -0.5em Introduction}}}{1}{}%
 \contentsline {section}{\numberline {1.1}Problem Statement and Approach}{1}{}%
 \contentsline {section}{\numberline {1.2}Objectives}{1}{}%
 \contentsline {section}{\numberline {1.3}Scope}{1}{}%
 \contentsline {section}{\numberline {1.4}Tasks and Schedule}{2}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {2.}\hskip -0.5em Background Theory and Related Work}}}{4}{}%
-\contentsline {section}{\numberline {2.1}Recommender Systems}{4}{}%
-\contentsline {section}{\numberline {2.2}Text Processing Algorithms}{4}{}%
-\contentsline {subsection}{\numberline {2.2.1}Algorithm I}{4}{}%
-\contentsline {subsection}{\numberline {2.2.2}Algorithm II}{4}{}%
-\contentsline {section}{\numberline {2.3}Development Tools}{4}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Proposed Work}}}{5}{}%
-\contentsline {section}{\numberline {3.1}System Architecture}{5}{}%
-\contentsline {section}{\numberline {3.2}System Specifications and Requirements}{5}{}%
-\contentsline {section}{\numberline {3.3}Hardware Module 1}{5}{}%
-\contentsline {subsection}{\numberline {3.3.1}Component 1}{5}{}%
-\contentsline {subsection}{\numberline {3.3.2}Logical Circuit Diagram}{5}{}%
-\contentsline {section}{\numberline {3.4}Hardware Module 2}{5}{}%
-\contentsline {subsection}{\numberline {3.4.1}Component 1}{5}{}%
-\contentsline {subsection}{\numberline {3.4.2}Component 2}{5}{}%
-\contentsline {section}{\numberline {3.5}Path Finding Algorithm}{5}{}%
-\contentsline {section}{\numberline {3.6}Database Design}{5}{}%
-\contentsline {section}{\numberline {3.7}GUI Design}{5}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Implementation Results}}}{6}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{7}{}%
-\contentsline {section}{\numberline {5.1}Problems and Solutions}{7}{}%
-\contentsline {section}{\numberline {5.2}Future Works}{7}{}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {REFERENCES}}{8}{}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{9}{}%
-\contentsline {apdx}{A\hskip 1em First appendix title}{10}{}%
-\contentsline {apdx}{B\hskip 1em Second appendix title}{12}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {2.}\hskip -0.5em Background Knowledge and Literature Review}}}{4}{}%
+\contentsline {section}{\numberline {2.1}Knowledge Background}{4}{}%
+\contentsline {section}{\numberline {2.2}Theoretical and Core Concepts}{5}{}%
+\contentsline {subsection}{\numberline {2.2.1}Tasks Failures Detection}{5}{}%
+\contentsline {subsection}{\numberline {2.2.2}Container Technology}{6}{}%
+\contentsline {subsection}{\numberline {2.2.3}Overview of machine learning}{6}{}%
+\contentsline {subsection}{\numberline {2.2.4}Overview of machine learning}{6}{}%
+\contentsline {subsection}{\numberline {2.2.5}Deep learning}{7}{}%
+\contentsline {section}{\numberline {2.3}Technologies survey}{8}{}%
+\contentsline {subsection}{\numberline {2.3.1}Apache Mesos}{8}{}%
+\contentsline {section}{\numberline {2.4}Technologies survey}{9}{}%
+\contentsline {section}{\numberline {2.5}Text Processing Algorithms}{9}{}%
+\contentsline {subsection}{\numberline {2.5.1}Algorithm I}{9}{}%
+\contentsline {subsection}{\numberline {2.5.2}Algorithm II}{9}{}%
+\contentsline {section}{\numberline {2.6}Development Tools}{9}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Proposed Work}}}{11}{}%
+\contentsline {section}{\numberline {3.1}System Architecture}{11}{}%
+\contentsline {section}{\numberline {3.2}System Specifications and Requirements}{11}{}%
+\contentsline {section}{\numberline {3.3}Hardware Module 1}{11}{}%
+\contentsline {subsection}{\numberline {3.3.1}Component 1}{11}{}%
+\contentsline {subsection}{\numberline {3.3.2}Logical Circuit Diagram}{11}{}%
+\contentsline {section}{\numberline {3.4}Hardware Module 2}{11}{}%
+\contentsline {subsection}{\numberline {3.4.1}Component 1}{11}{}%
+\contentsline {subsection}{\numberline {3.4.2}Component 2}{11}{}%
+\contentsline {section}{\numberline {3.5}Path Finding Algorithm}{11}{}%
+\contentsline {section}{\numberline {3.6}Database Design}{11}{}%
+\contentsline {section}{\numberline {3.7}GUI Design}{11}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Implementation Results}}}{12}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{13}{}%
+\contentsline {section}{\numberline {5.1}Problems and Solutions}{13}{}%
+\contentsline {section}{\numberline {5.2}Future Works}{13}{}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {REFERENCES}}{14}{}%

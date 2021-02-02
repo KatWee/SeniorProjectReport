@@ -16,6 +16,9 @@
   \forloop{loopcntr}{0}{\value{loopcntr}<#1}{&}
 }
 
+%%%%% add package multirole for table
+\usepackage{multirow}
+
 \defaultfontfeatures{Mapping=tex-text,Scale=1.0,LetterSpace=0.0}
 \setmainfont[Scale=1.0,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{Times New Roman}
 %\setmathfont(Digits)[Scale=1.0,LetterSpace=0,FakeStretch=1.0]{Times New Roman}
@@ -341,44 +344,154 @@ Therefore, this project aims to improve the fairness of the scheduler by reducin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  Literature Review %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Background Theory and Related Work}
+\chapter{Background Knowledge and Literature Review}
+\section{Knowledge Background}
+In 2009, Apache Mesos \cite{mesos} was a research project at the University of California in Berkeley.  Benjamin, et al. wanted to improve datacenter efficiency by allowing multiple applications to share a single computing cluster across the many servers that make up a modern datacenter.  So, multiple applications can share the processor, memory, and hard drive with any laptop or workstation.  In 2010, the Mesos project entered the Apache Incubator, an arm of the Apache Software Foundation, so this project can gain the full support of the ASF’s efforts.  In 2013, The Apache Mesos project graduated from the incubator and founded Mesosphere.  Mesosphere’s flagship product, the Datacenter Operating System (DCOS), commercializes the open-source project by providing a turnkey solution to enterprises looking to deploy applications and scale infrastructure as effortlessly as other companies using Mesos, such as Airbnb, Apple, and Netflix. 
 
-Explain theory, algorithms, protocols, or existing research works and tools related to your work. 
+Meanwhile, most such operating systems only fairly divide and account for CPU cycles.  So, performance isolation is essential to operating systems shared by dependable services.  These dependable services require specifying and enforcing policies for all resources, and that current metrics for evaluating fair sharing are insufficient. In 2006, Aage Kvalnes et al. researched new policy specifications and metrics, and illustrated these with the help of a new operating system that supports holistic resource sharing.  \cite{policiesAndMetrics}
 
-\section{Recommender Systems}
+In data centers and clouds, where applications could be co-scheduled on the same physical nodes, resource fairness needs to extend to multiple resource types such as memory, disk I/O, and network bandwidth.  Ali, et al. considered the problem of fair resource allocation in a system containing different resource types, where each user may have different demands for each resource and researched about a new generalization of max-min fairness to multiple resource types called Dominant Resource Fairness (DRF). \cite{dominantResourceFairness}
+
+\newpage
+\section{Theoretical and Core Concepts}
+
+\subsection{Tasks Failures Detection}
+Hadoop usually uses JobTracker to detect failures of the TaskTracker nodes.  It detects with heartbeat-based failure detection.  The TaskTracker will send heartbeat message to JobTracker and JobTracker will declare a TaskTracker as dead only when it does not receive heartbeat for a limited time.  It cannot quickly detect the failures and it may assign task to dead nodes.  This can increase the number of failure tasks in Hadoop. \cite{adaptiveScheduling}
+
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=12cm]{./image/tasktracker.png}}
+\caption{TaskTracker Failure Detection Model in Hadoop Framework \cite{adaptiveScheduling}}\label{fig:tasktracker}
+\end{figure}
+
+For example, active TaskTracker send heartbeat messages to JobTracker every 3 seconds.  While JobTracker check the timeout condition every 200 seconds.  And there are network delays or messages losses, so some heartbeat may arrive late or loss.  The JobTracker may consider that TaskTracker as dead node even it is available as shown in Figure~\ref{fig:tasktracker}. that heartbeat message m2 does not arrive and the JobTracker consider this TaskTracker as dead.
+
+\newpage
+\subsection{Container Technology}
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=13cm]{./image/vmVSContainer.png}}
+\caption{Virtual machine vs Container \cite{docker}}\label{fig:vmVSContainer}
+\end{figure}
+Container Technology is a method to package up code and all its dependencies, so the application runs quickly and reliably from one computing environment to another, with container software having names including the popular choices of Docker, Apache Mesos, RKT, and Kubernetes.  The virtual machine contains the entire operating system.  Therefore, the physical server that runs several virtual machines is running several operating systems’ simultaneously as shown in Figure~\ref{fig:vmVSContainer}. \cite{docker}
+
+There is a lot of overhead on virtual machine.  In contrast, with container technology, the server runs a single operating system.  Each container can share this single operating system with other containers on server.  Containers require less resource of server with less overhead and more efficient than virtual machines. \cite{container}   Containers are set up to accomplish work in a multiple container architecture (container cluster).  They also enable a program to be broken down into smaller pieces, which are known as microservices.  So, the program can work on each of the containers separately.
+
+\subsection{Overview of machine learning}
+Machine learning is a branch of artificial intelligence (AI).  It is the machine’s ability to learn from data provided without human intervention and able to improve decision from experience.  Without human directed programming instructions, the machine accesses data, observes and finds data pattern.  The more data input the better data pattern learning and better decision making.\cite{ml}
+
+\subsection{Overview of machine learning}
+An artificial neural network (ANN) is a computational model imitates the natural human brain. The network consists of hundreds or thousands small neuron nodes. Those numerous neuron nodes communicate to each other in the web form. The neuron node is called processing unit. Each of processing unit is interconnected by nodes. Each processing unit comprises of input unit and output unit. Input unit receives various type of data format. It also has an internal weighting system. The neural network learns from the input and produce output result.
+
+ANN use rules and guidelines to generate result/ output. The set of these learning rules is called backpropagation because it uses backward propagation of error to learn or improve the better result. ANN learns data patterns in training phase. It compares actual output with the desired output that is expected result in supervised phase. The difference between actual and expected result are worked backward to adjust the weight of its connections between the units. The purpose is to make the lowest possible error. \cite{ann}
+
+\subsection{Deep learning}
+Nowadays, there are collections of vast unlabeled and unstructured data gathering from various sources that is difficult to analyses useful information by traditional programs in a linear way.  The hierarchical level of artificial neural network that work in web form to process data with a nonlinear approach is called Deep Learning.  The first layer of the neural network processes a raw data and pass output on to the next layer. The second layer processes first layer output plus additional information and pass output to next layer again. This continues across all levels of the neuron network to make information more meaningful information. \cite{deepLearning}
+
+Deep learning models can achieve high accuracy, sometimes exceeding human-level performance. “Deep” refers to the powerful number of hidden layers in the neural network.  However, it needs lots of labeled data and high-performance machines to analyze. The organized layers of interconnected nodes can be tens or hundreds of hidden layers. \cite{deepLearning2} as shown in Figure~\ref{fig:NN}.
+
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=8cm]{./image/NN.png}}
+\caption{Neural networks.}\label{fig:NN}
+\end{figure}
+
+\newpage
+\section{Technologies survey}  
+\subsection{Apache Mesos}
+Mesos consists of a master, agent daemons running on each cluster node, and Mesos frameworks that run task on these agents as shown in Figure~\ref{fig:MesosArc}. Architecture consist of three components: masters, slaves, and the frameworks that run on them. Mesos relies on Apache ZooKeeper, a distributed database used specifically for coordinating leader election within the cluster, and for leader detection by other Mesos masters, slaves, and frameworks. \cite{mesosInAction}
+
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/MesosArc.png}}
+\caption{The Mesos architecture consists of one or more masters, slaves, and frameworks. \cite{mesosInAction}}\label{fig:MesosArc}
+\end{figure}
+
+\begin{enumerate}
+  \item \textbf{Masters: } Mesos masters are responsible for managing the Mesos slave daemons running on each machine in the cluster. Using Zookeeper, they coordinate which node will be the leading master, and which masters will be on standby, and ready to take over if the leading master goes offline. A Mesos cluster requires minimum one master, and three or more are recommended for production deployments. Zookeeper can run on the same machines as the Mesos masters themselves or use a standalone Zookeeper cluster. 
+  \item \textbf{Slaves: } The machines in a cluster responsible for executing a framework’s tasks.
+  \item \textbf{Frameworks: } Mesos application that’s responsible for scheduling and executing tasks on a cluster. A framework is made up of two components: a scheduler and an executor. 
+  \begin{itemize}
+     \item \textbf{Schedulers} A scheduler is a long-running service responsible for connecting to a Mesos master and accepting or rejecting resource offers. Mesos delegates the responsibility of scheduling to the framework, instead of attempting to schedule all the work for a cluster itself. The scheduler can then accept or reject a resource offer based on whether it has any tasks to run at the time of the offer. 
+     \item \textbf{Executor} An executor is a process launched on a Mesos slave that runs a framework’s tasks on a slave.
+   \end{itemize}
+\end{enumerate}
+
+Dominant resource is a resource of specific type (CPU, memory, disk, ports) which is most demanded by given framework among other resources it needs. DRF computes the share of resource allocated to a framework (dominant share) and tries to maximize the smallest dominant share in the system. for next round offers the resources first to the one with smallest dominant share, then to the second smallest one and so on. \cite{drf} Example with 9 CPUs and 18 GB RAM to two frameworks running task that require <1 CPU, 4GB> and <3CPUs, 1GB> shown in Table~\ref{tbl:DRFTwoFramework}.
 
 \begin{table}[!h]
-\caption{test table method1}\label{tbl:method1}
-\begin{tabular}{c|c|l|rr} \hline\hline
-Center & Center & left aligned & Right & Right aligned \\ \hline\hline
-Center & Center & left aligned & Right & Right aligned \\ \hline
-Center & Center & left aligned & Right & Right aligned \\ 
-Center & Center & left aligned & Right & Right aligned \\ \hline
-Center & Center & left aligned & Right & Right aligned \\ \hline\hline
+\caption{Example of running 2 frameworks.}\label{tbl:DRFTwoFramework}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{Schedule} & \multicolumn{2}{c|}{Framework A}& \multicolumn{2}{c|}{Framework B}& \multicolumn{2}{c|}{total}\\ 
+\cline{2-7} & Resource Share & Dominant Share & Resource Share & Dominant Share & CPU & RAM \\ 
+\hline
+B  & <0, 0> & 0 & <3/9, 1/18> & 1/3 & 3/9 & 1/18 \\ 
+\hline
+A  & <1/9>, <4/18> & \textbf{2/9} & <3/9, 1/18> & 1/3 & 4/9 & 5/18 \\ 
+\hline
+A  & <2/9>, <8/18> & 4/9 & <3/9>, <1/18> & \textbf{1/3} & 5/9 & 8/18 \\ 
+\hline
+B  & <2/9>, <8/18> & \textbf{4/9} & <6/9>, 2/18> & 2/3 & 8/9 & 10/18 \\ 
+\hline
+A  & <3/9>, <12/18> & 2/3 & <6/9>, 2/18> & 2/3 & 1 & 14/18 \\ 
+\hline
 \end{tabular}
 \end{table}
 
+\subsection{Zookeeper}
+ZooKeeper is an open-source Apache project that provides a centralized service for providing configuration information, naming, synchronization, and group services over large clusters in distributed systems. The goal is to make these systems easier to manage with improved, more reliable propagation of changes. ZooKeeper provides an infrastructure for cross-node synchronization by maintaining status type information in memory on ZooKeeper servers. A ZooKeeper server keeps a copy of the state of the entire system and persists this information in local log files. Large Hadoop clusters are supported by multiple ZooKeeper servers, with a master server synchronizing the top-level servers. \cite{zookeeper}
 
-\section{Text Processing Algorithms}
-\subsection{Algorithm I}
+\subsection{Elasticsearch}
+Elasticsearch is an open-source search and analytics engine built on Apache Lucene and developed in Java. Elasticsearch can be used to store and search all kinds of documents, analyze huge volumes of data in near real-time and give back answers in milliseconds, and supports multitenancy. It’s able to achieve fast search responses because it searches an index directly instead of searching the text. Related data is often stored in the same index, which consists of one or more primary shards, and zero or more replica shards. Once an index has been created, the number of primary shards cannot be changed. It uses a structure based on documents and comes with extensive REST APIs for storing and searching the data. 
 
-% Can define this in the preamble..
-You can place the figure and refer to it as Figure~\ref{fig:model2}.
-The figure and table numbering will be run and updated automatically when you add/remove tables/figures from the document.
+Elasticsearch is the component of the Elastic Stack, a set of open-source tools for storage, analysis, and visualization. The four components, Elasticsearch, Logstash, Kibana and Beats, are designed for use as an integrated solution. It is commonly referred to as the “ELK” stack.\cite{elasticsearch}
+
+\subsection{Chronos}
+Chronos is the Mesos Cron system. It handles time-based scheduling of jobs on a Mesos cluster. Chronos can be used to schedule commands or scripts. The Chronos feature set is easily and reliably to create standalone schedule-based jobs, as well as complex dependency-based jobs and pipelines, simply by specifying the schedule and resources that the job requires. This guarantees that time-based jobs are running on time while continuing to use datacenter resources as efficiently as possible. In Figure~\ref{fig:chronos}, it shows about the differences between running Cron jobs on a single machine and running them on a Mesos cluster.\cite{mesosInAction}
 
 \begin{figure}[!h]\centering
-\setlength{\fboxrule}{0.2mm} % can define this in the preamble
-\setlength{\fboxsep}{1cm}
-\fbox{\includegraphics[width=5cm]{./model2.pdf}}
-\caption{The network model}\label{fig:model2}
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/chronos.png}}
+\caption{Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs. \cite{mesosInAction}}\label{fig:chronos}
 \end{figure}
 
- 
-\subsection{Algorithm II}
-Add more subsections as you want.
+\subsection{Marathon}
+Marathon is a popular open source Mesos framework developed by Mesosphere. Marathon is used for deploying long-running services and applications, both in Linux cgroups and Docker containers. It can also be considered a private platform as a service (PaaS) on which to deploy applications. Marathon can specify the resources needed for each instance of an application and number of running instances. If a Mesos slave fails, or an instance of application crashes or exits, Marathon will automatically start a new instance to replace the failed one.
 
+Marathon also allows users to specify dependencies on other services and applications during deployment, so an application instance can’t start before its database instance is up and passing health checks. Marathon contains a list of features that should satisfy the needs of most application management scenarios such as managing applications and groups of applications with dependencies and health checks, rolling application upgrades with specific capacity requirements, a powerful web interface and REST API, and high availability (using ZooKeeper for leader election and coordination).\cite{mesosInAction}
 
-\section{Development Tools}
+\subsection{Spark}
+Apache Spark, unified analytics engine for large-scale data processing, runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud. It can access diverse data sources. Spark perform task faster and more efficiently than Hadoop’s MapReduce, both in memory and on disk in many cases. Spark also provide API for several programming language, including Python, Scala and Java and support streaming workloads, interactive queries and machine learning libraries, in addition to MapReduce-like batch processing.  Spark can run locally. But that is useful only for development purpose, the number of CPU cores limits the number of executors. When setting up a production Spark cluster, there are two option.
+
+When setting up statically partitioned cluster on an Infrastructure as a Service (IaaS) provider. It will be wasting money due to cloud instances sitting idle. Find-grained resource sharing can help increase system’s utilization. For example, if there are two applications likes in Figure~\ref{fig:spark}, Spark and Jenkins that need to run on multiple servers. Each of these system atop a general-purpose cluster manager like Mesos that allows for this sort of fine-grained resource sharing. It can share compute resources and run multiple workloads on a single Mesos slave. This will lead to better resource utilization across many machines within a modern datacenter.\cite{mesosInAction}
+
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/spark.png}}
+\caption{Mesos managing cluster resources for two applications. \cite{mesosInAction}}\label{fig:spark}
+\end{figure}
+
+\subsection{Apache Kafka}
+Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In Figure~\ref{fig:kafka}, producers are processes that send message to Kafka. Then, Kafka stores these messages in key-value. The data can be partitioned into different topic. And Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. And partitions are replicated to multiple servers.\cite{kafka}
+
+\begin{figure}[!h]\centering
+\setlength{\fboxrule}{0mm} % can define this in the preamble
+\setlength{\fboxsep}{0cm}
+\fbox{\includegraphics[width=10cm]{./image/kafka.png}}
+\caption{Overview of Kafka. \cite{kafka}}\label{fig:kafka}
+\end{figure}
+
+\section{Related Research}
+The current data center management is a representative large-scale resource management and scheduling framework for clusters, liked the open-source project Mesos \cite{mesosInAction}. However, the data center environment are cluster systems and variety of submitted tasks, such as Hadoop clusters that support big data processing and Spark clusters that support in-memory computing. Mesos is a resource allocation method with no differential task type and scheduler does not consider the overall resource demand or workload, which leads to low average resource utilization and starve were a framework with a high demand on queue. Moreover, Mesos uses the DRF (Dominant Resource Fairness) algorithm for resource allocation. The DRF algorithm is the default scheduling algorithm of Mesos, the algorithm still has the disadvantage of not considering the machine performance and task type.
+
+Many researchers have conducted relevant work. For example, in 2016, Li Y et al \cite{fishSwarm} introduced the fish swarm intelligence algorithm to dynamically adjusting the Mesos cluster resources to improve the Mesos load imbalance and resource utilization. The DRF scheduling algorithm of Mesos is extended, and in 2018, Wenbin Liu et al. proposed A X-DRF algorithm \cite{xdrf} based on building classifies the performance of physical machines and job type judgment classification is proposed to solve the problem of machine performance in literature, but the task type is not considered and not consider the waiting time. Compared with the original DRF algorithm, the X-DRF algorithm has higher system resource utilization rate, which is in line with the actual production rules of data centers, and provides new ideas for heterogeneous cluster multi- resource management for data center managers. In 2019, Pankaj Saha et al. developed Tromino \cite{tromino}, a policy driven queue manager. Tromino allows task from individual frameworks to be scheduled based on each framework’s overall resources requirement and current resources consumption. Tromino reduce the impact of unfairness due to framework specific configuration and unfair waiting time due to higher resource demand in a pending task queue.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -455,106 +568,6 @@ What could be done in the future to make your projects better.
 %% You may go to file .bbl to manually edit the bib items.
 \bibliographystyle{kmutt}
 \bibliography{string,cpe}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix{First appendix title}
-\noindent{\large\bf Put appropriate topic here} \\
-
-This is where you put hardware circuit diagrams, detailed experimental data in tables or source codes, etc.. \\ \bigskip
-
-
-
-This appendix describes two static allocation methods for fGn (or fBm)
-traffic. Here, $\lambda$ and $C$ are respectively the traffic arrival
-rate and the service rate per dimensionless time step. Their unit are
-converted to a physical time unit by multiplying the step size
-$\Delta$. For a fBm self-similar traffic source,
-Norros~\cite{norros95} provides its EB as
-\begin{equation}\label{eq:norros}
-  C = \lambda + (\kappa(H)\sqrt{-2\ln\epsilon})^{1/H}a^{1/(2H)}x^{-(1-H)/H}\lambda^{1/(2H)}
-\end{equation}
-where $\kappa(H) = H^H(1-H)^{(1-H)}$. Simplicity in the calculation is
-the attractive feature of (\ref{eq:norros}).
-
-The MVA technique developed in~\cite{kim01} so far provides the most
-accurate estimation of the loss probability compared to previous
-bandwidth allocation techniques according to simulation results.
-Consider a discrete-time queueing system with constant service rate
-$C$ and input process $\lambda_n$ with $\mathbb{E}\{\lambda_n\} =
-\lambda$ and $\mathrm{Var}\{\lambda_n\} = \sigma^2$.  Define $X_n \equiv
-\sum_{k=1}^n \lambda_k - Cn$.  The loss probability due to the MVA
-approach is given by
-\begin{equation}\label{eq:loss_mva}
-  \varepsilon \approx \alpha e^{-m_x/2}
-\end{equation}
-where
-\begin{equation}\label{eq:mx}
-m_x = \min_{n \geq 0} \frac{((C-\lambda)n + B)^2}{\mathrm{Var}\{X_n\}} =
-\frac{((C-\lambda)n^\ast + B)^2}{\mathrm{Var}\{X_{n^{\ast}}\}}
-\end{equation} 
-and 
-\begin{equation}\label{eq:alpha}
-  \alpha =
-  \frac{1}{\lambda\sqrt{2\pi\sigma^2}}\exp\left(\frac{(C-\lambda)^2}{2\sigma^2}\right)
-  \int_C^\infty (r-C)\exp\left(\frac{(r-\lambda)^2}{2\sigma^2}\right)\, dr
-\end{equation}
-For a given $\varepsilon$, we numerically solve for $C$ that satisfies
-(\ref{eq:loss_mva}). Any search algorithm can be used to do the task.
-Here, the bisection method is used.  
-
-Next, we show how $\mathrm{Var}\{X_n\}$ can be determined.  Let
-$C_{\lambda}(l)$ be the autocovariance function of $\lambda_n$.  The
-MVA technique basically approximates the input process $\lambda_n$
-with a Gaussian process, which allows $\mathrm{Var}\{X_n\}$ to be
-represented by the autocovariance function.  In particular, the
-variance of $X_n$ can be expressed in terms of $C_{\lambda}(l)$ as
-\begin{equation}
-  \mathrm{Var}\{X_n\} = nC_{\lambda}(0) + 2\sum_{l=1}^{n-1} (n-l)C_{\lambda}(l)
-\end{equation} 
-Therefore, $C_{\lambda}(l)$ must be known in the MVA technique, either
-by assuming specific traffic models or by off-line analysis in case of
-traces.  In most practical situations, $C_{\lambda}(l)$ will not be
-known in advance, and an on-line measurement algorithm developed
-in~\cite{eun01} is required to jointly determine both $n^\ast$ and
-$m_x$. For fGn traffic, $\mathrm{Var}\{X_n\}$ is equal to $\sigma^2
-n^{2H}$, where $\sigma^2 = \mathrm{Var}\{\lambda_n\}$, and we can find
-the $n^\ast$ that minimizes (\ref{eq:mx}) directly. Although $\lambda$
-can be easily measured, it is not the case for $\sigma^2$ and $H$.
-Consequently, the MVA technique suffers from the need of prior
-knowledge traffic parameters.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%% The 2nd appendix %%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix{Second appendix title}
-\noindent{\large\bf Put appropriate topic here} \\
-
-Next, we show how $\mathrm{Var}\{X_n\}$ can be determined.  Let
-$C_{\lambda}(l)$ be the autocovariance function of $\lambda_n$.  The
-MVA technique basically approximates the input process $\lambda_n$
-with a Gaussian process, which allows $\mathrm{Var}\{X_n\}$ to be
-represented by the autocovariance function.  In particular, the
-variance of $X_n$ can be expressed in terms of $C_{\lambda}(l)$ as
-\begin{equation}
-  \mathrm{Var}\{X_n\} = nC_{\lambda}(0) + 2\sum_{l=1}^{n-1} (n-l)C_{\lambda}(l)
-\end{equation} 
-
-\noindent{\large\bf Add more topic as you need} \\
-
-Therefore, $C_{\lambda}(l)$ must be known in the MVA technique, either
-by assuming specific traffic models or by off-line analysis in case of
-traces.  In most practical situations, $C_{\lambda}(l)$ will not be
-known in advance, and an on-line measurement algorithm developed
-in~\cite{eun01} is required to jointly determine both $n^\ast$ and
-$m_x$. For fGn traffic, $\mathrm{Var}\{X_n\}$ is equal to $\sigma^2
-n^{2H}$, where $\sigma^2 = \mathrm{Var}\{\lambda_n\}$, and we can find
-the $n^\ast$ that minimizes (\ref{eq:mx}) directly. Although $\lambda$
-can be easily measured, it is not the case for $\sigma^2$ and $H$.
-Consequently, the MVA technique suffers from the need of prior
-knowledge traffic parameters. 
 
 
 

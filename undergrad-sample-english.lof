@@ -1,6 +1,10 @@
 \addvspace {0em}
 \addvspace {0em}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The network model}}{4}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces TaskTracker Failure Detection Model in Hadoop Framework \cite {adaptiveScheduling}}}{5}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Virtual machine vs Container \cite {docker}}}{6}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Neural networks.}}{7}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The Mesos architecture consists of one or more masters, slaves, and frameworks. \cite {mesosInAction}}}{8}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The network model}}{10}{}%
 \addvspace {0em}
 \addvspace {0em}
 \addvspace {0em}
