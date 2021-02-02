@@ -1,7 +1,6 @@
 # SeniorProjectReport
-report senior project (KMUTT)
-
-# edit with Texworks
+report senior project (KMUTT)<br/>
+edit with Texworks
 <br/>
 
 # compile in Texworks
