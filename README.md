@@ -1,9 +1,16 @@
 # SeniorProjectReport
 report senior project (KMUTT)
 
-edit with Texworks
+# edit with Texworks
 <br/>
-compile in cml 
+
+# compile in Texworks
+At top left of program select xelatex and click run<br/>
+select bibtex and click run<br/>
+select xelatex and click run<br/>
+<br/>
+
+# compile in cml 
 <br/>
 `xelatex undergrad-sample-english.tex`<br/>
 `bibtex undergrad-sample-english.aux`<br/>
