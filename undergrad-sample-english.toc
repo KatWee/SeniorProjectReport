@@ -1,0 +1,47 @@
+\contentsline {chapterx}{\mdseries ABSTRACT}{ii}{}%
+\contentsline {chapterx}{\mdseries THAI ABSTRACT}{iii}{}%
+\contentsline {chapterx}{\mdseries ACKNOWLEDGMENTS}{iv}{}%
+\contentsline {chapterx}{\mdseries CONTENTS}{vi}{}%
+\contentsline {chapterx}{\mdseries LIST OF TABLES}{vii}{}%
+\contentsline {chapterx}{\mdseries LIST OF FIGURES}{viii}{}%
+\contentsline {chapterx}{\mdseries LIST OF SYMBOLS}{ix}{}%
+\contentsline {chapterx}{\mdseries LIST OF TECHNICAL VOCABULARY AND ABBREVATIONS}{x}{}%
+\contentsline {chapterxx}{\mdseries \bf CHAPTER}{1}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {1.}\hskip -0.5em Introduction}}}{1}{}%
+\contentsline {section}{\numberline {1.1}Problem Statement and Approach}{1}{}%
+\contentsline {section}{\numberline {1.2}Objectives}{1}{}%
+\contentsline {section}{\numberline {1.3}Scope}{1}{}%
+\contentsline {section}{\numberline {1.4}Tasks and Schedule}{2}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {2.}\hskip -0.5em Background Knowledge and Literature Review}}}{4}{}%
+\contentsline {section}{\numberline {2.1}Knowledge Background}{4}{}%
+\contentsline {section}{\numberline {2.2}Theoretical and Core Concepts}{5}{}%
+\contentsline {subsection}{\numberline {2.2.1}Tasks Failures Detection}{5}{}%
+\contentsline {subsection}{\numberline {2.2.2}Container Technology}{6}{}%
+\contentsline {subsection}{\numberline {2.2.3}Overview of machine learning}{6}{}%
+\contentsline {subsection}{\numberline {2.2.4}AI - Artificial Neural network}{6}{}%
+\contentsline {subsection}{\numberline {2.2.5}Deep learning}{7}{}%
+\contentsline {section}{\numberline {2.3}Technologies survey}{8}{}%
+\contentsline {subsection}{\numberline {2.3.1}Apache Mesos}{8}{}%
+\contentsline {subsection}{\numberline {2.3.2}Zookeeper}{9}{}%
+\contentsline {subsection}{\numberline {2.3.3}Elasticsearch}{9}{}%
+\contentsline {subsection}{\numberline {2.3.4}Chronos}{10}{}%
+\contentsline {subsection}{\numberline {2.3.5}Marathon}{10}{}%
+\contentsline {subsection}{\numberline {2.3.6}Spark}{11}{}%
+\contentsline {subsection}{\numberline {2.3.7}Apache Kafka}{12}{}%
+\contentsline {section}{\numberline {2.4}Related Research}{12}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Methodology and Design}}}{13}{}%
+\contentsline {section}{\numberline {3.1}Project Functionality}{13}{}%
+\contentsline {subsection}{\numberline {3.1.1}Sequence diagram}{13}{}%
+\contentsline {subsection}{\numberline {3.1.2}Hypothesis testing}{14}{}%
+\contentsline {section}{\numberline {3.2}System Architecture}{14}{}%
+\contentsline {subsection}{\numberline {3.2.1}Architecture diagram}{14}{}%
+\contentsline {subsection}{\numberline {3.2.2}Policy}{14}{}%
+\contentsline {subsection}{\numberline {3.2.3}Database Schema}{17}{}%
+\contentsline {section}{\numberline {3.3}Data management }{18}{}%
+\contentsline {subsection}{\numberline {3.3.1}Which dataset is use for training?}{18}{}%
+\contentsline {subsection}{\numberline {3.3.2}Transform data pipeline}{19}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Implementation Results}}}{20}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{21}{}%
+\contentsline {section}{\numberline {5.1}Problems and Solutions}{21}{}%
+\contentsline {section}{\numberline {5.2}Future Works}{21}{}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {REFERENCES}}{22}{}%

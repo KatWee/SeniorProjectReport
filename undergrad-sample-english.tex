@@ -19,6 +19,9 @@
 %%%%% add package multirole for table
 \usepackage{multirow}
 
+%%%%% add package for online bib
+\usepackage{url}
+
 \defaultfontfeatures{Mapping=tex-text,Scale=1.0,LetterSpace=0.0}
 \setmainfont[Scale=1.0,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{Times New Roman}
 %\setmathfont(Digits)[Scale=1.0,LetterSpace=0,FakeStretch=1.0]{Times New Roman}
@@ -248,7 +251,7 @@ Therefore, this project aims to improve the fairness of the scheduler by reducin
 
 \section{Tasks and Schedule}
 \begin{table}[!h]
-  \caption{Semester 1’s Gantt chart}\label{tbl:method1}
+  \caption{Semester 1’s Gantt chart}\label{tbl:gantt1}
   \noindent\begin{tabular}{p{0.30\textwidth}*{16}{|p{0.01\textwidth}}|}
     % The top line
     \textbf{Task/Week} & \multicolumn{4}{c|}{August} & \multicolumn{4}{c|}{September}  & \multicolumn{4}{c|}{October} & \multicolumn{4}{c|}{November}\\
@@ -304,7 +307,7 @@ Therefore, this project aims to improve the fairness of the scheduler by reducin
 \newpage
 
 \begin{table}[!h]
-  \caption{Semester 2’s Gantt chart}\label{tbl:method1}
+  \caption{Semester 2’s Gantt chart}\label{tbl:gantt2}
   \noindent\begin{tabular}{p{0.17\textwidth}*{20}{|p{0.01\textwidth}}|}
     % The top line
     \textbf{Task/Week} & \multicolumn{4}{c|}{January} & \multicolumn{4}{c|}{February} & \multicolumn{4}{c|}{March} & \multicolumn{4}{c|}{April}& \multicolumn{4}{c|}{May}  \\
@@ -552,7 +555,7 @@ Hypothesis testing is to verify reduction of failure task in each framework. Thi
     \hline
     \textbf{Spark} & 100 & 1 \\
     \hline
-\end{tabul}ar}
+\end{tabular}
 \end{table}
 
 \textbf{Experiment 2:} Framework with different arrival rate and all tasks are vary in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment2}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Both policies.
@@ -652,9 +655,9 @@ This project designs two policies for the Meta-scheduler: 1) First Demand Policy
     \end{tabular}
   \end{table}
 
-  \item \textbf{Success rate prediction}There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, etc. These metrics are able to identify anomalies (task failed, task killed, etc.) by using the pipeline provided in Topic \ref{dataPipeline}
-
-  Firstly, the log data need to be pre-processed by transforming and cleansing.  Secondly, the log data are clustered by K-means algorithm to separate the data that point into different metric groups or different machines.  The success rate prediction of given task will use the Random Forest. Random Forest is a set of interconnected decision tree that uses the majority voting to provide classification or regression result. It is robust to noise and able to provide highly accurate prediction. \cite{AdaptiveScheduling} In each cluster, the model will be trained by active and terminated tasks information. 
+  \item \textbf{Success rate prediction}There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, etc. These metrics are able to identify anomalies (task failed, task killed, etc.) by using the pipeline provided in \textbf{Topic} 3.3.2
+  
+  Firstly, the log data need to be pre-processed by transforming and cleansing.  Secondly, the log data are clustered by K-means algorithm to separate the data that point into different metric groups or different machines.  The success rate prediction of given task will use the Random Forest. Random Forest is a set of interconnected decision tree that uses the majority voting to provide classification or regression result. It is robust to noise and able to provide highly accurate prediction. \cite{adaptiveScheduling} In each cluster, the model will be trained by active and terminated tasks information. 
 
   In each cluster, data will be divided into 80\% training dataset and remaining 20\% testing dataset. The measure metric is accuracy, precision, recall and error. When users submit task, NKR-scheduler will request metric information from Mesos, allocate resource to run tasks, profile the task to cluster and use that cluster’s model to predict success rates of this task shown in \textbf{Figure}~\ref{fig:flowDiagramPredict}.
 
@@ -755,7 +758,7 @@ This project uses simulation to create a large dataset, and typical usage of Mes
 
 \newpage
 
-\subsection{Transform data pipeline }
+\subsection{Transform data pipeline}
 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
