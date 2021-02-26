@@ -1,0 +1,21 @@
+\addvspace {0em}
+\addvspace {0em}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces TaskTracker Failure Detection Model in Hadoop Framework \cite {adaptiveScheduling}}}{5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Virtual machine vs Container \cite {docker}}}{6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Neural networks.}}{7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The Mesos architecture consists of one or more masters, slaves, and frameworks. \cite {mesosInAction}}}{8}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs. \cite {mesosInAction}}}{10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mesos managing cluster resources for two applications. \cite {mesosInAction}}}{11}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Overview of Kafka. \cite {kafka}}}{12}%
+\addvspace {0em}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Sequence diagram of Apache Mesos}}{13}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Architecture diagram.}}{15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Architecture diagram.}}{15}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Flow Diagram of Predicting success rate.}}{16}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces database schema.}}{17}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Data pipeline.}}{19}%
+\addvspace {0em}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Cluster Information}}{20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Active Framework}}{21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Active Framework}}{22}%
+\addvspace {0em}

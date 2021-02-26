@@ -785,7 +785,33 @@ This project uses log data that mentioned before, and then transforms log data t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Implementation Results}
 
-You can title this chapter as \textbf{Preliminary Results} or \textbf{Work Progress} for the progress reports. Present implementation or experimental results here and discuss them.
+\hspace{10mm} In this chapter, we walk you through the setup, the configuration and the result we got from our policies, explain more in details.
+\section{Mesos Cluster Setup}
+	For this section about Mesos setup, We setup 3 node of EC2 to be a cluster for each node have 2 GB of vCPU and 4 GiB of Memory, then totally calculate cluster should be 6 CPU and 8.4 Memory. We setup this cluster in medium performance of network and expose cluster to public via IP, Then we can submit task via API
+	\begin{figure}[!h]\centering
+    \setlength{\fboxrule}{0mm} % can define this in the preamble
+    \setlength{\fboxsep}{0cm}
+    \fbox{\includegraphics[width=6cm]{./image/cluster_setup.png}}
+    \caption{Cluster Information}\label{fig:cluster_setup}
+    \end{figure}
+
+\section{Active Framework}
+     There are consist of three widely known Mesos Frameworks, Spark Marathon and Chronos and use default setup for each Framework
+	\begin{figure}[!h]\centering
+    \setlength{\fboxrule}{0mm} % can define this in the preamble
+    \setlength{\fboxsep}{0cm}
+    \fbox{\includegraphics[width=15cm]{./image/Framework.png}}
+    \caption{Active Framework}\label{fig:Framework}
+    \end{figure}
+    
+\section{Submit task}
+     We developed python code to help us submit work, with random pick on memory and cpu base on each task and also random framework to submit. This python code require 1 parameter to start work that is number of task.
+	\begin{figure}[!h]\centering
+    \setlength{\fboxrule}{0mm} % can define this in the preamble
+    \setlength{\fboxsep}{0cm}
+    \fbox{\includegraphics[width=15cm]{./image/submit.png}}
+    \caption{Active Framework}\label{fig:submit}
+    \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Conclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
