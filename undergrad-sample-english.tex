@@ -363,7 +363,8 @@ Hadoop usually uses JobTracker to detect failures of the TaskTracker nodes.  It 
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
   \fbox{\includegraphics[width=12cm]{./image/tasktracker.png}}
-  \caption{TaskTracker Failure Detection Model in Hadoop Framework \cite{adaptiveScheduling}}\label{fig:tasktracker}
+  \caption{TaskTracker Failure Detection Model in Hadoop Framework}\label{fig:tasktracker}
+  [From: Adaptive Failure-Aware Scheduling for Hadoop. (Mbarka Soualhia, Montreal, Quebec, Canada, 2018)]
 \end{figure}
 
 For example, active TaskTracker send heartbeat messages to JobTracker every 3 seconds.  While JobTracker check the timeout condition every 200 seconds.  And there are network delays or messages losses, so some heartbeat may arrive late or loss.  The JobTracker may consider that TaskTracker as dead node even it is available as shown in \textbf{Figure}~\ref{fig:tasktracker}. that heartbeat message m2 does not arrive and the JobTracker consider this TaskTracker as dead.
@@ -376,7 +377,8 @@ For example, active TaskTracker send heartbeat messages to JobTracker every 3 se
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
   \fbox{\includegraphics[width=13cm]{./image/vmVSContainer.png}}
-  \caption{Virtual machine vs Container \cite{docker}}\label{fig:vmVSContainer}
+  \caption{Virtual machine vs Container}\label{fig:vmVSContainer}
+  [From: Docker, "What is a Container?," [Online]. Available: www.docker.com/resources/what-container. Accessed 30 August 2020]
 \end{figure}
 
 Container Technology is a method to package up code and all its dependencies, so the application runs quickly and reliably from one computing environment to another, with container software having names including the popular choices of Docker, Apache Mesos, RKT, and Kubernetes.  The virtual machine contains the entire operating system.  Therefore, the physical server that runs several virtual machines is running several operating systems’ simultaneously as shown in \textbf{Figure}~\ref{fig:vmVSContainer}. \cite{docker}
@@ -414,7 +416,8 @@ Mesos consists of a master, agent daemons running on each cluster node, and Meso
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
   \fbox{\includegraphics[width=10cm]{./image/MesosArc.png}}
-  \caption{The Mesos architecture consists of one or more masters, slaves, and frameworks. \cite{mesosInAction}}\label{fig:MesosArc}
+  \caption{The Mesos architecture consists of one or more masters, slaves, and frameworks.}\label{fig:MesosArc}
+  [From: Ignazio, R. Mesos in Action (Manning Publications Co., Shelter Island, NY, 2016).]
 \end{figure}
 
 \begin{enumerate}
@@ -464,7 +467,8 @@ Chronos is the Mesos Cron system. It handles time-based scheduling of jobs on a 
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
   \fbox{\includegraphics[width=10cm]{./image/chronos.png}}
-  \caption{Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs. \cite{mesosInAction}}\label{fig:chronos}
+  \caption{Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs.}\label{fig:chronos}
+  [From: Ignazio, R. Mesos in Action (Manning Publications Co., Shelter Island, NY, 2016).]
 \end{figure}
 
 \subsection{Marathon}
@@ -483,7 +487,8 @@ When setting up statically partitioned cluster on an Infrastructure as a Service
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
   \fbox{\includegraphics[width=13cm]{./image/spark.png}}
-  \caption{Mesos managing cluster resources for two applications. \cite{mesosInAction}}\label{fig:spark}
+  \caption{Mesos managing cluster resources for two applications.}\label{fig:spark}
+  [From: Ignazio, R. Mesos in Action (Manning Publications Co., Shelter Island, NY, 2016).]
 \end{figure}
 
 \newpage
@@ -495,7 +500,8 @@ Apache Kafka is an open-source stream-processing software platform. Apache Kafka
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
   \fbox{\includegraphics[width=6cm]{./image/kafka.png}}
-  \caption{Overview of Kafka. \cite{kafka}}\label{fig:kafka}
+  \caption{Overview of Kafka.}\label{fig:kafka}
+  [From: wikipedia.''Kafka''.[online].Available:\url{en.wikipedia.org/wiki/Apache_Kafka}.Accessed 25 November 2020]
 \end{figure}
 
 \section{Related Research}

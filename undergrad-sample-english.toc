@@ -29,19 +29,19 @@
 \contentsline {subsection}{\numberline {2.3.6}Spark}{11}{}%
 \contentsline {subsection}{\numberline {2.3.7}Apache Kafka}{12}{}%
 \contentsline {section}{\numberline {2.4}Related Research}{12}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Methodology and Design}}}{13}{}%
-\contentsline {section}{\numberline {3.1}Project Functionality}{13}{}%
-\contentsline {subsection}{\numberline {3.1.1}Sequence diagram}{13}{}%
-\contentsline {subsection}{\numberline {3.1.2}Hypothesis testing}{14}{}%
-\contentsline {section}{\numberline {3.2}System Architecture}{14}{}%
-\contentsline {subsection}{\numberline {3.2.1}Architecture diagram}{14}{}%
-\contentsline {subsection}{\numberline {3.2.2}Policy}{14}{}%
-\contentsline {subsection}{\numberline {3.2.3}Database Schema}{17}{}%
-\contentsline {section}{\numberline {3.3}Data management }{18}{}%
-\contentsline {subsection}{\numberline {3.3.1}Which dataset is use for training?}{18}{}%
-\contentsline {subsection}{\numberline {3.3.2}Transform data pipeline}{19}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Implementation Results}}}{20}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{21}{}%
-\contentsline {section}{\numberline {5.1}Problems and Solutions}{21}{}%
-\contentsline {section}{\numberline {5.2}Future Works}{21}{}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {REFERENCES}}{22}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Methodology and Design}}}{14}{}%
+\contentsline {section}{\numberline {3.1}Project Functionality}{14}{}%
+\contentsline {subsection}{\numberline {3.1.1}Sequence diagram}{14}{}%
+\contentsline {subsection}{\numberline {3.1.2}Hypothesis testing}{15}{}%
+\contentsline {section}{\numberline {3.2}System Architecture}{15}{}%
+\contentsline {subsection}{\numberline {3.2.1}Architecture diagram}{15}{}%
+\contentsline {subsection}{\numberline {3.2.2}Policy}{15}{}%
+\contentsline {subsection}{\numberline {3.2.3}Database Schema}{18}{}%
+\contentsline {section}{\numberline {3.3}Data management }{19}{}%
+\contentsline {subsection}{\numberline {3.3.1}Which dataset is use for training?}{19}{}%
+\contentsline {subsection}{\numberline {3.3.2}Transform data pipeline}{20}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Implementation Results}}}{21}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{22}{}%
+\contentsline {section}{\numberline {5.1}Problems and Solutions}{22}{}%
+\contentsline {section}{\numberline {5.2}Future Works}{22}{}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {REFERENCES}}{23}{}%
