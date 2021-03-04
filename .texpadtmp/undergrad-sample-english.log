@@ -1,0 +1,2004 @@
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.11.14)  26 FEB 2021 12:52
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**undergrad-sample-english.tex
+(./undergrad-sample-english.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06> (./cpe-english-project.cls
+
+LaTeX Warning: You have requested document class `cpe-english-project',
+               but the document class provides `cpe-grad'.
+
+Document Class: cpe-grad 2016/05/30 CPE,KMUTT latex class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count163
+\c@chapter=\count164
+\c@section=\count165
+\c@subsection=\count166
+\c@subsubsection=\count167
+\c@paragraph=\count168
+\c@subparagraph=\count169
+\c@figure=\count170
+\c@table=\count171
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+Document Style `CPE thesis/report'.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count172
+\Gm@cntv=\count173
+\c@Gm@tempcnt=\count174
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen145
+\ar@mcellbox=\box45
+\extrarowheight=\dimen146
+\NC@list=\toks17
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box46
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen147
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen148
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count175
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count176
+\leftroot@=\count177
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count178
+\DOTSCASE@=\count179
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen149
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count180
+\c@MaxMatrixCols=\count181
+\dotsspace@=\muskip16
+\c@parentequation=\count182
+\dspbrk@lvl=\count183
+\tag@help=\toks20
+\row@=\count184
+\column@=\count185
+\maxfields@=\count186
+\andhelp@=\toks21
+\eqnshift@=\dimen150
+\alignsep@=\dimen151
+\tagshift@=\dimen152
+\tagwidth@=\dimen153
+\totwidth@=\dimen154
+\lineht@=\dimen155
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (/usr/local/texlive/2020/texmf-dist/tex/xelatex/mathspec/mathspec.sty
+Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection for XeLaTeX)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count187
+) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-03-06 L3 programming layer (loader) 
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-03-12 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count188
+\l__pdf_internal_box=\box49
+\g__pdf_backend_object_int=\count189
+\g__pdf_backend_annotation_int=\count190
+))
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count191
+\g__xparse_grabber_int=\count192
+\l__xparse_m_args_int=\count193
+\l__xparse_v_nesting_int=\count194
+)
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count195
+\l__fontspec_language_int=\count196
+\l__fontspec_strnum_int=\count197
+\l__fontspec_tmp_int=\count198
+\l__fontspec_tmpa_int=\count199
+\l__fontspec_tmpb_int=\count266
+\l__fontspec_tmpc_int=\count267
+\l__fontspec_em_int=\count268
+\l__fontspec_emdef_int=\count269
+\l__fontspec_strong_int=\count270
+\l__fontspec_strongdef_int=\count271
+\l__fontspec_tmpa_dim=\dimen156
+\l__fontspec_tmpb_dim=\dimen157
+\l__fontspec_tmpc_dim=\dimen158
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/local/texlive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count272
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@eu@=\count273
+\c@eu@i=\count274
+\c@mkern=\count275
+) (/usr/local/texlive/2020/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many other characters in Unicode lower plane
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+)
+\tipaTiiicode=\count276
+\tipasavetokens=\toks26
+\tipachecktokens=\toks27
+) (/usr/local/texlive/2020/texmf-dist/tex/xelatex/xltxtra/xltxtra.sty
+Package: xltxtra 2018/12/31 v0.7 Improvements for the "XeLaTeX" format
+ (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscripts
+\subsupersep=\dimen159
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks28
+\xl@@everylogo=\toks29
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box50
+\l__xetex_show_hyphens_temp_box=\box51
+\l__xetex_show_hyphens_final_box=\box52
+\g__xetex_show_hyphens_word_box=\box53
+)
+\bibindent=\dimen160
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+\c@definition=\count277
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks30
+\minrowclearance=\skip54
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/forloop/forloop.sty
+Package: forloop 2006/09/18 v3.0 For Loops for LaTeX
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+))
+\c@loopcntr=\count278
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip55
+\multirow@cntb=\count279
+\multirow@dima=\skip56
+\bigstrutjot=\dimen161
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+
+Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Mapping=tex-text,Scale=1.0,LetterSpace=0.0,Ligatures=TeX,Scale=1.0,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.0]"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.0]"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1.0]"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.0]"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 28.
+\c@theorem=\count280
+\c@lemma=\count281
+\c@corollary=\count282
+ (/Users/supapat/Desktop/Research/SeniorProjectReport/.texpadtmp/undergrad-sample-english.aux)
+\openout1 = `undergrad-sample-english.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 124.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 124.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 124.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 124.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(113.81102pt, 426.79135pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=433.62pt
+* \textheight=712.49861pt
+* \oddsidemargin=36.135pt
+* \evensidemargin=41.54103pt
+* \topmargin=-22.76228pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: logo02.jpg Graphic file (type bmp)
+<logo02.jpg>
+[1
+
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 131.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 131.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 131.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Underfull \hbox (badness 10000) in alignment at lines 131--131
+[] [] 
+ []
+
+[2]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 136.
+
+Underfull \hbox (badness 10000) in alignment at lines 153--155
+[][] 
+ []
+
+[2]
+
+./undergrad-sample-english.tex:162: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.162 ...nt{TH Sarabun New:script=thai}[Scale=1.3]
+                                                  
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Info: Could not resolve font "TH Sarabun New:script=thai/BI"
+(fontspec)             (it probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "TH Sarabun New:script=thai/B"
+(fontspec)             (it probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "TH Sarabun New:script=thai/I"
+(fontspec)             (it probably doesn't exist).
+
+
+./undergrad-sample-english.tex:162: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.162 ...nt{TH Sarabun New:script=thai}[Scale=1.3]
+                                                  
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+./undergrad-sample-english.tex:162: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.162 ...nt{TH Sarabun New:script=thai}[Scale=1.3]
+                                                  
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Info: Font family 'THSarabunNew:script=thai(0)' created for
+(fontspec)             font 'TH Sarabun New:script=thai' with options
+(fontspec)             [Mapping=tex-text,Scale=1.0,LetterSpace=0.0,Scale=1.3].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.3]"TH Sarabun
+(fontspec)             New:script=thai:letterspace=0.0;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->s*[1.3]"TH
+(fontspec)             Sarabun New:script=thai:letterspace=0.0;"
+
+LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(0)/m/n' will be
+(Font)              scaled to size 13.00003pt on input line 164.
+./undergrad-sample-english.tex:164: Font TU/THSarabunNew:script=thai(0)/m/n/10="TH Sarabun New:script=thai:letterspace=0.0;" at 13.00003pt not loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.164 \thaifont
+               
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Info: Could not resolve font "TH Sarabun New:script=thai/BI"
+(fontspec)             (it probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "TH Sarabun New:script=thai/B"
+(fontspec)             (it probably doesn't exist).
+
+
+Package fontspec Info: Could not resolve font "TH Sarabun New:script=thai/I"
+(fontspec)             (it probably doesn't exist).
+
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Info: Font family 'THSarabunNew:script=thai(1)' created for
+(fontspec)             font 'TH Sarabun New:script=thai' with options
+(fontspec)             [Mapping=tex-text,Scale=1.0,LetterSpace=0.0,Language=Thai,Scale=1.23].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun New:script=thai/OT:letterspace=0.0;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun New:script=thai/OT:letterspace=0.0;"
+
+LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(1)/m/n' will be
+(Font)              scaled to size 12.29996pt on input line 165.
+./undergrad-sample-english.tex:165: Font TU/THSarabunNew:script=thai(1)/m/n/10="TH Sarabun New:script=thai/OT:letterspace=0.0;" at 12.29996pt not loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.165 \thaiabstract
+                   
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ­ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ธ in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ธ in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ด in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ธ in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ด in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ง in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no ห in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ต in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no 3 in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no ผ in font nullfont!
+Missing character: There is no ู in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ภ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ุ in font nullfont!
+Missing character: There is no ภ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ฒ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no ฐ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no ์ in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no อ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no จ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ผ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ด in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no โ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ต in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ู in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ณ in font nullfont!
+Missing character: There is no ฑ in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ต in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no ส in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ์ in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no ภ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ์ in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ณ in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ์ in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+
+./undergrad-sample-english.tex:165: Package fontspec Error: The font "TH Sarabun New:script=thai" cannot be
+(fontspec)                found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.165 \thaiabstract
+                   
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ด in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no จ in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no ถ in font nullfont!
+Missing character: There is no ุ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ์ in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no จ in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ไ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ฐ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ภ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ด in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no จ in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ไ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ฐ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ภ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ฐ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ภ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ถ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no โ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no โ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ไ in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ุ in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no จ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ต in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ณ in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no ี in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no ่ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no ห in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ศ in font nullfont!
+Missing character: There is no ึ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ม in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ็ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ท in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ฒ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ป in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ุ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ใ in font nullfont!
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ข in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no พ in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no ฐ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no น in font nullfont!
+Missing character: There is no แ in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ะ in font nullfont!
+Missing character: There is no ภ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ษ in font nullfont!
+Missing character: There is no า in font nullfont!
+
+LaTeX Font Warning: Font shape `TU/THSarabunNew:script=thai(0)/b/n' undefined
+(Font)              using `TU/THSarabunNew:script=thai(0)/m/n' instead on input line 173.
+
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ำ in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ำ in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ญ in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ุ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ด in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ย in font nullfont!
+Missing character: There is no ไ in font nullfont!
+Missing character: There is no ฟ in font nullfont!
+Missing character: There is no ฟ in font nullfont!
+Missing character: There is no ้ in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no า in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ช in font nullfont!
+Missing character: There is no ุ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ผ in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ห in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ็ in font nullfont!
+Missing character: There is no ก in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no เ in font nullfont!
+Missing character: There is no ค in font nullfont!
+Missing character: There is no ล in font nullfont!
+Missing character: There is no ื in font nullfont!
+Missing character: There is no อ in font nullfont!
+Missing character: There is no บ in font nullfont!
+Missing character: There is no ผ in font nullfont!
+Missing character: There is no ิ in font nullfont!
+Missing character: There is no ว in font nullfont!
+Missing character: There is no ร in font nullfont!
+Missing character: There is no ั in font nullfont!
+Missing character: There is no ง in font nullfont!
+Missing character: There is no ส in font nullfont!
+Missing character: There is no ี in font nullfont!
+
+Underfull \hbox (badness 10000) in alignment at lines 170--174
+[][] 
+ []
+
+[3]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 182.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 182.
+ [4
+
+] (/Users/supapat/Desktop/Research/SeniorProjectReport/.texpadtmp/undergrad-sample-english.toc [5
+
+])
+\tf@toc=\write3
+\openout3 = `undergrad-sample-english.toc'.
+
+ [6] (/Users/supapat/Desktop/Research/SeniorProjectReport/.texpadtmp/undergrad-sample-english.lot)
+\tf@lot=\write4
+\openout4 = `undergrad-sample-english.lot'.
+
+ [7
+
+] (/Users/supapat/Desktop/Research/SeniorProjectReport/.texpadtmp/undergrad-sample-english.lof)
+\tf@lof=\write5
+\openout5 = `undergrad-sample-english.lof'.
+
+ [8
+
+]
+Overfull \hbox (12.98328pt too wide) in paragraph at lines 201--201
+[]|\TU/TimesNewRoman(0)/b/n/10 SYMBOL| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
+ []
+
+[9
+
+] [10
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
+(Font)              scaled to size 14.0pt on input line 228.
+[1
+
+]
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--259
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 259--260
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 274--274
+[]|\TU/TimesNewRoman(0)/m/n/10 2.1 Explore related work and
+ []
+
+[2]
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--315
+[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+ []
+
+
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 315--316
+[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+ []
+
+
+Overfull \hbox (2.11548pt too wide) in paragraph at lines 318--318
+[]|\TU/TimesNewRoman(0)/b/n/10 5.Implementation| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
+[]|\TU/TimesNewRoman(0)/m/n/10 5.1 Implement
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 322--322
+[]|\TU/TimesNewRoman(0)/m/n/10 5.2 Train model
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 326--326
+\TU/TimesNewRoman(0)/m/n/10 on top scheduler
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 326--326
+\TU/TimesNewRoman(0)/m/n/10 with many situa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
+[]|\TU/TimesNewRoman(0)/m/n/10 6.2 Evaluate
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 328--328
+\TU/TimesNewRoman(0)/m/n/10 model for sched-
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 330--330
+[]|\TU/TimesNewRoman(0)/m/n/10 6.3 Improve way
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
+\TU/TimesNewRoman(0)/m/n/10 to distributed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+[]|\TU/TimesNewRoman(0)/m/n/10 6.4 Tune model
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--332
+\TU/TimesNewRoman(0)/m/n/10 for scheduler
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 338--338
+[]|\TU/TimesNewRoman(0)/m/n/10 7.2 Present final
+ []
+
+[3]
+Chapter 2.
+[4
+
+]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
+(Font)              scaled to size 13.0pt on input line 359.
+File: ./image/tasktracker.png Graphic file (type bmp)
+<./image/tasktracker.png>
+ [5]
+File: ./image/vmVSContainer.png Graphic file (type bmp)
+<./image/vmVSContainer.png>
+ [6]
+File: ./image/NN.png Graphic file (type bmp)
+<./image/NN.png>
+ [7]
+File: ./image/MesosArc.png Graphic file (type bmp)
+<./image/MesosArc.png>
+ [8] [9]
+File: ./image/chronos.png Graphic file (type bmp)
+<./image/chronos.png>
+ [10]
+File: ./image/spark.png Graphic file (type bmp)
+<./image/spark.png>
+ [11]
+File: ./image/kafka.png Graphic file (type bmp)
+<./image/kafka.png>
+ [12]
+Chapter 3.
+File: ./image/SequenceDiagram.png Graphic file (type bmp)
+<./image/SequenceDiagram.png>
+[13
+
+]
+File: ./image/ArchitectureDiagram.png Graphic file (type bmp)
+<./image/ArchitectureDiagram.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 593--610
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14]
+File: ./image/flowDiagram.png Graphic file (type bmp)
+<./image/flowDiagram.png>
+ [15]
+Overfull \hbox (37.59995pt too wide) in paragraph at lines 629--643
+[][] 
+ []
+
+File: ./image/flowDiagramPredict.png Graphic file (type bmp)
+<./image/flowDiagramPredict.png>
+File: ./image/database.png Graphic file (type bmp)
+<./image/database.png>
+[16]
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 686--716
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17]
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 727--736
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18]
+File: ./image/dataPipeline.png Graphic file (type bmp)
+<./image/dataPipeline.png>
+ [19]
+Chapter 4.
+File: ./image/cluster_setup.png Graphic file (type bmp)
+<./image/cluster_setup.png>
+File: ./image/Framework.png Graphic file (type bmp)
+<./image/Framework.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./image/submit.png Graphic file (type bmp)
+<./image/submit.png>
+[20
+
+] [21]
+Chapter 5.
+(/Users/supapat/Desktop/Research/SeniorProjectReport/.texpadtmp/undergrad-sample-english.bbl [22
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[]\TU/TimesNewRoman(0)/m/n/10 Jonas DeMuro, 2019,  “What is container technology?,” $[][][] [] [][][][][][][][][] [] [][][] [] [][][][] []
+ []
+
+
+Overfull \hbox (15.13pt too wide) in paragraph at lines 55--59
+[][][][][][][][][][][][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$\TU/TimesNewRoman(0)/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 73--77
+[]\TU/TimesNewRoman(0)/m/n/10 Hargrave Marshall, 2019,  “Deep Learning,” $[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][] [] [] []
+ []
+
+) [23
+
+] (/Users/supapat/Desktop/Research/SeniorProjectReport/.texpadtmp/undergrad-sample-english.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 10026 strings out of 479418
+ 200496 string characters out of 5884584
+ 524693 words of memory out of 5000000
+ 27373 multiletter control sequences out of 15000+600000
+ 534539 words of font info for 58 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 59i,15n,71p,1351b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on /Users/supapat/Desktop/Research/SeniorProjectReport/.texpadtmp/undergrad-sample-english.pdf (34 pages).
