@@ -2,6 +2,12 @@
 %%%%%% xelatex grad-sample.tex 
 %%%%%% for a few times to generate the output pdf file
 \documentclass[12pt,oneside,openright,a4paper]{cpe-english-project}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{thai}
+\newfontfamily\thaifont[Script=Thai,Scale=1.23]{TH Sarabun New}
+
 %%%%%% add package for gantt chart
 \usepackage{xcolor,colortbl}
 \usepackage{forloop}
@@ -18,9 +24,6 @@
 
 %%%%% add package multirole for table
 \usepackage{multirow}
-
-%%%%% add package for online bib
-\usepackage{url}
 
 \defaultfontfeatures{Mapping=tex-text,Scale=1.0,LetterSpace=0.0}
 \setmainfont[Scale=1.0,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{Times New Roman}
@@ -122,6 +125,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+\pdfstringdefDisableCommands{%
+\let\MakeUppercase\relax
+}
 \begin{center}
   \includegraphics[width=2.8cm]{logo02.jpg}
 \end{center}
@@ -159,7 +165,7 @@ In a multihop ad hoc network, the interference among nodes is
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%% Thai abstract here %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-{\newfontfamily\thaifont{TH Sarabun New:script=thai}[Scale=1.3]
+{
 \XeTeXlinebreaklocale "th_TH"	
 \thaifont
 \thaiabstract
