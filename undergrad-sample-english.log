@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  17 MAR 2021 17:39
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  22 MAR 2021 02:14
 entering extended mode
 **./undergrad-sample-english.tex
 (undergrad-sample-english.tex
@@ -646,7 +646,49 @@ tterspace=0;extend=1.0;+smcp;mapping=tex-text;"
 (fontspec)             =1.0\fontdimen 4\font 
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 31.
+(Font)              scaled to size 10.0pt on input line 30.
+
+Package fontspec Info: Font family 'TimesNewRoman(1)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Mapping=tex-text,Scale=1.0,LetterSpace=0.0,Ligatures=Te
+X,Scale=1.0,LetterSpace=0,FakeStretch=1.0].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.0]"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;letterspace=0.0;lette
+rspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1.0]"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;letterspace=0.0;lette
+rspace=0;extend=1.0;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.0]"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;letterspace=0.0;let
+terspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1.0]"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;letterspace=0.0;let
+terspace=0;extend=1.0;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1.0]"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;letterspace=0.0;let
+terspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1.0]"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;letterspace=0.0;let
+terspace=0;extend=1.0;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.0]"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;letterspace=0.0;le
+tterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1.0]"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;letterspace=0.0;le
+tterspace=0;extend=1.0;+smcp;mapping=tex-text;"
+
+\symDigits:m:n=\mathgroup7
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 30.
 \c@theorem=\count302
 \c@lemma=\count303
 \c@corollary=\count304
@@ -778,6 +820,11 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 13
 (C:\Users\Kat\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 137.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 137.
+
 Underfull \hbox (badness 10000) in alignment at lines 137--137
 [] [] 
  []
@@ -789,127 +836,109 @@ Package hyperref Warning: bookmark level for unknown chapterx defaults to 0.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
 (Font)              scaled to size 10.0pt on input line 142.
 
-Underfull \hbox (badness 10000) in alignment at lines 159--161
+Underfull \hbox (badness 10000) in alignment at lines 147--149
 [][] 
  []
 
 [2]
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 12.29996pt on input line 170.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+(Font)              scaled to size 12.29996pt on input line 158.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count306
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count307
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count308
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count309
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count310
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count311
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count312
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count313
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count314
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count315
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count316
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 \thai@year=\count317
-LaTeX Info: Redefining \rmfamily on input line 171.
-LaTeX Info: Redefining \sffamily on input line 171.
-LaTeX Info: Redefining \ttfamily on input line 171.
-
-Overfull \hbox (6.165pt too wide) in paragraph at lines 173--174
-[]\TU/THSarabunNew(0)/m/n/10 การวิจัยครั้งนี้มีวัตถุประสงค์ เพื่อศึกษาความพึงพอ
-ใจในการให้บริการงานทั่วไปของสานักวิชา พื้นฐานและภาษา เพื่อเปรียบเทียบระดับความ
- []
-
-
-Overfull \hbox (12.2535pt too wide) in paragraph at lines 173--174
-\TU/THSarabunNew(0)/m/n/10 พึงพอใจต่อการให้บริการงาน ทั่วไปของสานักวิชาพื้นฐานแ
-ละภาษา ของนักศึกษาที่มาใช้บริการสานักวิชาพื้นฐานและภาษา สถาบัน เทคโนโลยี
- []
-
-
-Overfull \hbox (5.8206pt too wide) in paragraph at lines 173--174
-\TU/THSarabunNew(0)/m/n/10 ไทย-ญี่ปุ่น จาแนกตามเพศ คณะ และชั้นปีที่ศึกษา เพื่อศ
-ึกษาปัญหาและข้อเสนอแนะของ นักศึกษามาเป็นแนวทางในการพัฒนาและปรับปรุง
- []
-
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 12.29996pt on input line 179.
+(Font)              scaled to size 12.29996pt on input line 167.
 
-Underfull \hbox (badness 10000) in alignment at lines 176--180
+Underfull \hbox (badness 10000) in alignment at lines 164--168
 [][] 
  []
 
 [3]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 188.
+(Font)              scaled to size 12.0pt on input line 176.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 188.
+(Font)              scaled to size 12.0pt on input line 176.
  [4
 
 ] (undergrad-sample-english.toc
@@ -944,18 +973,18 @@ LaTeX Info: Redefining \ttfamily on input line 1.
  [8
 
 ]
-Overfull \hbox (12.98328pt too wide) in paragraph at lines 207--207
+Overfull \hbox (12.98328pt too wide) in paragraph at lines 195--195
 []|\TU/TimesNewRoman(0)/b/n/10 SYMBOL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+[]|\TU/TimesNewRoman(1)/m/n/10 jobs/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-[]|\TU/TimesNewRoman(0)/m/n/10 jobs/
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+[]|\TU/TimesNewRoman(1)/m/n/10 jobs/
  []
 
 [9
@@ -970,255 +999,255 @@ Package hyperref Warning: bookmark level for unknown chapterxx defaults to 0.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 232.
+(hyperref)                removed on input line 220.
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 14.0pt on input line 234.
+(Font)              scaled to size 14.0pt on input line 222.
 [1
 
 ]
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--265
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 265--266
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--254
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 280--280
-[]|\TU/TimesNewRoman(0)/m/n/10 2.1 Explore related work and
+Underfull \hbox (badness 2073) in paragraph at lines 268--268
+[]|\TU/TimesNewRoman(1)/m/n/10 2.1 Explore related work and
  []
 
 [2]
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 1| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 2| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--321
-[]|\TU/TimesNewRoman(0)/m/n/10 3| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+[]|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 321--322
-[]|\TU/TimesNewRoman(0)/m/n/10 4| 
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--310
+[]|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (2.11548pt too wide) in paragraph at lines 324--324
+Overfull \hbox (2.11548pt too wide) in paragraph at lines 312--312
 []|\TU/TimesNewRoman(0)/b/n/10 5.Implementation| 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
+[]|\TU/TimesNewRoman(1)/m/n/10 5.1 Implement
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 316--316
+[]|\TU/TimesNewRoman(1)/m/n/10 5.2 Train model
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 320--320
+\TU/TimesNewRoman(1)/m/n/10 on top scheduler
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 320--320
+\TU/TimesNewRoman(1)/m/n/10 with many situa-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--322
+[]|\TU/TimesNewRoman(1)/m/n/10 6.2 Evaluate
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 322--322
+\TU/TimesNewRoman(1)/m/n/10 model for sched-
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 324--324
+[]|\TU/TimesNewRoman(1)/m/n/10 6.3 Improve way
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\TU/TimesNewRoman(1)/m/n/10 to distributed
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\TU/TimesNewRoman(0)/m/n/10 5.1 Implement
+[]|\TU/TimesNewRoman(1)/m/n/10 6.4 Tune model
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 328--328
-[]|\TU/TimesNewRoman(0)/m/n/10 5.2 Train model
+Underfull \hbox (badness 10000) in paragraph at lines 326--326
+\TU/TimesNewRoman(1)/m/n/10 for scheduler
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 332--332
-\TU/TimesNewRoman(0)/m/n/10 on top scheduler
- []
-
-
-Underfull \hbox (badness 1755) in paragraph at lines 332--332
-\TU/TimesNewRoman(0)/m/n/10 with many situa-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
-[]|\TU/TimesNewRoman(0)/m/n/10 6.2 Evaluate
- []
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 334--334
-\TU/TimesNewRoman(0)/m/n/10 model for sched-
- []
-
-
-Underfull \hbox (badness 1168) in paragraph at lines 336--336
-[]|\TU/TimesNewRoman(0)/m/n/10 6.3 Improve way
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
-\TU/TimesNewRoman(0)/m/n/10 to distributed
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
-[]|\TU/TimesNewRoman(0)/m/n/10 6.4 Tune model
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
-\TU/TimesNewRoman(0)/m/n/10 for scheduler
- []
-
-
-Underfull \hbox (badness 3849) in paragraph at lines 344--344
-[]|\TU/TimesNewRoman(0)/m/n/10 7.2 Present final
+Underfull \hbox (badness 3849) in paragraph at lines 332--332
+[]|\TU/TimesNewRoman(1)/m/n/10 7.2 Present final
  []
 
 [3]
@@ -1226,13 +1255,13 @@ Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 352.
+(hyperref)                removed on input line 340.
 
 [4
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 13.0pt on input line 365.
+(Font)              scaled to size 13.0pt on input line 353.
 File: ./image/tasktracker.png Graphic file (type bmp)
 <./image/tasktracker.png>
  [5]
@@ -1258,49 +1287,36 @@ Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 521.
+(hyperref)                removed on input line 509.
 
 File: ./image/SequenceDiagram.png Graphic file (type bmp)
 <./image/SequenceDiagram.png>
 [14
 
-]
+] [15]
 File: ./image/ArchitectureDiagram.png Graphic file (type bmp)
 <./image/ArchitectureDiagram.png>
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 605--622
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 601--618
 [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[15]
+[16]
 File: ./image/flowDiagram.png Graphic file (type bmp)
 <./image/flowDiagram.png>
- [16]
-Overfull \hbox (37.59995pt too wide) in paragraph at lines 641--655
+
+Overfull \hbox (37.59995pt too wide) in paragraph at lines 637--651
 [][] 
  []
 
+[17]
 File: ./image/flowDiagramPredict.png Graphic file (type bmp)
 <./image/flowDiagramPredict.png>
+ [18]
 File: ./image/database.png Graphic file (type bmp)
 <./image/database.png>
-[17]
-Overfull \hbox (6.62868pt too wide) in paragraph at lines 698--728
-[][] 
- []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[18]
-Overfull \hbox (6.62868pt too wide) in paragraph at lines 739--748
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 696--726
 [][] 
  []
 
@@ -1308,38 +1324,69 @@ Overfull \hbox (6.62868pt too wide) in paragraph at lines 739--748
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19]
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 737--746
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20]
 File: ./image/dataPipeline.png Graphic file (type bmp)
 <./image/dataPipeline.png>
- [20]
+ [21]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 798.
+(hyperref)                removed on input line 796.
 
-File: ./image/cluster_setup.png Graphic file (type bmp)
-<./image/cluster_setup.png>
-File: ./image/Framework.png Graphic file (type bmp)
-<./image/Framework.png>
+File: ./image/resourcesCluster.png Graphic file (type bmp)
+<./image/resourcesCluster.png>
+File: ./image/NumberTask.png Graphic file (type bmp)
+<./image/NumberTask.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: ./image/submit.png Graphic file (type bmp)
-<./image/submit.png>
-[21
+[22
 
-] [22]
+]
+File: ./image/exampleData.png Graphic file (type bmp)
+<./image/exampleData.png>
+ [23]
+File: ./image/elbow.png Graphic file (type bmp)
+<./image/elbow.png>
+File: ./image/cluster.png Graphic file (type bmp)
+<./image/cluster.png>
+ [24]
+File: ./image/FDPNumberTask.png Graphic file (type bmp)
+<./image/FDPNumberTask.png>
+ [25]
+File: ./image/finishFail.png Graphic file (type bmp)
+<./image/finishFail.png>
+File: ./image/finishFailFDP.png Graphic file (type bmp)
+<./image/finishFailFDP.png>
+File: ./image/finishFailRate.png Graphic file (type bmp)
+<./image/finishFailRate.png>
+File: ./image/FDPCPU.png Graphic file (type bmp)
+<./image/FDPCPU.png>
+File: ./image/FDPmem.png Graphic file (type bmp)
+<./image/FDPmem.png>
+ [26]
+File: ./image/FDPload.png Graphic file (type bmp)
+<./image/FDPload.png>
+ [27] [28]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 831.
+(hyperref)                removed on input line 972.
 
-(undergrad-sample-english.bbl [23
+(undergrad-sample-english.bbl [29
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
-[]\TU/TimesNewRoman(0)/m/n/10 Jonas DeMuro, 2019,  “What is container technolog
+[]\TU/TimesNewRoman(1)/m/n/10 Jonas DeMuro, 2019,  “What is container technolog
 y?,” [][]$[][][] [] [][][][][][][][][] [] [][][] [] [][][][] []
  []
 
@@ -1347,12 +1394,12 @@ y?,” [][]$[][][] [] [][][][][][][][][] [] [][][] [] [][][][] []
 Overfull \hbox (15.13pt too wide) in paragraph at lines 55--59
 [][][][][][][][][][][][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][]$[][]\TU/TimesNewRoman(0)/m/n/10 ,
+[][][][][][][][][][][]$[][]\TU/TimesNewRoman(1)/m/n/10 ,
  []
 
 
 Underfull \hbox (badness 6477) in paragraph at lines 73--77
-[]\TU/TimesNewRoman(0)/m/n/10 Hargrave Marshall, 2019,  “Deep Learning,” [][]$[
+[]\TU/TimesNewRoman(1)/m/n/10 Hargrave Marshall, 2019,  “Deep Learning,” [][]$[
 ][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][] [
 ] [] []
  []
@@ -1408,7 +1455,7 @@ braces):
 >  {thai/babelname}  =>  {thai}
 >  {thai/localnumeral}  =>  {thainumerals}
 >  {thai/Localnumeral}  =>  {thainumerals}.
- [24
+ [30
 
 ] (undergrad-sample-english.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
@@ -1417,15 +1464,15 @@ LaTeX Info: Redefining \ttfamily on input line 19.
 )
 Package rerunfilecheck Info: File `undergrad-sample-english.out' has not change
 d.
-(rerunfilecheck)             Checksum: DCAA2C0D70C7733818A1B2BC562EEF91;3361.
+(rerunfilecheck)             Checksum: 77BE9AEBDBC3D2B0FEAAEC901A636800;3875.
  ) 
 Here is how much of TeX's memory you used:
- 17331 strings out of 412016
- 306626 string characters out of 2845349
- 719692 words of memory out of 3000000
- 36760 multiletter control sequences out of 15000+200000
- 406087 words of font info for 74 fonts, out of 3000000 for 9000
+ 17434 strings out of 412016
+ 309031 string characters out of 2845349
+ 720951 words of memory out of 3000000
+ 36852 multiletter control sequences out of 15000+200000
+ 406103 words of font info for 76 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,15n,117p,1360b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 110i,15n,117p,1373b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on undergrad-sample-english.pdf (35 pages).
+Output written on undergrad-sample-english.pdf (41 pages).

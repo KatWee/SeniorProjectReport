@@ -11,8 +11,12 @@
 \contentsline {table}{\numberline {3.4}{\ignorespaces Description of Architecture diagram.}}{16}{table.3.4}%
 \contentsline {table}{\numberline {3.5}{\ignorespaces Parameter Formula and Description.}}{17}{table.3.5}%
 \contentsline {table}{\numberline {3.6}{\ignorespaces Decision Matrix.}}{17}{table.3.6}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Field name and description.}}{19}{table.3.7}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Framework of Apache Mesos.}}{19}{table.3.8}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Application Data.}}{20}{table.3.9}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Field name and description.}}{20}{table.3.7}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Framework of Apache Mesos.}}{20}{table.3.8}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Application Data.}}{21}{table.3.9}%
 \addvspace {0em}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Simulated task configuration.}}{22}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Result from random forest model.}}{25}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces FDP task configuration.}}{25}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces average of CPU and memory utilization before and after using FDP.}}{27}{table.4.4}%
 \addvspace {0em}

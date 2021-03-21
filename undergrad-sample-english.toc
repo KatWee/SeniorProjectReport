@@ -33,19 +33,24 @@
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {3.}\hskip -0.5em Methodology and Design}}}{14}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Project Functionality}{14}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Sequence diagram}{14}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Hypothesis testing}{15}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}System Architecture}{15}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Architecture diagram}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Policy}{15}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Database Schema}{18}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Data management }{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Which dataset is use for training?}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Transform data pipeline}{20}{subsection.3.3.2}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Implementation Results}}}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Mesos Cluster Setup}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Active Framework}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Submit task}{22}{section.4.3}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{23}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Problems and Solutions}{23}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Works}{23}{section.5.2}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{24}{section.5.2}%
+\contentsline {subsection}{\numberline {3.1.2}Hypothesis Testing}{15}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}System Architecture}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Architecture diagram}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Policy}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Database Schema}{19}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Data management }{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Which dataset is use for training?}{20}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Transform data pipeline}{21}{subsection.3.3.2}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Experimental setup, Results, and Discussion}}}{22}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Setup cluster, framework application, and parameter}{22}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Model for predict success rate}{24}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}k-means Clustering}{24}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Random forest model}{25}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Policy 1: First Demand Share Policy (FDP)}{25}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Policy 2: Success rate prediction}{28}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Policy 1 and 2}{28}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Discussion}{28}{section.4.6}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Problems and Solutions}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Future Works}{29}{section.5.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{30}{section.5.2}%
