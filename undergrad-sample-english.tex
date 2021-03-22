@@ -798,7 +798,7 @@ This project uses log data that mentioned before to build models by using the fo
 \hspace{10mm} In this chapter details about experimental setup, results, and discussion.  \textbf{Topic 4.1} details about control variables in cluster for this experiment and results of simulated data.  \textbf{Topic 4.2} results of data processing and model for predict success rate.  \textbf{Topic 4.3} and  \textbf{Topic 4.4} are the results from each policy.  \textbf{Topic 4.5} is the result when used 2 policies together. Lastly,  \textbf{Topic 4.6} discusses about the result of  \textbf{Topic 4.3} to  \textbf{Topic 4.5} and how to improve them.
 
 \section{Setup cluster, framework application, and parameter}
-\hspace{10mm}For our experiment setup, we had setup a cluster inside a cloud provider which called AWS. This cluster consists of 3 nodes with 6 CPUs, 8.4 GB of memory, and 135 GB of disk for each node as shown in \textbf{Figure}~\ref{fig:resourcesCluster}. We setup this cluster with 3 widely known Mesos Framework, Spark Marathon, and Chronos, and conducted the way to test our setup by simulated data. We had randomly varied the resources of each task from the range that each task can provide. 
+\hspace{10mm}For our experiment setup, we had setup a cluster inside a cloud provider which called AWS. This cluster consists of 3 nodes with 2 CPUs, 2.8 GB of memory, and 45 GB of disk for each node as shown in \textbf{Figure}~\ref{fig:resourcesCluster}. We setup this cluster with 3 widely known Mesos Framework, Spark Marathon, and Chronos, and conducted the way to test our setup by simulated data. We had randomly varied the resources of each task from the range that each task can provide. 
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
@@ -903,7 +903,7 @@ The result of submitted task is shown in \textbf{Figure}~\ref{fig:FDPNumberTask}
 We also considered other matrices after applying this policy.
 
 \begin{enumerate}
-  \item \textbf{Failed task:} The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finishFail} and \textbf{Figure}~\ref{fig:finishFailFDP}. The number of Chronos’ failed tasks was decreased, but in the other hand, number of spark’s failed tasks was increased. In \textbf{Figure}~\ref{fig:finishFailRate} shows that fail rate is faster when used this policy. The slope was increased from 0.195 to 0.251. So, this policy cannot reduce the number of failed task in every framework and increase its failure rate.
+  \item \textbf{Failed task:} The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finishFail} and \textbf{Figure}~\ref{fig:finishFailFDP}. The number of Chronos failed tasks was decreased, but in the other hand, number of spark failed tasks was increased. In \textbf{Figure}~\ref{fig:finishFailRate} shows that growth rate of failed tasks is upward when used this policy. The slope was increased from 0.195 to 0.251. So, this policy cannot reduce the number of failed tasks in every framework and increase its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
@@ -923,7 +923,7 @@ We also considered other matrices after applying this policy.
     \caption{Growth rate of fail task before and after using FDP}\label{fig:finishFailRate}
   \end{figure}
   
-  \item \textbf{CPU and memory utilization:} Comparing CPU and memory utilization of cluster framework before and after used this policy, the averages of CPU and memory utilization is shown in \textbf{Table}~\ref{tbl:FDPCPUmem}. From the table, both CPU and memory utilization average were decreased. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:FDPCPU} and \textbf{Figure}~\ref{fig:FDPmem}. 
+  \item \textbf{CPU and memory utilization:} The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:FDPCPUmem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:FDPCPU} and \textbf{Figure}~\ref{fig:FDPmem}. 
   \begin{table}[!h]
   \caption{average of CPU and memory utilization before and after using FDP.}\label{tbl:FDPCPUmem}
   \begin{tabular}{|l|l|l|}
