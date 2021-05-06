@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  22 MAR 2021 18:03
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  7 MAY 2021 02:03
 entering extended mode
 **./undergrad-sample-english.tex
 (undergrad-sample-english.tex
@@ -927,6 +927,25 @@ LaTeX Info: Redefining \ttfamily on input line 159.
 LaTeX Info: Redefining \rmfamily on input line 159.
 LaTeX Info: Redefining \sffamily on input line 159.
 LaTeX Info: Redefining \ttfamily on input line 159.
+
+Overfull \hbox (15.22075pt too wide) in paragraph at lines 161--162
+[] \TU/THSarabunNew(0)/m/n/10 ในปัจจุบัน Big Data เป็นสิ่งที่กำลังถูกใช้งานอย่า
+งกว้างขวางในภาคธุรกิจและต้องการใช้เครื่องคอมพิวเตอร์หลายเครื่องในการประมวล
+ []
+
+
+Overfull \hbox (3.18845pt too wide) in paragraph at lines 161--162
+\TU/THSarabunNew(0)/m/n/10 ผลข้อมูล เนื่องจากคอมพิวเตอร์เพียงเครื่องเดียวไม่เพี
+ยงพอสำหรับการประมวลผล ซึ่ง Apache Mesos เป็นเครื่องมือที่จะช่วยในการทำงาน
+ []
+
+
+Overfull \hbox (9.78119pt too wide) in paragraph at lines 161--162
+\TU/THSarabunNew(0)/m/n/10 ทรัพยากรที่กำลังถูกใช้อยู่ในระบบ ทำให้การทำงานไม่สำเ
+ร็จ หรือทำให้ไม่ได้รับทรัพยากรในการทำงานอย่างเท่าเทียม ผู้จัดทำจึงได้สร้าง NKR-
+
+ []
+
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
 (Font)              scaled to size 12.29996pt on input line 167.
 
@@ -973,18 +992,8 @@ LaTeX Info: Redefining \ttfamily on input line 1.
  [8
 
 ]
-Overfull \hbox (12.98328pt too wide) in paragraph at lines 195--195
+Overfull \hbox (12.98328pt too wide) in paragraph at lines 196--196
 []|\TU/TimesNewRoman(0)/b/n/10 SYMBOL| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-[]|\TU/TimesNewRoman(1)/m/n/10 jobs/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
-[]|\TU/TimesNewRoman(1)/m/n/10 jobs/
  []
 
 [9
@@ -999,254 +1008,254 @@ Package hyperref Warning: bookmark level for unknown chapterxx defaults to 0.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 220.
+(hyperref)                removed on input line 235.
 
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 14.0pt on input line 222.
+(Font)              scaled to size 14.0pt on input line 237.
 [1
 
 ]
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--253
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--268
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 253--254
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 268--269
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Underfull \hbox (badness 2073) in paragraph at lines 268--268
+Underfull \hbox (badness 2073) in paragraph at lines 283--283
 []|\TU/TimesNewRoman(1)/m/n/10 2.1 Explore related work and
  []
 
 [2]
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 1| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 2| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--309
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--324
 []|\TU/TimesNewRoman(1)/m/n/10 3| 
  []
 
 
-Overfull \hbox (0.66618pt too wide) in paragraph at lines 309--310
+Overfull \hbox (0.66618pt too wide) in paragraph at lines 324--325
 []|\TU/TimesNewRoman(1)/m/n/10 4| 
  []
 
 
-Overfull \hbox (2.11548pt too wide) in paragraph at lines 312--312
+Overfull \hbox (2.11548pt too wide) in paragraph at lines 327--327
 []|\TU/TimesNewRoman(0)/b/n/10 5.Implementation| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--314
+Underfull \hbox (badness 10000) in paragraph at lines 329--329
 []|\TU/TimesNewRoman(1)/m/n/10 5.1 Implement
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 316--316
+Underfull \hbox (badness 6220) in paragraph at lines 331--331
 []|\TU/TimesNewRoman(1)/m/n/10 5.2 Train model
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 320--320
+Underfull \hbox (badness 2828) in paragraph at lines 335--335
 \TU/TimesNewRoman(1)/m/n/10 on top scheduler
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 320--320
+Underfull \hbox (badness 1755) in paragraph at lines 335--335
 \TU/TimesNewRoman(1)/m/n/10 with many situa-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--322
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 []|\TU/TimesNewRoman(1)/m/n/10 6.2 Evaluate
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 322--322
+Underfull \hbox (badness 1354) in paragraph at lines 337--337
 \TU/TimesNewRoman(1)/m/n/10 model for sched-
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 324--324
+Underfull \hbox (badness 1168) in paragraph at lines 339--339
 []|\TU/TimesNewRoman(1)/m/n/10 6.3 Improve way
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--324
+Underfull \hbox (badness 10000) in paragraph at lines 339--339
 \TU/TimesNewRoman(1)/m/n/10 to distributed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
 []|\TU/TimesNewRoman(1)/m/n/10 6.4 Tune model
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 341--341
 \TU/TimesNewRoman(1)/m/n/10 for scheduler
  []
 
 
-Underfull \hbox (badness 3849) in paragraph at lines 332--332
+Underfull \hbox (badness 3849) in paragraph at lines 347--347
 []|\TU/TimesNewRoman(1)/m/n/10 7.2 Present final
  []
 
@@ -1255,76 +1264,170 @@ Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 340.
+(hyperref)                removed on input line 355.
+
+
+LaTeX Warning: Citation `mesos' on page 4 undefined on input line 358.
+
+
+LaTeX Warning: Citation `policiesAndMetrics' on page 4 undefined on input line 
+360.
+
+
+LaTeX Warning: Citation `dominantResourceFairness' on page 4 undefined on input
+ line 362.
 
 [4
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 13.0pt on input line 353.
+(Font)              scaled to size 13.0pt on input line 368.
+
+
+LaTeX Warning: Citation `adaptiveScheduling' on page 5 undefined on input line 
+369.
+
 File: ./image/tasktracker.png Graphic file (type bmp)
 <./image/tasktracker.png>
- [5]
+[5]
 File: ./image/vmVSContainer.png Graphic file (type bmp)
 <./image/vmVSContainer.png>
- [6]
+
+
+LaTeX Warning: Citation `docker' on page 6 undefined on input line 393.
+
+
+LaTeX Warning: Citation `container' on page 6 undefined on input line 395.
+
+
+LaTeX Warning: Citation `ml' on page 6 undefined on input line 398.
+
+
+LaTeX Warning: Citation `ann' on page 6 undefined on input line 403.
+
+[6]
+
+LaTeX Warning: Citation `deepLearning' on page 7 undefined on input line 406.
+
+
+LaTeX Warning: Citation `deepLearning2' on page 7 undefined on input line 408.
+
 File: ./image/NN.png Graphic file (type bmp)
 <./image/NN.png>
- [7]
+[7]
+
+LaTeX Warning: Citation `mesosInAction' on page 8 undefined on input line 422.
+
 File: ./image/MesosArc.png Graphic file (type bmp)
 <./image/MesosArc.png>
- [8] [9]
+[8]
+
+LaTeX Warning: Citation `drf' on page 9 undefined on input line 443.
+
+
+LaTeX Warning: Citation `zookeeper' on page 9 undefined on input line 466.
+
+[9]
+
+LaTeX Warning: Citation `elasticsearch' on page 10 undefined on input line 473.
+
+
+
+LaTeX Warning: Citation `mesosInAction' on page 10 undefined on input line 476.
+
+
 File: ./image/chronos.png Graphic file (type bmp)
 <./image/chronos.png>
- [10]
+[10]
+
+LaTeX Warning: Citation `mesosInAction' on page 11 undefined on input line 491.
+
+
+[11]
+
+LaTeX Warning: Citation `mesosInAction' on page 12 undefined on input line 498.
+
+
 File: ./image/spark.png Graphic file (type bmp)
 <./image/spark.png>
- [11]
+[12]
+
+LaTeX Warning: Citation `kafka' on page 13 undefined on input line 511.
+
 File: ./image/kafka.png Graphic file (type bmp)
 <./image/kafka.png>
- [12] [13]
+
+LaTeX Warning: Citation `mesosInAction' on page 13 undefined on input line 522.
+
+
+
+LaTeX Warning: Citation `fishSwarm' on page 13 undefined on input line 524.
+
+
+LaTeX Warning: Citation `xdrf' on page 13 undefined on input line 524.
+
+
+LaTeX Warning: Citation `tromino' on page 13 undefined on input line 524.
+
+[13] [14]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 509.
+(hyperref)                removed on input line 529.
 
 File: ./image/SequenceDiagram.png Graphic file (type bmp)
 <./image/SequenceDiagram.png>
-[14
+[15
 
-] [15]
-File: ./image/ArchitectureDiagram.png Graphic file (type bmp)
-<./image/ArchitectureDiagram.png>
+]
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 559--568
+[][] 
+ []
 
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 601--618
+
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 574--585
+[][] 
+ []
+
+
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 591--602
 [][] 
  []
 
 [16]
-File: ./image/flowDiagram.png Graphic file (type bmp)
-<./image/flowDiagram.png>
+File: ./image/ArchitectureDiagram.png Graphic file (type bmp)
+<./image/ArchitectureDiagram.png>
 
-Overfull \hbox (37.59995pt too wide) in paragraph at lines 637--651
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 621--638
 [][] 
  []
 
 [17]
-File: ./image/flowDiagramPredict.png Graphic file (type bmp)
-<./image/flowDiagramPredict.png>
- [18]
-File: ./image/database.png Graphic file (type bmp)
-<./image/database.png>
+File: ./image/flowDiagram.png Graphic file (type bmp)
+<./image/flowDiagram.png>
 
-Overfull \hbox (6.62868pt too wide) in paragraph at lines 696--726
+Overfull \hbox (37.59995pt too wide) in paragraph at lines 657--671
 [][] 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (49.99333pt too wide) in paragraph at lines 675--684
+[][] 
+ []
 
+[18]
+
+LaTeX Warning: Citation `adaptiveScheduling' on page 19 undefined on input line
+ 688.
+
+File: ./image/flowDiagramPredict.png Graphic file (type bmp)
+<./image/flowDiagramPredict.png>
 [19]
-Overfull \hbox (6.62868pt too wide) in paragraph at lines 737--746
+File: ./image/database.png Graphic file (type bmp)
+<./image/database.png>
+
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 716--746
 [][] 
  []
 
@@ -1332,59 +1435,198 @@ Overfull \hbox (6.62868pt too wide) in paragraph at lines 737--746
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20]
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 757--766
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21]
 File: ./image/dataPipeline.png Graphic file (type bmp)
 <./image/dataPipeline.png>
- [21]
+ [22]
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 796.
+(hyperref)                removed on input line 816.
 
 File: ./image/resourcesCluster.png Graphic file (type bmp)
 <./image/resourcesCluster.png>
-File: ./image/NumberTask.png Graphic file (type bmp)
-<./image/NumberTask.png>
+
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 834--845
+[][] 
+ []
+
+File: ./image/chap4/task0.png Graphic file (type bmp)
+<./image/chap4/task0.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22
+[23
 
 ]
 File: ./image/exampleData.png Graphic file (type bmp)
 <./image/exampleData.png>
- [23]
+ [24]
 File: ./image/elbow.png Graphic file (type bmp)
 <./image/elbow.png>
 File: ./image/cluster.png Graphic file (type bmp)
 <./image/cluster.png>
- [24]
-File: ./image/FDPNumberTask.png Graphic file (type bmp)
-<./image/FDPNumberTask.png>
  [25]
-File: ./image/finishFail.png Graphic file (type bmp)
-<./image/finishFail.png>
-File: ./image/finishFailFDP.png Graphic file (type bmp)
-<./image/finishFailFDP.png>
-File: ./image/finishFailRate.png Graphic file (type bmp)
-<./image/finishFailRate.png>
-File: ./image/FDPCPU.png Graphic file (type bmp)
-<./image/FDPCPU.png>
-File: ./image/FDPmem.png Graphic file (type bmp)
-<./image/FDPmem.png>
+File: ./image/highcorr.png Graphic file (type bmp)
+<./image/highcorr.png>
+File: ./image/lowcorr.png Graphic file (type bmp)
+<./image/lowcorr.png>
  [26]
-File: ./image/FDPload.png Graphic file (type bmp)
-<./image/FDPload.png>
- [27] [28]
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 911--920
+[][] 
+ []
+
+File: ./image/chap4/task1.png Graphic file (type bmp)
+<./image/chap4/task1.png>
+[27]
+File: ./image/chap4/finfail0.png Graphic file (type bmp)
+<./image/chap4/finfail0.png>
+File: ./image/chap4/finfail1.png Graphic file (type bmp)
+<./image/chap4/finfail1.png>
+File: ./image/chap4/po1-fail.png Graphic file (type bmp)
+<./image/chap4/po1-fail.png>
+ [28]
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 964--973
+[][] 
+ []
+
+File: ./image/chap4/po1-cpu.png Graphic file (type bmp)
+<./image/chap4/po1-cpu.png>
+File: ./image/chap4/po1-mem.png Graphic file (type bmp)
+<./image/chap4/po1-mem.png>
+File: ./image/chap4/po1-load.png Graphic file (type bmp)
+<./image/chap4/po1-load.png>
+[29]
+File: ./image/chap4/task2.png Graphic file (type bmp)
+<./image/chap4/task2.png>
+ [30]
+File: ./image/chap4/finfail0.png Graphic file (type bmp)
+<./image/chap4/finfail0.png>
+File: ./image/chap4/finfail2.png Graphic file (type bmp)
+<./image/chap4/finfail2.png>
+File: ./image/chap4/po2-fail.png Graphic file (type bmp)
+<./image/chap4/po2-fail.png>
+
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 1043--1052
+[][] 
+ []
+
+File: ./image/chap4/po2-cpu.png Graphic file (type bmp)
+<./image/chap4/po2-cpu.png>
+File: ./image/chap4/po2-mem.png Graphic file (type bmp)
+<./image/chap4/po2-mem.png>
+[31] [32]
+File: ./image/chap4/po2-load.png Graphic file (type bmp)
+<./image/chap4/po2-load.png>
+File: ./image/chap4/task3.png Graphic file (type bmp)
+<./image/chap4/task3.png>
+ [33]
+File: ./image/chap4/finfail0.png Graphic file (type bmp)
+<./image/chap4/finfail0.png>
+File: ./image/chap4/finfail2.png Graphic file (type bmp)
+<./image/chap4/finfail2.png>
+File: ./image/chap4/po2-fail.png Graphic file (type bmp)
+<./image/chap4/po2-fail.png>
+
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 1123--1132
+[][] 
+ []
+
+File: ./image/chap4/po1-cpu.png Graphic file (type bmp)
+<./image/chap4/po1-cpu.png>
+File: ./image/chap4/po1-mem.png Graphic file (type bmp)
+<./image/chap4/po1-mem.png>
+[34]
+File: ./image/chap4/po3-load.png Graphic file (type bmp)
+<./image/chap4/po3-load.png>
+ [35]
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+[]|\TU/TimesNewRoman(0)/b/n/10 Different
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+\TU/TimesNewRoman(0)/b/n/10 average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+\TU/TimesNewRoman(0)/b/n/10 of tasks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+[]|\TU/TimesNewRoman(0)/b/n/10 Number
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+\TU/TimesNewRoman(0)/b/n/10 of failed
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+[]|\TU/TimesNewRoman(0)/b/n/10 Average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+\TU/TimesNewRoman(0)/b/n/10 of CPU
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+[]|\TU/TimesNewRoman(0)/b/n/10 Average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+\TU/TimesNewRoman(0)/b/n/10 of Mem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+\TU/TimesNewRoman(0)/b/n/10 ory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1167
+[]|\TU/TimesNewRoman(0)/b/n/10 Average
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1167--1168
+[]|\TU/TimesNewRoman(0)/b/n/10 Running
+ []
+
+
+Overfull \hbox (2.00157pt too wide) in paragraph at lines 1167--1168
+\TU/TimesNewRoman(0)/b/n/10 Time(min)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1169
+[]|\TU/TimesNewRoman(0)/b/n/10 Original apache
+ []
+
+[36]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 972.
+(hyperref)                removed on input line 1184.
 
-(undergrad-sample-english.bbl [29
+[37
 
-]
+] (undergrad-sample-english.bbl [38]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\TU/TimesNewRoman(1)/m/n/10 Jonas DeMuro, 2019,  “What is container technolog
 y?,” [][]$[][][] [] [][][][][][][][][] [] [][][] [] [][][][] []
@@ -1455,24 +1697,36 @@ braces):
 >  {thai/babelname}  =>  {thai}
 >  {thai/localnumeral}  =>  {thainumerals}
 >  {thai/Localnumeral}  =>  {thainumerals}.
- [30
+ [39
 
 ] (undergrad-sample-english.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
 )
-Package rerunfilecheck Info: File `undergrad-sample-english.out' has not change
-d.
-(rerunfilecheck)             Checksum: 77BE9AEBDBC3D2B0FEAAEC901A636800;3875.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `undergrad-sample-english.out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `undergrad-sample-english.out':
+(rerunfilecheck)             Before: 7C6C1FE437363FEE5CF2B3CA7D15B9CB;3907
+(rerunfilecheck)             After:  4B187953A12C4095E0363404F4D8820C;3955.
  ) 
 Here is how much of TeX's memory you used:
- 17434 strings out of 412016
- 309031 string characters out of 2845349
- 720951 words of memory out of 3000000
- 36852 multiletter control sequences out of 15000+200000
+ 17513 strings out of 412016
+ 310761 string characters out of 2845349
+ 722111 words of memory out of 3000000
+ 36920 multiletter control sequences out of 15000+200000
  406103 words of font info for 76 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,15n,117p,1373b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 110i,15n,117p,1382b,514s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on undergrad-sample-english.pdf (41 pages).
+Output written on undergrad-sample-english.pdf (50 pages).
