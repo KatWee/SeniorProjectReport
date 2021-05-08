@@ -920,7 +920,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
 \end{table}
 
 \section{Policy 1: First Demand Share Policy (FDP)}  
-\hspace{10mm}FDP used the same setup as mentioned in \textbf{Section 4.1} and also use the same submitted tasks in \textbf{Table}~\ref{tbl:SimulatedTaskConfiguration}. NKR have developed to receive tasks, and then considers based on the first policy. And the result of submitted task is shown in \textbf{Figure}~\ref{fig:task1}.
+\hspace{10mm}FDP used the same setup as mentioned in \textbf{Section 4.1} and also use the same submitted tasks in \textbf{Table}~\ref{tbl:SimulatedTaskConfiguration}. NKR have developed to receive tasks, and then considers based on the first policy.
 
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -929,24 +929,24 @@ Simulated data was created by running sample jobs in a cluster following in \tex
     \caption{Number of tasks for each framework after using FDP}\label{fig:task1}
 \end{figure}
 
-\hspace{10mm}From \textbf{Figure}~\ref{fig:task0}, Marathon and Chronos could not launch a fair number of tasks because Spark could hold on to offer more than the others. After comparing with normal Mesos, there has a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task1}. Each framework had almost the same approximate number of tasks, which is 1 task. The values that use to compare between before and after applied first policy was following with these values (1.2713, 1.94410, 1.29788). After calculating the average of difference, the result is 0.448. So, this policy can’t improve fairness compared to the default policy 0.3736. The result is increased by 16\%.
+\hspace{10mm}From \textbf{Figure}~\ref{fig:task0}, Marathon and Chronos could not launch a fair number of tasks because Spark could hold on to offer more than the others. After comparing with normal Mesos, there is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task1}. Each framework had almost the same approximate number of tasks, which is 1 task. The values that use to compare between before and after applied first policy was following with these values (1.2713, 1.94410, 1.29788). After calculating the average of difference, the result is 0.448. So, this policy cannot improve fairness compared to the default policy 0.3736. The result is increased by 16\%. 
 \newline
-The other matrices were also considered after applying this policy.
+This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
   \item Failed task
   \newline
-  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-1} and Figure \textbf{Figure}~\ref{fig:finfail1}. The number of Chronos failed tasks was decreased, but in the other hand, number of Spark failed tasks was increased. In \textbf{Figure}~\ref{fig:fail1} shows that growth rate of failed tasks is upward when used this policy. The slope was decreased from 0.258 to 0.265. So, this policy cannot reduce the number of failed tasks in every framework and increase its failure rate.
+The result of finished and failed tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-1} and Figure \textbf{Figure}~\ref{fig:finfail1}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of Chronos failed tasks was increased, but the number of Marathon and Spark failed tasks was the same. In \textbf{Figure}~\ref{fig:fail1} shows that growth rate of failed tasks is upward when used this policy. The slope was increased from 0.258 to 0.265. So, this policy not only cannot reduce the number of failed tasks but also increase its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
     \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0.png}}
-    \caption{Number of failed and finish tasks before using FDP}\label{fig:finfail0-1}
+    \caption{Number of finished and failed tasks before using FDP}\label{fig:finfail0-1}
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
     \fbox{\includegraphics[width=14cm]{./image/chap4/finfail1.png}}
-    \caption{Number of failed and finish tasks after using FDP}\label{fig:finfail1}
+    \caption{Number of finished and failed tasks after using FDP}\label{fig:finfail1}
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -996,7 +996,7 @@ The other matrices were also considered after applying this policy.
 \end{enumerate}
 \textbf{Conclusion of First Demand Share Policy (FDP)}
 \newline
-\hspace{10mm}First Demand Policy cannot improve fairness of running tasks. The number of failed tasks is still the same in the most frameworks. Only Chronos failed task is decrease by 3.75\%. Also, failure rate of failed tasks, Resource utilization and system load are not improved. 
+\hspace{10mm}First Demand Policy cannot improve fairness of running tasks. The number of failed tasks is still the same in the most of frameworks. Only Chronos failed task is decrease by 3.75\%. Also, failure rate of failed tasks, resource utilization and system load are not improved. 
 
 
 \section{Policy 2: Success Rate Prediction}  
@@ -1009,24 +1009,24 @@ The other matrices were also considered after applying this policy.
     \caption{Number of tasks for each framework after using Success Rate Prediction}\label{fig:task2}
 \end{figure}
 
-\hspace{10mm}There is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task2}. Each framework had almost the same approximate number of tasks, which is 0.97 After calculated different average, the values is (0.7512, 0.9725, 0.7762), the result is 0.147. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 60\% And compared to the first policy, the fairness increased by 67.18\%
+\hspace{10mm}There is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task2}. Each framework had almost the same approximate number of tasks, which is 0.97. After calculating different average, the values are (0.7512,0.9725,0.7762), the result is 0.147. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 60\%. And compared to the first policy, the fairness increased by 67.18\%
 \newline
-The other matrices were also considered after applying this policy.
+This project also considered these other matrices after applying this policy:  
 \begin{enumerate}
   \item Failed task
   \newline
-  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2} and Figure\textbf{Figure}~\ref{fig:finfail2}. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is upward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy cannot reduce the number of failed tasks in every framework and increase its failure rate. 
+  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2} and Figure\textbf{Figure}~\ref{fig:finfail2}. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is downward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy can reduce the number of failed tasks in every framework and decrease its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
     \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0.png}}
-    \caption{Number of failed and finish tasks before using Success Rate Prediction}\label{fig:finfail0-2}
+    \caption{Number of finished and failed tasks before using Success Rate Prediction}\label{fig:finfail0-2}
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
     \fbox{\includegraphics[width=14cm]{./image/chap4/finfail2.png}}
-    \caption{Number of failed and finish tasks after Success Rate Prediction}\label{fig:finfail2}
+    \caption{Number of finished and failed tasks after using Success Rate Prediction}\label{fig:finfail2}
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1076,11 +1076,11 @@ The other matrices were also considered after applying this policy.
 \end{enumerate}
 \textbf{Conclusion of Success Rate Prediction}
 \newline
-\hspace{10mm}Success Rate Prediction can improve fairness of running tasks by only 60\%. The number of failed tasks is reduced by 7.3\%. Also, failure rate of failed tasks, Resource utilization and system load are improved.
+\hspace{10mm}Success Rate Prediction can improve fairness of running tasks by only 60\%. The number of failed tasks is reduced by 7.3\%. Also, failure rate of failed tasks, resource utilization and system load are improved.
 
 
 \section{Policy 3: Hybrid Policy}  
-\hspace{10mm}For this policy, Hybrid Policy is combined of FDP and Success Rate Prediction. The result of submitted task is shown in  \textbf{Figure}~\ref{fig:task3}.
+\hspace{10mm}Hybrid Policy is combined FDP and Success Rate Prediction. The result of submitted task is shown in \textbf{Figure}~\ref{fig:task3}.
 
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1091,7 +1091,7 @@ The other matrices were also considered after applying this policy.
 
 \hspace{10mm}In \textbf{Figure}~\ref{fig:task3}, There is a little improvement in fairness as shown. Each framework had almost the same approximate number of tasks, which is 0.74. After calculated different average, the values are (0.823,0.7927,0.6298), the result is 0.1293. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 65.4\%, compared to the first policy, the fairness improved by 71.1\% and compared to the second policy, the fairness improved by 12\%
 \newline
-The other matrices were also considered after applying this policy.
+This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
   \item Failed task
   \newline
@@ -1189,7 +1189,7 @@ The averages of CPU and memory utilization of cluster framework before and after
 \hspace{10mm}There are many factors that can cause task failure. For example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model that predict the failure rate of task. The Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework.
 
 \section{Result}
-\hspace{10mm}As previous mentioned, this work has three policies attached to NRT-scheduler. The tasks were submitted to NRT-scheduler. After \textbf{First Demand Policy} is applied, the fairness in system is decreased by 16.6\% and the other metrics such as CPU utilization, memory utilization, failure rate, etc., were increased. The result did not improve performance as expected, and it was found that fairness has a correlation with failure task. Next experiment applies \textbf{Success Rate Prediction}. The failure rate was improved by nearly 7.3\% and the others metric were significantly improved. However, the failure rate did not meet the criteria as expected, and fairness did not improve. Therefore, the last policy called Hybrid Policy was developed. The result shown that the failure rate was improved by 15.3\% and the other metric were improved. 
+\hspace{10mm}As previous mentioned, this work has three policies attached to NKR-scheduler. The tasks were submitted to NKR-scheduler. After \textbf{First Demand Policy} is applied, the fairness in system is decreased by 16.6\% and the other metrics such as CPU utilization, memory utilization, failure rate, etc., were increased. The result did not improve performance as expected, and it was found that fairness has a correlation with failure task. Next experiment applies \textbf{Success Rate Prediction}. The failure rate was improved by nearly 7.3\% and the others metric were significantly improved. However, the failure rate did not meet the criteria as expected, and fairness did not improve. Therefore, the last policy called Hybrid Policy was developed. The result shown that the failure rate was improved by 15.3\% and the other metric were improved. 
 
 \section{Discussion}
 \hspace{10mm}Spark was configured with a relatively greedier scheduling policy compared to other frameworks. This type of scheduling can significantly affect the other frameworks to manage resources utilization. As a result, spark can run more tasks at the beginning and come with the highest number of success tasks compared to other frameworks, whereas other frameworks required much more time to complete and then it caused higher failure rate. After the First Demand Policy was applied, the success rate decreased along with the decreasing of fairness. After applying Success Rate Prediction which focuses on predicting the failure rate of incoming tasks, the result shown the improvement of success rate and fairness. If incoming tasks have high probability to be failed tasks, it will have more time to classify the type of tasks and modify the resources utilization. Therefore, both time and fairness are two factors that affect the failure rate. The Hybrid Policy was applied to prove that these two factors can improve the success rate of tasks. The result shown that success rate of tasks was improve more than expectation.

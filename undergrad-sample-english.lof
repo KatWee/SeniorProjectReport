@@ -24,15 +24,15 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Data clustering visualize by metrices that have high correlation}}{26}{figure.4.6}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Data clustering visualize by metrices that have low correlation}}{26}{figure.4.7}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Number of tasks for each framework after using FDP}}{27}{figure.4.8}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Number of failed and finish tasks before using FDP}}{28}{figure.4.9}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Number of failed and finish tasks after using FDP}}{28}{figure.4.10}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Number of finished and failed tasks before using FDP}}{28}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Number of finished and failed tasks after using FDP}}{28}{figure.4.10}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Growth rate of fail task before and after using FDP}}{28}{figure.4.11}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces CPU utilization before and after using FDP}}{29}{figure.4.12}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Memory utilization before and after using FDP}}{29}{figure.4.13}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces System load before and after using FDP}}{30}{figure.4.14}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Number of tasks for each framework after using Success Rate Prediction}}{30}{figure.4.15}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Number of failed and finish tasks before using Success Rate Prediction}}{31}{figure.4.16}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Number of failed and finish tasks after Success Rate Prediction}}{31}{figure.4.17}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Number of finished and failed tasks before using Success Rate Prediction}}{31}{figure.4.16}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Number of finished and failed tasks after using Success Rate Prediction}}{31}{figure.4.17}%
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Growth rate of fail task before and after using Success Rate Prediction}}{31}{figure.4.18}%
 \contentsline {figure}{\numberline {4.19}{\ignorespaces CPU utilization before and after using Success Rate Prediction}}{32}{figure.4.19}%
 \contentsline {figure}{\numberline {4.20}{\ignorespaces Memory utilization before and after using Success Rate Prediction}}{32}{figure.4.20}%
