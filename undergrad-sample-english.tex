@@ -362,8 +362,6 @@ RAM & random access memory
 
 \hspace{10mm}In data centers and clouds, where applications could be co-scheduled on the same physical nodes, resource fairness needs to extend to multiple resource types such as memory, disk I/O, and network bandwidth.  Ali, et al. considered the problem of fair resource allocation in a system containing different resource types, where each user may have different demands for each resource and researched about a new generalization of max-min fairness to multiple resource types called Dominant Resource Fairness (DRF). \cite{dominantResourceFairness}
 
-\newpage
-
 %%%%%%%%%% Theoretical and Core Concepts %%%%%%%%%%%%
 \section{Theoretical and Core Concepts}
 
@@ -475,8 +473,6 @@ RAM & random access memory
 \subsection{Zookeeper}
 \hspace{10mm}ZooKeeper is an open-source Apache project that provides a centralized service for providing configuration information, naming, synchronization, and group services over large clusters in distributed systems. The goal is to make these systems easier to manage with improved, more reliable propagation of changes. ZooKeeper provides an infrastructure for cross-node synchronization by maintaining status type information in memory on ZooKeeper servers. A ZooKeeper server keeps a copy of the state of the entire system and persists this information in local log files. Large Hadoop clusters are supported by multiple ZooKeeper servers, with a master server synchronizing the top-level servers. \cite{zookeeper}
 
-\newpage
-
 %%% Elasticsearch
 \subsection{Elasticsearch}
 \hspace{10mm}Elasticsearch is an open-source search and analytics engine built on Apache Lucene and developed in Java. Elasticsearch can be used to store and search all kinds of documents, analyze huge volumes of data in near real-time and give back answers in milliseconds, and supports multitenancy. It’s able to achieve fast search responses because it searches an index directly instead of searching the text. Related data is often stored in the same index, which consists of one or more primary shards, and zero or more replica shards. Once an index has been created, the number of primary shards cannot be changed. It uses a structure based on documents and comes with extensive REST APIs for storing and searching the data. 
@@ -495,15 +491,12 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
   [From: Ignazio, R. Mesos in Action (Manning Publications Co., Shelter Island, NY, 2016).]
 \end{figure}
 
-\newpage
-
 %%% Marathon
 \subsection{Marathon}
 \hspace{10mm}Marathon is a popular open source Mesos framework developed by Mesosphere. Marathon is used for deploying long-running services and applications, both in Linux cgroups and Docker containers. It can also be considered a private platform as a service (PaaS) on which to deploy applications. Marathon can specify the resources needed for each instance of an application and number of running instances. If a Mesos slave fails, or an instance of application crashes or exits, Marathon will automatically start a new instance to replace the failed one.
 
 \hspace{10mm}Marathon also allows users to specify dependencies on other services and applications during deployment, so an application instance can’t start before its database instance is up and passing health checks. Marathon contains a list of features that should satisfy the needs of most application management scenarios such as managing applications and groups of applications with dependencies and health checks, rolling application upgrades with specific capacity requirements, a powerful web interface and REST API, and high availability (using ZooKeeper for leader election and coordination).\cite{mesosInAction}
 
-\newpage
 %%% Spark
 \subsection{Spark}
 \hspace{10mm}Apache Spark, unified analytics engine for large-scale data processing, runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud. It can access diverse data sources. Spark perform task faster and more efficiently than Hadoop’s MapReduce, both in memory and on disk in many cases. Spark also provide API for several programming language, including Python, Scala and Java and support streaming workloads, interactive queries and machine learning libraries, in addition to MapReduce-like batch processing.  Spark can run locally. But that is useful only for development purpose, the number of CPU cores limits the number of executors. When setting up a production Spark cluster, there are two option.
@@ -518,7 +511,6 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
   [From: Ignazio, R. Mesos in Action (Manning Publications Co., Shelter Island, NY, 2016).]
 \end{figure}
 
-\newpage
 %%% Apache Kafka
 \subsection{Apache Kafka}
 \hspace{10mm}Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In \textbf{Figure}~\ref{fig:kafka}, producers are processes that send message to Kafka. Then, Kafka stores these messages in key-value. The data can be partitioned into different topic. And Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. And partitions are replicated to multiple servers.\cite{kafka}
@@ -555,7 +547,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=14cm]{./image/SequenceDiagram.png}}
+  \fbox{\includegraphics[width=16cm]{./image/SequenceDiagram.png}}
   \caption{Sequence diagram of Apache Mesos}\label{fig:SequenceDiagram}
 \end{figure}
 
@@ -565,10 +557,10 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 \subsection{Hypothesis Testing} 
 \hspace{10mm}Hypothesis Testing was set up in order to proof that NKR-scheduler can reduce task failure in each framework. This project separates into 2 experiments because it considers both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. This project uses three frameworks which are Marathon, Chronos, and Spark for the test.  The results were compared using 4 criteria for executing framework;
 \begin{enumerate}
-  \item Normal Cluster Setting (not using NKR-scheduler) 
-  \item NKR-scheduler – apply with Policy 1 (First Demand Share Policy)
-  \item NKR-scheduler – apply with Policy 2 (Success rate prediction)
-  \item NKR-scheduler – apply with both Policies 
+  \item \textbf{Normal Cluster Setting}: not using NKR-scheduler 
+  \item \textbf{NKR-scheduler}: apply with Policy 1 (First Demand Share Policy)
+  \item \textbf{NKR-scheduler}: apply with Policy 2 (Success rate prediction)
+  \item \textbf{NKR-scheduler}: apply with both Policies
 \end{enumerate}
 
 \begin{table}[!h]
@@ -629,7 +621,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=14cm]{./image/ArchitectureDiagram.png}}
+  \fbox{\includegraphics[width=16cm]{./image/ArchitectureDiagram.png}}
   \caption{Architecture diagram.}\label{fig:ArchitectureDiagram}
 \end{figure}
 
@@ -656,6 +648,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
   \end{tabular}
 \end{table}
 
+\newpage
 %%%Policy
 \subsection{Policy}  
 \hspace{10mm}This project designs two policies for the Meta-scheduler: 1) First Demand Policy (FDP), and 2) Success rate prediction. These policies can be extended further based on scheduling needs of users. 
@@ -667,7 +660,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=12cm]{./image/flowDiagram.png}}
+    \fbox{\includegraphics[width=15cm]{./image/flowDiagram.png}}
     \caption{Architecture diagram.}\label{fig:flowDiagram}
   \end{figure}
 
@@ -675,7 +668,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
   \begin{table}[!h]
     \caption{Parameter Formula and Description.}\label{tbl:Parameter}
-    \begin{tabular}{@{}|p{0.3\textwidth}|p{0.3\textwidth}|p{0.4\textwidth}|}
+    \begin{tabular}{@{}|p{0.3\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
       \hline
       \textbf{Parameter name} & \textbf{Formula} & \textbf{Description} \\ 
       \hline
@@ -693,7 +686,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
   \begin{table}[!h]
     \caption{Decision Matrix.}\label{tbl:DecisionMatrix}
-      \begin{tabular}{@{}|p{0.2\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|p{0.4\textwidth}|}
+      \begin{tabular}{@{}|p{0.2\textwidth}|p{0.2\textwidth}|p{0.2\textwidth}|p{0.3\textwidth}|}
       \hline
       \textbf{Framework} & \textbf{DD} & \textbf{(1-DS)} & \textbf{TOTAL}\\
       \hline
@@ -704,6 +697,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
     \end{tabular}
   \end{table}
   
+  \newpage
 %%%%% 2.Success rate prediction
   \item \textbf{Success rate prediction}There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, and etc. These metrics are able to identify anomalies (task failed, task killed, and etc.) by using the pipeline provided in \textbf{Topic} 3.3.2
   
@@ -714,14 +708,13 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=15cm]{./image/flowDiagramPredict.png}}
+    \fbox{\includegraphics[width=16cm]{./image/flowDiagramPredict.png}}
     \caption{Flow Diagram of Predicting success rate.}\label{fig:flowDiagramPredict}
   \end{figure}
 
 \end{enumerate}
 
 \newpage
-
 %%%Database Schema
 \subsection{Database Schema}  
 
@@ -817,7 +810,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
-  \fbox{\includegraphics[width=13cm]{./image/dataPipeline.png}}
+  \fbox{\includegraphics[width=15cm]{./image/dataPipeline.png}}
   \caption{Data pipeline.}\label{fig:dataPipeline}
 \end{figure}
 
@@ -856,7 +849,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
 
 \begin{table}[!h]
   \caption{Simulated task configuration.}\label{tbl:SimulatedTaskConfiguration}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
+  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.3\textwidth}|p{0.4\textwidth}|}
     \hline
     \textbf{Framework} & \textbf{Number of tasks} & \textbf{Arrival Rate (sec)} \\
     \hline
@@ -927,15 +920,15 @@ Simulated data was created by running sample jobs in a cluster following in \tex
 \subsection{Random forest model}  
 \hspace{10mm}Random forest model was trained with these following parameters: 
 \begin{enumerate}
-  \item max\_dept: The maximum dept of the tree sets to be 10
-  \item random\_stat: This parameter control randomness of the bootstrapping of the samples used when building tree. 10 is seed for generate random number. Using an integer will produce the same result across different calls. It is easier to check that the results are stable across a number of different distinct random seeds.
-  \item ma\_features: For each split, it will consider maximum 10 features.
+  \item \textbf{max\_dept}: The maximum dept of the tree sets to be 10
+  \item \textbf{random\_stat}: This parameter control randomness of the bootstrapping of the samples used when building tree. 10 is seed for generate random number. Using an integer will produce the same result across different calls. It is easier to check that the results are stable across a number of different distinct random seeds.
+  \item \textbf{ma\_features}: For each split, it will consider maximum 10 features.
 \end{enumerate}
 \hspace{10mm}The result of random forest model is shown in \textbf{Table}~\ref{tbl:RandomForestConfusion}. The accuracy of this model is 0.832, precision is 0.85 and recall is 0.98.
 
 \begin{table}[!h]
   \caption{Result from random forest model.}\label{tbl:RandomForestConfusion}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
+  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.35\textwidth}|p{0.35\textwidth}|}
    \hline
    \textbf{} & \textbf{Fail (predicted)} & \textbf{Finish (predicted)} \\ 
    \hline
@@ -962,20 +955,15 @@ Simulated data was created by running sample jobs in a cluster following in \tex
 This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
 %%% po1 fail task
-  \item Failed task
+  \item \textbf{Failed task}
   \newline
-The result of finished and failed tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-1} and Figure \textbf{Figure}~\ref{fig:finfail1}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of Chronos failed tasks was increased, but the number of Marathon and Spark failed tasks was the same. In \textbf{Figure}~\ref{fig:fail1} shows that growth rate of failed tasks is upward when used this policy. The slope was increased from 0.258 to 0.265. So, this policy not only cannot reduce the number of failed tasks but also increase its failure rate.
+The result of finished and failed tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-1}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of Chronos failed tasks was increased, but the number of Marathon and Spark failed tasks was the same. In \textbf{Figure}~\ref{fig:fail1} shows that growth rate of failed tasks is upward when used this policy. The slope was increased from 0.258 to 0.265. So, this policy not only cannot reduce the number of failed tasks but also increase its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0.png}}
-    \caption{Number of finished and failed tasks before using FDP}\label{fig:finfail0-1}
-\end{figure}
-\begin{figure}[!h]\centering
-    \setlength{\fboxrule}{0mm} % can define this in the preamble
-    \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail1.png}}
-    \caption{Number of finished and failed tasks after using FDP}\label{fig:finfail1}
+    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0-1.png}}
+    \caption{Number of finished and failed tasks before and after using FDP}\label{fig:finfail0-1}
+    (A) is before using FDP and (B) is  after using FDP
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -986,12 +974,12 @@ The result of finished and failed tasks for each framework before and after appl
 
 % po1 CPU and mem
 \newpage
-  \item CPU and memory utilization
+  \item \textbf{CPU and memory utilization}
   \newline
   The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po1CPUMem}. From the table, both CPU and memory utilization average were increased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu1} and \textbf{Figure}~\ref{fig:mem1}. 
   \begin{table}[!h]
   \caption{Average of CPU and memory utilization before and after using FDP.}\label{tbl:po1CPUMem}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
+  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.35\textwidth}|p{0.35\textwidth}|}
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
@@ -1015,7 +1003,7 @@ The result of finished and failed tasks for each framework before and after appl
 \end{figure}
 
 %%% po1 load
-  \item System load
+  \item \textbf{System load}
   \newline
   The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load1}. System load average before using FDP is 2.085 and after is 3.033. So, system is busier when applied this policy.
 \begin{figure}[!h]\centering
@@ -1047,20 +1035,15 @@ The result of finished and failed tasks for each framework before and after appl
 This project also considered these other matrices after applying this policy:  
 \begin{enumerate}
 %%% po2 fail task
-  \item Failed task
+  \item \textbf{Failed task}
   \newline
-  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2} and Figure\textbf{Figure}~\ref{fig:finfail2}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is downward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy can reduce the number of failed tasks in every framework and decrease its failure rate.
+  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2}.The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is downward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy can reduce the number of failed tasks in every framework and decrease its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0.png}}
-    \caption{Number of finished and failed tasks before using Success Rate Prediction}\label{fig:finfail0-2}
-\end{figure}
-\begin{figure}[!h]\centering
-    \setlength{\fboxrule}{0mm} % can define this in the preamble
-    \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail2.png}}
-    \caption{Number of finished and failed tasks after using Success Rate Prediction}\label{fig:finfail2}
+    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0-2.png}}
+    \caption{Number of finished and failed tasks before and after using Success Rate Prediction}\label{fig:finfail0-2}
+    (A) is before using Success Rate Prediction and (B) is  after using Success Rate Prediction
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1070,12 +1053,13 @@ This project also considered these other matrices after applying this policy:
 \end{figure}
 
 %%% po2 CPU and mem
-  \item CPU and memory utilization
+\newpage
+  \item \textbf{CPU and memory utilization}
   \newline
   The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po2CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu2} and \textbf{Figure}~\ref{fig:mem2}. 
   \begin{table}[!h]
   \caption{Average of CPU and memory utilization before and after using FDP.}\label{tbl:po2CPUMem}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
+  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.35\textwidth}|p{0.35\textwidth}|}
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
@@ -1098,9 +1082,8 @@ This project also considered these other matrices after applying this policy:
     \caption{Memory utilization before and after using Success Rate Prediction}\label{fig:mem2}
 \end{figure}
 
-\newpage
 %%% po2 load
-  \item System load
+  \item \textbf{System load}
   \newline
   The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load2}. System load average before using FDP is 2.058 and after is 1.188. So, system is less busy when applied this policy.
 \begin{figure}[!h]\centering
@@ -1114,7 +1097,6 @@ This project also considered these other matrices after applying this policy:
 \textbf{Conclusion of Success Rate Prediction}
 \newline
 \hspace{10mm}Success Rate Prediction can improve fairness of running tasks by only 60\%. The number of failed tasks is reduced by 7.3\%. Also, failure rate of failed tasks, resource utilization and system load are improved.
-
 
 %%%%%%%%%% Policy 3: Hybrid Policy %%%%%%%%%%%%
 \section{Policy 3: Hybrid Policy}  
@@ -1132,20 +1114,15 @@ This project also considered these other matrices after applying this policy:
 This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
 %%% po3 fail task
-  \item Failed task
+  \item \textbf{Failed task}
   \newline
-  The result of failed and finished tasks for each framework before and after applied both policies is shown in  \textbf{Figure}~\ref{fig:finfail0-3} and Figure \textbf{Figure}~\ref{fig:finfail3}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased by this policy. In \textbf{Figure}~\ref{fig:fail3} shows that growth rate of failed tasks is upward when used this policy. The slope decreased from 0.258 to 0.06. So, this policy cannot reduce the number of failed tasks in every framework and its failure rate.
+  The result of failed and finished tasks for each framework before and after applied both policies is shown in  \textbf{Figure}~\ref{fig:finfail0-3}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased by this policy. In \textbf{Figure}~\ref{fig:fail3} shows that growth rate of failed tasks is upward when used this policy. The slope decreased from 0.258 to 0.06. So, this policy cannot reduce the number of failed tasks in every framework and its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0.png}}
-    \caption{Number of finished and failed tasks before using Hybrid Policy}\label{fig:finfail0-3}
-\end{figure}
-\begin{figure}[!h]\centering
-    \setlength{\fboxrule}{0mm} % can define this in the preamble
-    \setlength{\fboxsep}{0cm}
-    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail2.png}}
-    \caption{Number of finished and failed tasks after using Hybrid Policy}\label{fig:finfail3}
+    \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0-3.png}}
+    \caption{Number of finished and failed tasks before and after using Hybrid Policy}\label{fig:finfail0-3}
+    (A) is before using Hybrid Policy and (B) is  after using Hybrid Policy
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1155,12 +1132,12 @@ This project also considered these other matrices after applying this policy:
 \end{figure}
 
 %%%po3 CPU and mem
-  \item CPU and memory utilization
+  \item \textbf{CPU and memory utilization}
   \newline
 The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po3CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in Figure \textbf{Figure}~\ref{fig:cpu3} and\textbf{Figure}~\ref{fig:mem3}.    
   \begin{table}[!h]
   \caption{Average of CPU and memory utilization before and after using both FDP and success rate prediction.}\label{tbl:po3CPUMem}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
+  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.35\textwidth}|p{0.35\textwidth}|}
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
@@ -1184,7 +1161,7 @@ The averages of CPU and memory utilization of cluster framework before and after
 \end{figure}
 
 %%%po3 load
-  \item System load
+  \item \textbf{System load}
   \newline
   The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load3}. System load average before using FDP is 2.058 and after is 0.579. So, system is less busy when applied this policy.
 \begin{figure}[!h]\centering
