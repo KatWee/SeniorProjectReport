@@ -18,7 +18,7 @@
 \contentsline {table}{\numberline {4.1}{\ignorespaces Simulated task configuration.}}{23}{table.4.1}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Result from random forest model.}}{27}{table.4.2}%
 \contentsline {table}{\numberline {4.3}{\ignorespaces Average of CPU and memory utilization before and after using FDP.}}{29}{table.4.3}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Average of CPU and memory utilization before and after using FDP.}}{32}{table.4.4}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Average of CPU and memory utilization before and after using both FDP and success rate prediction.}}{35}{table.4.5}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Summary of result.}}{36}{table.4.6}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Average of CPU and memory utilization before and after using FDP.}}{31}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Average of CPU and memory utilization before and after using both FDP and success rate prediction.}}{34}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Failure task and other metrics.}}{37}{table.4.6}%
 \addvspace {0em}

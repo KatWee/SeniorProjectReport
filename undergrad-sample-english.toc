@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {3.2.1}Architecture diagram}{17}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Policy}{17}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Database Schema}{20}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Data management }{21}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Data management}{21}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Which dataset is use for training?}{21}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Transform data pipeline}{22}{subsection.3.3.2}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Experimental setup, results}}}{23}{chapter.4}%
@@ -48,11 +48,10 @@
 \contentsline {subsection}{\numberline {4.2.2}Random forest model}{27}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Policy 1: First Demand Share Policy (FDP)}{27}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Policy 2: Success Rate Prediction}{30}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Policy 3: Hybrid Policy}{33}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Policy 3: Hybrid Policy}{32}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Summary of Result}{36}{section.4.6}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Result}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Discussion}{37}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Future work}{38}{section.5.4}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{39}{section.5.4}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {5.}\hskip -0.5em Conclusions}}}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Result and Discussion}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Conclusion}{38}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Future work}{38}{section.5.3}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {References}}{40}{section.5.3}%

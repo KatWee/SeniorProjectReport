@@ -37,7 +37,7 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Architecture\040diagram}{section.3.2}% 37
 \BOOKMARK [2][-]{subsection.3.2.2}{Policy}{section.3.2}% 38
 \BOOKMARK [2][-]{subsection.3.2.3}{Database\040Schema}{section.3.2}% 39
-\BOOKMARK [1][-]{section.3.3}{Data\040management\040}{chapter.3}% 40
+\BOOKMARK [1][-]{section.3.3}{Data\040management}{chapter.3}% 40
 \BOOKMARK [2][-]{subsection.3.3.1}{Which\040dataset\040is\040use\040for\040training?}{section.3.3}% 41
 \BOOKMARK [2][-]{subsection.3.3.2}{Transform\040data\040pipeline}{section.3.3}% 42
 \BOOKMARK [0][-]{chapter.4}{Experimental\040setup,\040results}{}% 43
@@ -50,8 +50,7 @@
 \BOOKMARK [1][-]{section.4.5}{Policy\0403:\040Hybrid\040Policy}{chapter.4}% 50
 \BOOKMARK [1][-]{section.4.6}{Summary\040of\040Result}{chapter.4}% 51
 \BOOKMARK [0][-]{chapter.5}{Conclusions}{}% 52
-\BOOKMARK [1][-]{section.5.1}{Conclusion}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.2}{Result}{chapter.5}% 54
-\BOOKMARK [1][-]{section.5.3}{Discussion}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.4}{Future\040work}{chapter.5}% 56
-\BOOKMARK [0][-]{section.5.4}{References}{}% 57
+\BOOKMARK [1][-]{section.5.1}{Result\040and\040Discussion}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{Conclusion}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.3}{Future\040work}{chapter.5}% 55
+\BOOKMARK [0][-]{section.5.3}{References}{}% 56
