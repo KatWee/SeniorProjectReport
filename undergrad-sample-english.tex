@@ -228,19 +228,18 @@ RAM & random access memory
 %\setlength{\parskip}{1.2mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%% Main body %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% CHAP 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \chapter{Introduction}
-
+%%%%%%%%%% Problem Statement and Approach %%%%%%%%%%%%
 \section{Problem Statement and Approach} 
 
 \hspace{10mm}Nowadays, several different types of applications, which are short or long-lived jobs, container orchestration, or MPI jobs, are executed in clouds or large computer clusters. Multiple users can demand difference resources to execute their tasks. Apache Mesos is a Middleware for the data center by introducing an abstraction layer that provides an entire data centers as a single large server. Instead of focusing on one application that running on a specific server. Mesos resource-isolation allows multi-tenant — the ability to run multiple applications on a single machine. Default sharing for multiple resources in this multi-tenant environment is defined by the Dominant Resource Fairness (DRF). Mesos receives the resources based on their current usage, which are responsible for scheduling their tasks within the allocation. In multiple schedulers can cause the fairness-imbalance in a multi-user environment, liked a greedy scheduler. It consumes more than its share of resources. Running multiple small tasks is better than launching large ones in terms of time spent waiting for enough resources. 
 
 \hspace{10mm}Therefore, this project aims to improve the fairness of the scheduler by reducing the unfair waiting time due to higher resource demand in a pending task list and use log data to improve the whole cluster.
 
-
+%%%%%%%%%% Objectives %%%%%%%%%%%%
 \section{Objectives}
 \begin{itemize}
   \item  To study about job scheduling in Apache Mesos
@@ -248,7 +247,7 @@ RAM & random access memory
   \item  ·	To evaluate result and compare with Apache Mesos scheduler by using difference job types in the list (short job, long job, MPI)
 \end{itemize}
 
-
+%%%%%%%%%% Scope %%%%%%%%%%%%
 \section{Scope}
 \begin{itemize}
   \item  This project focuses on the reduction of job failed. 
@@ -258,6 +257,7 @@ RAM & random access memory
 
 \newpage
 
+%%%%%%%%%% Tasks and Schedule %%%%%%%%%%%%
 \section{Tasks and Schedule}
 \begin{table}[!h]
   \caption{Semester 1’s Gantt chart}\label{tbl:gantt1}
@@ -354,6 +354,7 @@ RAM & random access memory
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Background Knowledge and Literature Review}
 
+%%%%%%%%%% Knowledge Background %%%%%%%%%%%%
 \section{Knowledge Background}
 \hspace{10mm}In 2009, Apache Mesos \cite{mesos} was a research project at the University of California in Berkeley.  Benjamin, et al. wanted to improve datacenter efficiency by allowing multiple applications to share a single computing cluster across the many servers that make up a modern datacenter.  So, multiple applications can share the processor, memory, and hard drive with any laptop or workstation.  In 2010, the Mesos project entered the Apache Incubator, an arm of the Apache Software Foundation, so this project can gain the full support of the ASF’s efforts.  In 2013, The Apache Mesos project graduated from the incubator and founded Mesosphere.  Mesosphere’s flagship product, the Datacenter Operating System (DCOS), commercializes the open-source project by providing a turnkey solution to enterprises looking to deploy applications and scale infrastructure as effortlessly as other companies using Mesos, such as Airbnb, Apple, and Netflix. 
 
@@ -363,8 +364,10 @@ RAM & random access memory
 
 \newpage
 
+%%%%%%%%%% Theoretical and Core Concepts %%%%%%%%%%%%
 \section{Theoretical and Core Concepts}
 
+%%% Tasks Failures Detection
 \subsection{Tasks Failures Detection}
 \hspace{10mm}Hadoop usually uses JobTracker to detect failures of the TaskTracker nodes.  It detects with heartbeat-based failure detection.  The TaskTracker will send heartbeat message to JobTracker and JobTracker will declare a TaskTracker as dead only when it does not receive heartbeat for a limited time.  It cannot quickly detect the failures and it may assign task to dead nodes.  This can increase the number of failure tasks in Hadoop. \cite{adaptiveScheduling}
 
@@ -380,6 +383,7 @@ RAM & random access memory
 
 \newpage
 
+%%% Container Technology
 \subsection{Container Technology}
 
 \begin{figure}[!h]\centering
@@ -394,14 +398,17 @@ RAM & random access memory
 
 \hspace{10mm}There is a lot of overhead on virtual machine.  In contrast, with container technology, the server runs a single operating system.  Each container can share this single operating system with other containers on server.  Containers require less resource of server with less overhead and more efficient than virtual machines. \cite{container}   Containers are set up to accomplish work in a multiple container architecture (container cluster).  They also enable a program to be broken down into smaller pieces, which are known as microservices.  So, the program can work on each of the containers separately.
 
+%%% Overview of machine learning
 \subsection{Overview of machine learning}
 \hspace{10mm}Machine learning is a branch of artificial intelligence (AI).  It is the machine’s ability to learn from data provided without human intervention and able to improve decision from experience.  Without human directed programming instructions, the machine accesses data, observes and finds data pattern.  The more data input the better data pattern learning and better decision making.\cite{ml}
 
+%%% AI - Artificial Neural network
 \subsection{AI - Artificial Neural network}
 \hspace{10mm}An artificial neural network (ANN) is a computational model imitates the natural human brain. The network consists of hundreds or thousands small neuron nodes. Those numerous neuron nodes communicate to each other in the web form. The neuron node is called processing unit. Each of processing unit is interconnected by nodes. Each processing unit comprises of input unit and output unit. Input unit receives various type of data format. It also has an internal weighting system. The neural network learns from the input and produce output result.
 
 \hspace{10mm}ANN use rules and guidelines to generate result/ output. The set of these learning rules is called backpropagation because it uses backward propagation of error to learn or improve the better result. ANN learns data patterns in training phase. It compares actual output with the desired output that is expected result in supervised phase. The difference between actual and expected result are worked backward to adjust the weight of its connections between the units. The purpose is to make the lowest possible error. \cite{ann}
 
+%%% Deep learning
 \subsection{Deep learning}
 \hspace{10mm}Nowadays, there are collections of vast unlabeled and unstructured data gathering from various sources that is difficult to analyses useful information by traditional programs in a linear way.  The hierarchical level of artificial neural network that work in web form to process data with a nonlinear approach is called Deep Learning.  The first layer of the neural network processes a raw data and pass output on to the next layer. The second layer processes first layer output plus additional information and pass output to next layer again. This continues across all levels of the neuron network to make information more meaningful information. \cite{deepLearning}
 
@@ -416,8 +423,10 @@ RAM & random access memory
 
 \newpage
 
+%%%%%%%%%% Technologies survey %%%%%%%%%%%%
 \section{Technologies survey}  
 
+%%% Apache Mesos
 \subsection{Apache Mesos}
 \hspace{10mm}Mesos consists of a master, agent daemons running on each cluster node, and Mesos frameworks that run task on these agents as shown in \textbf{Figure}~\ref{fig:MesosArc}. Architecture consist of three components: masters, slaves, and the frameworks that run on them. Mesos relies on Apache ZooKeeper, a distributed database used specifically for coordinating leader election within the cluster, and for leader detection by other Mesos masters, slaves, and frameworks. \cite{mesosInAction}
 
@@ -462,16 +471,19 @@ RAM & random access memory
   \end{tabular}
 \end{table}
 
+%%% Zookeeper
 \subsection{Zookeeper}
 \hspace{10mm}ZooKeeper is an open-source Apache project that provides a centralized service for providing configuration information, naming, synchronization, and group services over large clusters in distributed systems. The goal is to make these systems easier to manage with improved, more reliable propagation of changes. ZooKeeper provides an infrastructure for cross-node synchronization by maintaining status type information in memory on ZooKeeper servers. A ZooKeeper server keeps a copy of the state of the entire system and persists this information in local log files. Large Hadoop clusters are supported by multiple ZooKeeper servers, with a master server synchronizing the top-level servers. \cite{zookeeper}
 
 \newpage
 
+%%% Elasticsearch
 \subsection{Elasticsearch}
 \hspace{10mm}Elasticsearch is an open-source search and analytics engine built on Apache Lucene and developed in Java. Elasticsearch can be used to store and search all kinds of documents, analyze huge volumes of data in near real-time and give back answers in milliseconds, and supports multitenancy. It’s able to achieve fast search responses because it searches an index directly instead of searching the text. Related data is often stored in the same index, which consists of one or more primary shards, and zero or more replica shards. Once an index has been created, the number of primary shards cannot be changed. It uses a structure based on documents and comes with extensive REST APIs for storing and searching the data. 
 
 Elasticsearch is the component of the Elastic Stack, a set of open-source tools for storage, analysis, and visualization. The four components, Elasticsearch, Logstash, Kibana and Beats, are designed for use as an integrated solution. It is commonly referred to as the “ELK” stack.\cite{elasticsearch}
 
+%%% Chronos
 \subsection{Chronos}
 \hspace{10mm}Chronos is the Mesos Cron system. It handles time-based scheduling of jobs on a Mesos cluster. Chronos can be used to schedule commands or scripts. The Chronos feature set is easily and reliably to create standalone schedule-based jobs, as well as complex dependency-based jobs and pipelines, simply by specifying the schedule and resources that the job requires. This guarantees that time-based jobs are running on time while continuing to use datacenter resources as efficiently as possible. In \textbf{Figure}~\ref{fig:chronos}, it shows about the differences between running Cron jobs on a single machine and running them on a Mesos cluster.\cite{mesosInAction}
 
@@ -485,13 +497,14 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
 \newpage
 
+%%% Marathon
 \subsection{Marathon}
 \hspace{10mm}Marathon is a popular open source Mesos framework developed by Mesosphere. Marathon is used for deploying long-running services and applications, both in Linux cgroups and Docker containers. It can also be considered a private platform as a service (PaaS) on which to deploy applications. Marathon can specify the resources needed for each instance of an application and number of running instances. If a Mesos slave fails, or an instance of application crashes or exits, Marathon will automatically start a new instance to replace the failed one.
 
 \hspace{10mm}Marathon also allows users to specify dependencies on other services and applications during deployment, so an application instance can’t start before its database instance is up and passing health checks. Marathon contains a list of features that should satisfy the needs of most application management scenarios such as managing applications and groups of applications with dependencies and health checks, rolling application upgrades with specific capacity requirements, a powerful web interface and REST API, and high availability (using ZooKeeper for leader election and coordination).\cite{mesosInAction}
 
 \newpage
-
+%%% Spark
 \subsection{Spark}
 \hspace{10mm}Apache Spark, unified analytics engine for large-scale data processing, runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud. It can access diverse data sources. Spark perform task faster and more efficiently than Hadoop’s MapReduce, both in memory and on disk in many cases. Spark also provide API for several programming language, including Python, Scala and Java and support streaming workloads, interactive queries and machine learning libraries, in addition to MapReduce-like batch processing.  Spark can run locally. But that is useful only for development purpose, the number of CPU cores limits the number of executors. When setting up a production Spark cluster, there are two option.
 
@@ -506,7 +519,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 \end{figure}
 
 \newpage
-
+%%% Apache Kafka
 \subsection{Apache Kafka}
 \hspace{10mm}Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In \textbf{Figure}~\ref{fig:kafka}, producers are processes that send message to Kafka. Then, Kafka stores these messages in key-value. The data can be partitioned into different topic. And Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. And partitions are replicated to multiple servers.\cite{kafka}
 
@@ -518,6 +531,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
   [From: wikipedia.''Kafka''.[online].Available:\url{en.wikipedia.org/wiki/Apache_Kafka}.Accessed 25 November 2020]
 \end{figure}
 
+%%%%%%%%%% Related Research %%%%%%%%%%%%
 \section{Related Research}
 \hspace{10mm}The current data center management is a representative large-scale resource management and scheduling framework for clusters, liked the open-source project Mesos \cite{mesosInAction}. However, the data center environment are cluster systems and variety of submitted tasks, such as Hadoop clusters that support big data processing and Spark clusters that support in-memory computing. Mesos is a resource allocation method with no differential task type and scheduler does not consider the overall resource demand or workload, which leads to low average resource utilization and starve were a framework with a high demand on queue. Moreover, Mesos uses the DRF (Dominant Resource Fairness) algorithm for resource allocation. The DRF algorithm is the default scheduling algorithm of Mesos, the algorithm still has the disadvantage of not considering the machine performance and task type.
 
@@ -530,11 +544,13 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
 \hspace{10mm}In the previous chapter, we have explained a background knowledge that is important for better understanding of this project. Now it is the time to know an overall of our project i.e., how to design a meta-scheduler, functionality lists, and hypothesis that this project needs to answer.
 
+%%%%%%%%%% Project Functionality %%%%%%%%%%%%
 \section{Project Functionality}
 \hspace{10mm}This project is based on the hypothesis If the dominant share and demand awareness is known by meta-scheduler, the failure job in each framework will be reduced.
 
 \hspace{10mm}This project aims to design additional architecture (meta-scheduler) of Apache Mesos to prove the hypothesis above. The user submits the task directly to the meta-scheduler. When the meta-scheduler accepts tasks, it aggregates all tasks based on data from cluster master for a better fairness and utilization.
 
+%%% sqquence diagram
 \subsection{Sequence diagram} 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -545,6 +561,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
 \hspace{10mm}\textbf{Figure}~\ref{fig:SequenceDiagram} shows sequence diagram that user submits a job via command line or Application Programming Interface (API), and also specifies their framework, resources requirement, configuration script, and command to the meta-scheduler. The meta-scheduler, called NKR-scheduler, keeps track of incoming task from user and distributes each task to the queue. NKR-scheduler periodically fetches cluster and task information from Mesos Master to make a decision for task scheduling based on pre-defined policy (to be explained in Topic 3.2.2).  After NKR-scheduler finishes a decision-making process, it will dispatch task directly to corresponding framework.
 
+%%% Hypothesis Testing
 \subsection{Hypothesis Testing} 
 \hspace{10mm}Hypothesis Testing was set up in order to proof that NKR-scheduler can reduce task failure in each framework. This project separates into 2 experiments because it considers both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. This project uses three frameworks which are Marathon, Chronos, and Spark for the test.  The results were compared using 4 criteria for executing framework;
 \begin{enumerate}
@@ -603,8 +620,10 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
 \newpage
 
+%%%%%%%%%% System Architecture %%%%%%%%%%%%
 \section{System Architecture}
 
+%%%Architecture diagram
 \subsection{Architecture diagram}  
 
 \begin{figure}[!h]\centering
@@ -637,9 +656,11 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
   \end{tabular}
 \end{table}
 
+%%%Policy
 \subsection{Policy}  
 \hspace{10mm}This project designs two policies for the Meta-scheduler: 1) First Demand Policy (FDP), and 2) Success rate prediction. These policies can be extended further based on scheduling needs of users. 
 
+%%%%% 1.FDP
 \begin{enumerate}
   \item \textbf{First Demand Share Policy} We explain how FDP policy work by considering, a cluster with a total of 8 CPU and 64 GB of memory, where two frameworks (A and B) are shared completely shared resources. Each framework can have different number of tasks in its list. In example, framework a has 4 tasks each task consumes (2 CPU, 0.5GB memory) as a resource demand, and Framework B has 2 tasks with (0.5 CPU, 1 GB memory) and task still running on cluster. Framework A has 1 task (2CPU, 0.5 GB memory), and Framework B has 2 task (1CPU, 2 GB memory) the dominants share of framework A = max (2/8,0.5/64) = 25\% and Framework B = 12.5\%. In this case if we apply normal scheduling policy it will dispatch task from framework B as shows in \textbf{Figure}~\ref{fig:flowDiagram}.
 
@@ -682,7 +703,8 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
       \hline
     \end{tabular}
   \end{table}
-
+  
+%%%%% 2.Success rate prediction
   \item \textbf{Success rate prediction}There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, and etc. These metrics are able to identify anomalies (task failed, task killed, and etc.) by using the pipeline provided in \textbf{Topic} 3.3.2
   
 \hspace{10mm}Firstly, the log data need to be pre-processed by transforming and cleaning.  Secondly, the log data are clustered by K-means algorithm to separate the data that point into different metric groups or different machines.  The success rate prediction of given task will use the Random Forest. Random Forest is a set of interconnected decision tree that uses the majority voting to provide classification or regression result. It is robust to noise and able to provide highly accurate prediction. \cite{adaptiveScheduling} In each cluster, the model will be trained by active and terminated tasks information. 
@@ -700,6 +722,7 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
 \newpage
 
+%%%Database Schema
 \subsection{Database Schema}  
 
 \hspace{10mm}This project implement database as a Elasticsearch and keep log every minute. It allows storing, searching, and analyzing big volumes of data quickly and schema-less. It uses a default configuration to index the data. Database schema shows in \textbf{Figure}~\ref{fig:database} and describe each field in \textbf{Table}~\ref{tbl:fieldName}
@@ -747,7 +770,8 @@ Elasticsearch is the component of the Elastic Stack, a set of open-source tools 
 
 \newpage
 
-\section{Data management }
+%%%%%%%%%% Data management %%%%%%%%%%%%
+\section{Data management}
 
 \subsection{Which dataset is use for training?}
 \hspace{10mm}This project uses simulation to create a large dataset, and typical usage of Mesos cluster. This project divides types of framework into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage, but it will cover only 2 types of framework. This project implements a job simulator to submit 5 frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and this project will run application job according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
@@ -817,6 +841,7 @@ This project uses log data that mentioned before to build models by using the fo
 
 \hspace{10mm} In this chapter details about experimental setup that are the control variables in cluster for this experiment, results of simulated data and model for predict success rate. And also provide result from test run on each policy.
 
+%%%%%%%%%% Setup cluster, framework application, and parameter %%%%%%%%%%%%
 \section{Setup cluster, framework application, and parameter}
 \hspace{10mm}For the experiment setup, cluster had setup inside a cloud provider which called Amazon Web Services (AWS). This cluster consists of 3 nodes with 2 CPUs, 2.8 GB of memory, and 45 GB of disk for each node as shown in \textbf{Figure}~\ref{fig:resourcesCluster}. This cluster was setup with 3 widely known framework: Mesos, Spark Marathon, and Chronos. The tests were conducted by simulated data with randomly varied resources of each task based on task characteristics. 
 
@@ -865,6 +890,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
 
 \newpage
 
+%%%%%%%%%% Model for predict success rate %%%%%%%%%%%%
 \section{Model for predict success rate}
 \subsection{Clustering}  
 \hspace{10mm}The metric data was clustered by using k-means algorithm and used elbow method to find optimal k parameter which is number of data cluster in k-means. The result is shown in \textbf{Figure}~\ref{fig:elbow}. From the graph, k = 2 was chosen because at this point the distortion start to decrease in linear form. Therefore, the cluster metric data was separated into 2 clusters by k-means. After separated data into 2 clusters, it was expected that each cluster will be separated by resource utilization. But the result show that resource utilization cannot indicate the cluster they belong to as shown in \textbf{Figure}~\ref{fig:cluster}. 
@@ -897,6 +923,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
     \caption{Data clustering visualize by metrices that have low correlation}\label{fig:lowcorr}
 \end{figure}
 
+%%%%%%%%%% Random forest model %%%%%%%%%%%%
 \subsection{Random forest model}  
 \hspace{10mm}Random forest model was trained with these following parameters: 
 \begin{enumerate}
@@ -919,6 +946,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
   \end{tabular}
 \end{table}
 
+%%%%%%%%%% Policy 1: First Demand Share Policy (FDP) %%%%%%%%%%%%
 \section{Policy 1: First Demand Share Policy (FDP)}  
 \hspace{10mm}FDP used the same setup as mentioned in \textbf{Section 4.1} and also use the same submitted tasks in \textbf{Table}~\ref{tbl:SimulatedTaskConfiguration}. NKR have developed to receive tasks, and then considers based on the first policy.
 
@@ -933,6 +961,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
 \newline
 This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
+%%% po1 fail task
   \item Failed task
   \newline
 The result of finished and failed tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-1} and Figure \textbf{Figure}~\ref{fig:finfail1}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of Chronos failed tasks was increased, but the number of Marathon and Spark failed tasks was the same. In \textbf{Figure}~\ref{fig:fail1} shows that growth rate of failed tasks is upward when used this policy. The slope was increased from 0.258 to 0.265. So, this policy not only cannot reduce the number of failed tasks but also increase its failure rate.
@@ -955,6 +984,7 @@ The result of finished and failed tasks for each framework before and after appl
     \caption{Growth rate of fail task before and after using FDP}\label{fig:fail1}
 \end{figure}
 
+% po1 CPU and mem
 \newpage
   \item CPU and memory utilization
   \newline
@@ -984,6 +1014,7 @@ The result of finished and failed tasks for each framework before and after appl
     \caption{Memory utilization before and after using FDP}\label{fig:mem1}
 \end{figure}
 
+%%% po1 load
   \item System load
   \newline
   The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load1}. System load average before using FDP is 2.085 and after is 3.033. So, system is busier when applied this policy.
@@ -994,11 +1025,13 @@ The result of finished and failed tasks for each framework before and after appl
     \caption{System load before and after using FDP}\label{fig:load1}
 \end{figure}
 \end{enumerate}
+%%% po1 conclusion
 \textbf{Conclusion of First Demand Share Policy (FDP)}
 \newline
 \hspace{10mm}First Demand Policy cannot improve fairness of running tasks. The number of failed tasks is still the same in the most of frameworks. Only Chronos failed task is decrease by 3.75\%. Also, failure rate of failed tasks, resource utilization and system load are not improved. 
 
 
+%%%%%%%%%% Policy 2: Success Rate Prediction %%%%%%%%%%%%
 \section{Policy 2: Success Rate Prediction}  
 \hspace{10mm}The result of submitted task is shown in \textbf{Figure}~\ref{fig:task2}.
 
@@ -1013,9 +1046,10 @@ The result of finished and failed tasks for each framework before and after appl
 \newline
 This project also considered these other matrices after applying this policy:  
 \begin{enumerate}
+%%% po2 fail task
   \item Failed task
   \newline
-  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2} and Figure\textbf{Figure}~\ref{fig:finfail2}. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is downward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy can reduce the number of failed tasks in every framework and decrease its failure rate.
+  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2} and Figure\textbf{Figure}~\ref{fig:finfail2}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is downward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy can reduce the number of failed tasks in every framework and decrease its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
@@ -1035,6 +1069,7 @@ This project also considered these other matrices after applying this policy:
     \caption{Growth rate of fail task before and after using Success Rate Prediction}\label{fig:fail2}
 \end{figure}
 
+%%% po2 CPU and mem
   \item CPU and memory utilization
   \newline
   The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po2CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu2} and \textbf{Figure}~\ref{fig:mem2}. 
@@ -1064,6 +1099,7 @@ This project also considered these other matrices after applying this policy:
 \end{figure}
 
 \newpage
+%%% po2 load
   \item System load
   \newline
   The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load2}. System load average before using FDP is 2.058 and after is 1.188. So, system is less busy when applied this policy.
@@ -1074,11 +1110,13 @@ This project also considered these other matrices after applying this policy:
     \caption{System load before and after using Success Rate Prediction}\label{fig:load2}
 \end{figure}
 \end{enumerate}
+%%% po2 conclusion
 \textbf{Conclusion of Success Rate Prediction}
 \newline
 \hspace{10mm}Success Rate Prediction can improve fairness of running tasks by only 60\%. The number of failed tasks is reduced by 7.3\%. Also, failure rate of failed tasks, resource utilization and system load are improved.
 
 
+%%%%%%%%%% Policy 3: Hybrid Policy %%%%%%%%%%%%
 \section{Policy 3: Hybrid Policy}  
 \hspace{10mm}Hybrid Policy is combined FDP and Success Rate Prediction. The result of submitted task is shown in \textbf{Figure}~\ref{fig:task3}.
 
@@ -1093,20 +1131,21 @@ This project also considered these other matrices after applying this policy:
 \newline
 This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
+%%% po3 fail task
   \item Failed task
   \newline
-  The result of failed and finished tasks for each framework before and after applied both policies is shown in  \textbf{Figure}~\ref{fig:finfail0-3} and Figure \textbf{Figure}~\ref{fig:finfail3}. The number of failed tasks in every framework was decreased by this policy. In \textbf{Figure}~\ref{fig:fail3} shows that growth rate of failed tasks is upward when used this policy. The slope decreased from 0.258 to 0.06. So, this policy cannot reduce the number of failed tasks in every framework and its failure rate.
+  The result of failed and finished tasks for each framework before and after applied both policies is shown in  \textbf{Figure}~\ref{fig:finfail0-3} and Figure \textbf{Figure}~\ref{fig:finfail3}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased by this policy. In \textbf{Figure}~\ref{fig:fail3} shows that growth rate of failed tasks is upward when used this policy. The slope decreased from 0.258 to 0.06. So, this policy cannot reduce the number of failed tasks in every framework and its failure rate.
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
     \fbox{\includegraphics[width=14cm]{./image/chap4/finfail0.png}}
-    \caption{Number of failed and finish tasks before using Hybrid Policy}\label{fig:finfail0-3}
+    \caption{Number of finished and failed tasks before using Hybrid Policy}\label{fig:finfail0-3}
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
     \setlength{\fboxsep}{0cm}
     \fbox{\includegraphics[width=14cm]{./image/chap4/finfail2.png}}
-    \caption{Number of failed and finish tasks after using Hybrid Policy}\label{fig:finfail3}
+    \caption{Number of finished and failed tasks after using Hybrid Policy}\label{fig:finfail3}
 \end{figure}
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1115,6 +1154,7 @@ This project also considered these other matrices after applying this policy:
     \caption{Growth rate of fail task before and after using Hybrid Policy}\label{fig:fail3}
 \end{figure}
 
+%%%po3 CPU and mem
   \item CPU and memory utilization
   \newline
 The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po3CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in Figure \textbf{Figure}~\ref{fig:cpu3} and\textbf{Figure}~\ref{fig:mem3}.    
@@ -1143,6 +1183,7 @@ The averages of CPU and memory utilization of cluster framework before and after
     \caption{Memory utilization before and after using Hybrid Policy}\label{fig:mem3}
 \end{figure}
 
+%%%po3 load
   \item System load
   \newline
   The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load3}. System load average before using FDP is 2.058 and after is 0.579. So, system is less busy when applied this policy.
@@ -1153,18 +1194,20 @@ The averages of CPU and memory utilization of cluster framework before and after
     \caption{System load before and after using Success Rate Prediction}\label{fig:load3}
 \end{figure}
 \end{enumerate}
+
+%%% po3 conclusion
 \textbf{Conclusion of Hybrid Policy}
 \newline
-\hspace{10mm}Hybrid Policy can achieve the best results in terms of failure task and other metrics. Fairness of running tasks is improve by only 65.4\%. The number of failed tasks is reduced by 15.3\%. Also, failure rate of failed tasks, Resource utilization and system load are improved.
+\hspace{10mm}Hybrid Policy can achieve the best results in terms of failure task and other metrics. Fairness of running tasks is improve by only 65.4\%. The number of failed tasks is reduced by 15.3\%. Also, failure rate of failed tasks, resource utilization and system load are improved.
 
-
+%%%%%%%%%% Summary of Result %%%%%%%%%%%%
 \section{Summary of Result}  
 \hspace{10mm}The \textbf{Table}~\ref{tbl:chap4Sum} is shown result of all metrics from original apache Mesos, apache Mesos applied with First demand policy, apache Mesos applied with Success Rate Prediction and apache Mesos applied with Hybrid Policy.
   \begin{table}[!h]
   \caption{Summary of result.}\label{tbl:chap4Sum}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|}
    \hline
-   \textbf{Policy} & \textbf{Different average of tasks number} & \textbf{Number of failed tasks} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load} & \textbf{Running Time(min)} \\
+   \textbf{Policy} & \textbf{Different average of tasks number} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load} & \textbf{Running Time(min)} \\
    \hline
    \textbf{Original apache Mesos}& 0.3736 & 34& 4.814 & 3,315 &2.083& 24.26 \\
    \hline
@@ -1185,20 +1228,25 @@ The averages of CPU and memory utilization of cluster framework before and after
 
 \hspace{10mm}In this chapter, there are conclusion of this project, its result, discussion about the result and future work that could be done to improve this project.
 
+%%%%%%%%%% Conclusion %%%%%%%%%%%%
 \section{Conclusion}
-\hspace{10mm}There are many factors that can cause task failure. For example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model that predict the failure rate of task. The Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework.
+\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. And the last one, Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. 
 
+%%%%%%%%%% Result %%%%%%%%%%%%
 \section{Result}
-\hspace{10mm}As previous mentioned, this work has three policies attached to NKR-scheduler. The tasks were submitted to NKR-scheduler. After \textbf{First Demand Policy} is applied, the fairness in system is decreased by 16.6\% and the other metrics such as CPU utilization, memory utilization, failure rate, etc., were increased. The result did not improve performance as expected, and it was found that fairness has a correlation with failure task. Next experiment applies \textbf{Success Rate Prediction}. The failure rate was improved by nearly 7.3\% and the others metric were significantly improved. However, the failure rate did not meet the criteria as expected, and fairness did not improve. Therefore, the last policy called Hybrid Policy was developed. The result shown that the failure rate was improved by 15.3\% and the other metric were improved. 
+\hspace{10mm}As previous mentioned, this project has three policies attached to NKR-scheduler. The tasks were submitted to NKR-scheduler. After \textbf{First Demand Policy}is applied, the fairness in system is decreased by 16.6\% and the other metrics such as CPU utilization, memory utilization, failure rate, etc., were increased. The result did not improve performance as expected, and it was found that fairness has a correlation with failure task. Next experiment applies  \textbf{Success Rate Prediction}. The failure rate was improved by nearly 7.3\% and the others metric were significantly improved. However, the failure rate did not meet the criteria as expected, and fairness did not improve. Therefore, the last policy called Hybrid Policy was developed. The result shown that the failure rate was improved by 15.3\% and the other metric were improved.
 
+%%%%%%%%%% Discussion %%%%%%%%%%%%
 \section{Discussion}
-\hspace{10mm}Spark was configured with a relatively greedier scheduling policy compared to other frameworks. This type of scheduling can significantly affect the other frameworks to manage resources utilization. As a result, spark can run more tasks at the beginning and come with the highest number of success tasks compared to other frameworks, whereas other frameworks required much more time to complete and then it caused higher failure rate. After the First Demand Policy was applied, the success rate decreased along with the decreasing of fairness. After applying Success Rate Prediction which focuses on predicting the failure rate of incoming tasks, the result shown the improvement of success rate and fairness. If incoming tasks have high probability to be failed tasks, it will have more time to classify the type of tasks and modify the resources utilization. Therefore, both time and fairness are two factors that affect the failure rate. The Hybrid Policy was applied to prove that these two factors can improve the success rate of tasks. The result shown that success rate of tasks was improve more than expectation.
+\hspace{10mm}Spark was configured with a relatively greedier scheduling policy compared to the other frameworks. This type of scheduling can significantly affect the other frameworks to manage resources utilization. As a result, spark can run more tasks at the beginning and come with the highest number of success tasks compared to other frameworks, whereas other frameworks required much more time to complete and caused higher failure rate. After the First Demand Policy was applied, the success rate decreased along with the decreasing of fairness. After applying Success Rate Prediction which focuses on predicting the failure rate of incoming tasks, the result shown the improvement of success rate and fairness. If incoming tasks have high probability to be failed tasks, it will have more time to classify the type of tasks and modify the resources utilization. Therefore, both time and fairness are two factors that affect the failure rate. The Hybrid Policy was applied to prove that these two factors can improve the success rate of tasks. The result shown that success rate of tasks was improve more than expectation.
 
 \newpage
+%%%%%%%%%% Future work %%%%%%%%%%%%
 \section{Future work}
 \hspace{10mm}Finding the mathematics formula that can explain effect of time and fairness to failure rate of task is important key to improve this project.
 \hspace{10mm}It can be extended, and a new policy can be designed that check the available resources or use AI to check another metrics on each agent.
 \hspace{10mm}It will be useful to study the trade-offs between demand aware scheduling in a production environment, where hundreds of agents configured
+\hspace{10mm}To improve this project, finding the mathematics formula that can explain how time and fairness affect to failure rate of task is one thing that could do, and extended the project by building new policy that design to check the available resources or using AI to check another metrics on each agent is the other thing. And this project would be useful for those who want to study about the trade-offs between demand aware scheduling in a production environment, where hundreds of agents configured.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
