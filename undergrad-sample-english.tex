@@ -377,7 +377,7 @@ RAM & random access memory
   [From: Adaptive Failure-Aware Scheduling for Hadoop. (Mbarka Soualhia, Montreal, Quebec, Canada, 2018)]
 \end{figure}
 
-\hspace{10mm}For example, active TaskTracker send heartbeat messages to JobTracker every 3 seconds.  While JobTracker check the timeout condition every 200 seconds.  And there are network delays or messages losses, so some heartbeat may arrive late or loss.  The JobTracker may consider that TaskTracker as dead node even it is available as shown in \textbf{Figure}~\ref{fig:tasktracker}. that heartbeat message m2 does not arrive and the JobTracker consider this TaskTracker as dead.
+\hspace{10mm}For example, active TaskTracker send heartbeat messages to JobTracker every 3 seconds.  While JobTracker check the timeout condition every 200 seconds.  There are network delays or messages losses, so some heartbeat may arrive late or loss.  The JobTracker may consider that TaskTracker as dead node even it is available as shown in \textbf{Figure}~\ref{fig:tasktracker}. that heartbeat message m2 does not arrive and the JobTracker consider this TaskTracker as dead.
 
 \newpage
 
@@ -513,7 +513,7 @@ RAM & random access memory
 
 %%% Apache Kafka
 \subsection{Apache Kafka}
-\hspace{10mm}Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In \textbf{Figure}~\ref{fig:kafka}, producers are processes that send message to Kafka. Then, Kafka stores these messages in key-value. The data can be partitioned into different topic. And Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. And partitions are replicated to multiple servers.\cite{kafka}
+\hspace{10mm}Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In \textbf{Figure}~\ref{fig:kafka}, producers are processes that send message to Kafka. Then, Kafka stores these messages in key-value. The data can be partitioned into different topic. Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. Partitions are replicated to multiple servers.\cite{kafka}
 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -832,7 +832,7 @@ This project uses log data that mentioned before to build models by using the fo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Experimental setup, results}
 
-\hspace{10mm} In this chapter details about experimental setup that are the control variables in cluster for this experiment, results of simulated data and model for predict success rate. And also provide result from test run on each policy.
+\hspace{10mm} In this chapter details about experimental setup that are the control variables in cluster for this experiment, results of simulated data, model for predict success rate and result from test run on each policy.
 
 %%%%%%%%%% Setup cluster, framework application, and parameter %%%%%%%%%%%%
 \section{Setup cluster, framework application, and parameter}
@@ -862,7 +862,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
   \end{tabular}
 \end{table}
 
-\hspace{10mm}From \textbf{Table}~\ref{tbl:SimulatedTaskConfiguration} show the number of tasks running in system to perform simulated task. The details about simulated task in each framework, Firstly, Spark consists of tasks that are implemented in Python-based. There are 2 basic tasks that use to query database and perform left and right join. Secondly, Chronos and marathons have 3 types of tasks running in this system. All tasks consist of vary workload from minimum workload of text classification to maximum workload of training model and genetic algorithm. And the result of submitted task is shown in \textbf{Figure}~\ref{fig:task0}.
+\hspace{10mm}From \textbf{Table}~\ref{tbl:SimulatedTaskConfiguration} show the number of tasks running in system to perform simulated task. The details about simulated task in each framework, Firstly, Spark consists of tasks that are implemented in Python-based. There are 2 basic tasks that use to query database and perform left and right join. Secondly, Chronos and marathons have 3 types of tasks running in this system. All tasks consist of vary workload from minimum workload of text classification to maximum workload of training model and genetic algorithm. The result of submitted task is shown in \textbf{Figure}~\ref{fig:task0}.
 
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1030,7 +1030,7 @@ The result of finished and failed tasks for each framework before and after appl
     \caption{Number of tasks for each framework after using Success Rate Prediction}\label{fig:task2}
 \end{figure}
 
-\hspace{10mm}There is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task2}. Each framework had almost the same approximate number of tasks, which is 0.97. After calculating different average, the values are (0.7512,0.9725,0.7762), the result is 0.147. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 60\%. And compared to the first policy, the fairness increased by 67.18\%
+\hspace{10mm}There is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task2}. Each framework had almost the same approximate number of tasks, which is 0.97. After calculating different average, the values are (0.7512,0.9725,0.7762), the result is 0.147. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 60\% and the fairness increased by 67.18\%
 \newline
 This project also considered these other matrices after applying this policy:  
 \begin{enumerate}
@@ -1211,11 +1211,11 @@ The averages of CPU and memory utilization of cluster framework before and after
 
 %%%%%%%%%% Conclusion %%%%%%%%%%%%
 \section{Conclusion}
-\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. And the last one, Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the failure task by 15.3\%
+\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the failure task by 15.3\%
 
 %%%%%%%%%% Future work %%%%%%%%%%%%
 \section{Future work}
-\hspace{10mm}To improve this project, finding the mathematics formula that can explain how time and fairness affect to failure rate of task is one thing that could do, and extended the project by building new policy that design to check the available resources or using AI to check another metrics on each agent is the other thing. And this project would be useful for those who want to study about the trade-offs between demand aware scheduling in a production environment, where hundreds of agents configured.
+\hspace{10mm}To improve this project, finding the mathematics formula that can explain how time and fairness affect to failure rate of task is one thing that could do, and extended the project by building new policy that design to check the available resources or using AI to check another metrics on each agent is the other thing. It would be useful for those who want to study about the trade-offs between demand aware scheduling in a production environment, where hundreds of agents configured.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
