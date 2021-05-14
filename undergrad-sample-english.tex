@@ -358,7 +358,7 @@ RAM & random access memory
 \section{Knowledge Background}
 \hspace{10mm}In 2009, Apache Mesos \cite{mesos} was a research project at the University of California in Berkeley.  Benjamin, et al. wanted to improve datacenter efficiency by allowing multiple applications to share a single computing cluster across the many servers that make up a modern datacenter.  So, multiple applications can share the processor, memory, and hard drive with any laptop or workstation.  In 2010, the Mesos project entered the Apache Incubator, an arm of the Apache Software Foundation, so this project can gain the full support of the ASF’s efforts.  In 2013, The Apache Mesos project graduated from the incubator and founded Mesosphere.  Mesosphere’s flagship product, the Datacenter Operating System (DCOS), commercializes the open-source project by providing a turnkey solution to enterprises looking to deploy applications and scale infrastructure as effortlessly as other companies using Mesos, such as Airbnb, Apple, and Netflix. 
 
-\hspace{10mm}Meanwhile, most such operating systems only fairly divide and account for CPU cycles.  So, performance isolation is essential to operating systems shared by dependable services.  These dependable services require specifying and enforcing policies for all resources, and that current metrics for evaluating fair sharing are insufficient. In 2006, Aage Kvalnes et al. researched new policy specifications and metrics, and illustrated these with the help of a new operating system that supports holistic resource sharing.  \cite{policiesAndMetrics}
+\hspace{10mm}Most operating systems only fairly divide and account for CPU cycles.  So, performance isolation is essential to operating systems shared by dependable services.  These dependable services require specifying and enforcing policies for all resources, and that current metrics for evaluating fair sharing are insufficient. In 2006, Aage Kvalnes et al. researched new policy specifications and metrics, and illustrated these with the help of a new operating system that supports holistic resource sharing.  \cite{policiesAndMetrics}
 
 \hspace{10mm}In data centers and clouds, where applications could be co-scheduled on the same physical nodes, resource fairness needs to extend to multiple resource types such as memory, disk I/O, and network bandwidth.  Ali, et al. considered the problem of fair resource allocation in a system containing different resource types, where each user may have different demands for each resource and researched about a new generalization of max-min fairness to multiple resource types called Dominant Resource Fairness (DRF). \cite{dominantResourceFairness}
 
@@ -1143,7 +1143,7 @@ The averages of CPU and memory utilization of cluster framework before and after
    \hline
    \textbf{CPU} & 79.82\% & 45.73\% \\ 
    \hline
-   \textbf{Memory} & 39/46\% & 26.33\% \\ 
+   \textbf{Memory} & 39.46\% & 26.33\% \\ 
    \hline                     
   \end{tabular}
 \end{table}

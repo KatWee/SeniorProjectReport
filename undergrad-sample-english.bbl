@@ -1,0 +1,113 @@
+\begin{thebibliography}{10}
+
+\bibitem{container}
+Jonas DeMuro,  2019,
+\newblock ``What is container technology?,''
+  \url{www.techradar.com/news/what-is-container-technology},
+\newblock Accessed: 2020-08-30.
+
+\bibitem{docker}
+docker,  2020,
+\newblock ``What is a Container?,''
+  \url{www.docker.com/resources/what-container},
+\newblock Accessed: 2020-08-30.
+
+\bibitem{ml}
+expertsystem,  2020,
+\newblock ``What is Machine Learning? A definition,''
+  \url{https://expertsystem.com/machine-learning-definition/},
+\newblock Accessed: 2020-08-30.
+
+\bibitem{ann}
+Jake Frankenfield,  2020,
+\newblock ``Artificial Neural Network (ANN),''
+  \url{https://www.investopedia.com/terms/a/artificial-neural-networks-ann.asp},
+\newblock Accessed: 2020-09-05.
+
+\bibitem{dominantResourceFairness}
+Ali Ghodsi, Matei Zaharia, Benjamin Hindman, Andy Konwinski, Scott Shenker, and
+  Ion Stoica,
+\newblock  2011, ``Dominant resource fairness: fair allocation of multiple
+  resource types,''
+\newblock {\bf 8th USENIX conference on Networked systems design and
+  implementation}, pp. 323--336, march 2011.
+
+\bibitem{mesos}
+Ali Ghodsi, Matei Zaharia, Benjamin Hindman, Andy Konwinski, Scott Shenker, and
+  Ion Stoica,
+\newblock  2011, ``Mesos: A Platform for Fine-Grained Resource Sharing in the
+  Data Center,''
+\newblock {\bf 8th USENIX conference on Networked systems design and
+  implementation}, April 2011.
+
+\bibitem{zookeeper}
+IBM,  2020,
+\newblock ``Apache ZooKeeper,''
+  \url{https://www.ibm.com/analytics/hadoop/zookeeper},
+\newblock Accessed: 2020-09-05.
+
+\bibitem{mesosInAction}
+Roger Ignazio,
+\newblock  2016, {\bf Mesos in Action},
+\newblock Manning Publications Co.
+
+\bibitem{drf}
+Anton Kirillov,  2016,
+\newblock ``Resource Allocation in Mesos: Dominant Resource Fairness,''
+  \url{http://datastrophic.io/resource-allocation-in-mesos-dominant-resource-fairness-explained},
+\newblock Accessed: 2020-09-5.
+
+\bibitem{fishSwarm}
+Qing Liu, Tomohiro Odaka, Jousuke Kuroiwa, and Hisakazu Ogura,
+\newblock  2013, ``A Fair Scheduling Algorithm for Adaptive Heterogeneous
+  Resources in Data Centers,''
+\newblock {\bf IEICE}, pp. 872--885, April 2013.
+
+\bibitem{xdrf}
+Wenbin Liu, Ningjiang Chen, Hua Li, Yusi Tang, and Birui Liang,
+\newblock  2018, ``A Fair Scheduling Algorithm for Adaptive Heterogeneous
+  Resources in Data Centers,''
+\newblock {\bf the Tenth Asia-Pacific Symposium}, September 2018.
+
+\bibitem{deepLearning}
+Hargrave Marshall,  2019,
+\newblock ``Deep Learning,''
+  \url{https://www.investopedia.com/terms/d/deep-learning.asp},
+\newblock Accessed: 2020-09-03.
+
+\bibitem{elasticsearch}
+Abueg Ralf,  2020,
+\newblock ``Elasticsearch: What It Is, How It Works, And What It’s Used
+  For,'' \url{https://www.knowi.com/blog/what-is-elastic-search/},
+\newblock Accessed: 2020-11-24.
+
+\bibitem{tromino}
+Pankaj Saha, Angel Beltre, , and Madhusudhan Govindaraju,
+\newblock  2019, ``Tromino: Demand and DRF Aware Multi-Tenant Queue Manager for
+  Apache Mesos Cluster,''
+\newblock {\bf 2018 IEEE/ACM 11th International Conference on Utility and Cloud
+  Computing (UCC) 63-72}, May 2019.
+
+\bibitem{adaptiveScheduling}
+Mbarka Soualhia, Foutse Khomh, and Sofiène Tahar,
+\newblock  2018, ``Adaptive Failure-Aware Scheduling for Hadoop,''
+\newblock {\bf 2015 IEEE 34th International Performance Computing and
+  Communications Conference (IPCCC)}, February 2018.
+
+\bibitem{deepLearning2}
+TheMathWorks,  2020,
+\newblock ``What Is Deep Learning?,''
+  \url{https://www.mathworks.com/discovery/deep-learning.html},
+\newblock Accessed: 2020-09-03.
+
+\bibitem{policiesAndMetrics}
+Robbert van Renesse, Aage Kvalnes, Dmitrii Zagorodnov, and Dag Johansen,
+\newblock  2006, ``Policies and Metrics for Fair Resource Sharing,''
+\newblock {\bf University of Tromsø}, January 2006.
+
+\bibitem{kafka}
+Wikipedia,  2020,
+\newblock ``Apache Kafka,'' \url{https://en.wikipedia.org/wiki/Apache_Kafka},
+\newblock Accessed: 2020-11-25.
+
+\end{thebibliography}

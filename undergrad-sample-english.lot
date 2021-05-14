@@ -1,0 +1,24 @@
+\selectlanguage *{english}
+\addvspace {0em}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Semester 1’s Gantt chart}}{2}{table.1.1}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Semester 2’s Gantt chart}}{3}{table.1.2}%
+\addvspace {0em}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Example of running 2 frameworks.}}{8}{table.2.1}%
+\addvspace {0em}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Variable description.}}{14}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Variable description.}}{14}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Variable description.}}{14}{table.3.3}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Description of Architecture diagram.}}{15}{table.3.4}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Parameter Formula and Description.}}{17}{table.3.5}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Decision Matrix.}}{17}{table.3.6}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Field name and description.}}{19}{table.3.7}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Framework of Apache Mesos.}}{19}{table.3.8}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Application Data.}}{20}{table.3.9}%
+\addvspace {0em}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Simulated task configuration.}}{21}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Result from random forest model.}}{25}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Average of CPU and memory utilization before and after using FDP.}}{27}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Average of CPU and memory utilization before and after using FDP.}}{30}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Average of CPU and memory utilization before and after using both FDP and success rate prediction.}}{33}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Failure task and other metrics.}}{34}{table.4.6}%
+\addvspace {0em}
