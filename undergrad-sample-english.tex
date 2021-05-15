@@ -477,7 +477,7 @@ RAM & random access memory
 \subsection{Elasticsearch}
 \hspace{10mm}Elasticsearch is an open-source search and analytics engine built on Apache Lucene and developed in Java. Elasticsearch can be used to store and search all kinds of documents, analyze huge volumes of data in near real-time and give back answers in milliseconds, and supports multitenancy. It’s able to achieve fast search responses because it searches an index directly instead of searching the text. Related data is often stored in the same index, which consists of one or more primary shards, and zero or more replica shards. Once an index has been created, the number of primary shards cannot be changed. It uses a structure based on documents and comes with extensive REST APIs for storing and searching the data. 
 
-\hspace{10mm}Elasticsearch is the component of the Elastic Stack, a set of open-source tools for storage, analysis, and visualization. The four components, Elasticsearch, Logstash, Kibana and Beats, are designed for use as an integrated solution. It is commonly referred to as the “ELK” stack.\cite{elasticsearch}
+\hspace{10mm}Elasticsearch is the component of the Elastic Stack. Elastic Stack is a set of open-source tools for storage, analysis, and visualization. The four components are Elasticsearch, Logstash, Kibana and Beats. They are designed for use as an integrated solution. It is commonly referred to as the “ELK” stack.\cite{elasticsearch}
 
 %%% Chronos
 \subsection{Chronos}
@@ -487,7 +487,7 @@ RAM & random access memory
   \setlength{\fboxrule}{0mm} % can define this in the preamble
   \setlength{\fboxsep}{0cm}
   \fbox{\includegraphics[width=14cm]{./image/chronos.png}}
-  \caption{Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs.}\label{fig:chronos}
+  \caption{Mesos and Chronos provide a dynamic and fault-tolerant environment to run time-based jobs.}\label{fig:chronos}
   [From: Ignazio, R. Mesos in Action (Manning Publications Co., Shelter Island, NY, 2016).]
 \end{figure}
 
@@ -499,7 +499,7 @@ RAM & random access memory
 
 %%% Spark
 \subsection{Spark}
-\hspace{10mm}Apache Spark, unified analytics engine for large-scale data processing, runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud. It can access diverse data sources. Spark perform task faster and more efficiently than Hadoop’s MapReduce, both in memory and on disk in many cases. Spark also provide API for several programming language, including Python, Scala and Java and support streaming workloads, interactive queries and machine learning libraries, in addition to MapReduce-like batch processing.  Spark can run locally. But that is useful only for development purpose, the number of CPU cores limits the number of executors. When setting up a production Spark cluster, there are two option.
+\hspace{10mm}Apache Spark is unified analytics engine for large-scale data processing. It runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud. It can access diverse data sources. Spark perform task faster and more efficiently than Hadoop’s MapReduce, both in memory and on disk in many cases. Spark also provide API for several programming language, including Python, Scala, and Java and support streaming workloads, interactive queries and machine learning libraries, in addition to MapReduce-like batch processing.  Spark can run locally. But that is useful only for development purpose, the number of CPU cores limits the number of executors. When setting up a production Spark cluster, there are two option.
 
 \hspace{10mm}When setting up statically partitioned cluster on an Infrastructure as a Service (IaaS) provider. It will be wasting money due to cloud instances sitting idle. Find-grained resource sharing can help increase system’s utilization. For example, if there are two applications likes in \textbf{Figure}~\ref{fig:spark}, Spark and Jenkins that need to run on multiple servers. Each of these system atop a general-purpose cluster manager like Mesos that allows for this sort of fine-grained resource sharing. It can share compute resources and run multiple workloads on a single Mesos slave. This will lead to better resource utilization across many machines within a modern datacenter.\cite{mesosInAction}
 
@@ -513,7 +513,7 @@ RAM & random access memory
 
 %%% Apache Kafka
 \subsection{Apache Kafka}
-\hspace{10mm}Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In \textbf{Figure}~\ref{fig:kafka}, producers are processes that send message to Kafka. Then, Kafka stores these messages in key-value. The data can be partitioned into different topic. Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. Partitions are replicated to multiple servers.\cite{kafka}
+\hspace{10mm}Apache Kafka is an open-source stream-processing software platform. Apache Kafka is providing a unified, high-throughput, and low-latency platform for handling real-time data feeds. Kafka allows user to subscribe itself and publish data to any number of systems or real-time applications. In \textbf{Figure}~\ref{fig:kafka}, producers are processes that send message to Kafka. Kafka stores these messages in key-value. The data can be partitioned into different topic. Consumers are process that can read messages from partitions. Kafka runs on a cluster of one or more server, And the topics are distributed across the cluster nodes. Partitions are replicated to multiple servers.\cite{kafka}
 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -635,7 +635,7 @@ RAM & random access memory
     \hline
     \textbf{Client Receiver} & Interface for user to submit task to cluster.\\
     \hline
-    \textbf{Queue} & The list that stores task, and information about resources requirement in each framework that register into the Apache Mesos.\\
+    \textbf{Queue} & The list that stores task and information about resources requirement in each framework that register into the Apache Mesos.\\
     \hline
     \textbf{Scheduler} & The adaptive policy that configured by user and keeps track information about cluster from Apache Mesos.\\
     \hline
@@ -703,7 +703,7 @@ RAM & random access memory
   
 \hspace{10mm}Firstly, the log data need to be pre-processed by transforming and cleaning.  Secondly, the log data are clustered by K-means algorithm to separate the data that point into different metric groups or different machines.  The success rate prediction of given task will use the Random Forest. Random Forest is a set of interconnected decision tree that uses the majority voting to provide classification or regression result. It is robust to noise and able to provide highly accurate prediction. \cite{adaptiveScheduling} In each cluster, the model will be trained by active and terminated tasks information. 
 
-\hspace{10mm}In each cluster, data will be divided into 80\% training dataset and remaining 20\% testing dataset. The measure metric is accuracy, precision, recall and error. When users submit task, NKR-scheduler will request metric information from Mesos, allocate resource to run tasks, profile the task to data cluster and use that cluster model to predict success rates of their task shown in \textbf{Figure}~\ref{fig:flowDiagramPredict}.
+\hspace{10mm}In each cluster, data will be divided into 80\% training dataset and remaining 20\% testing dataset. The measure metric is accuracy, precision, recall ,and error. When users submit task, NKR-scheduler will request metric information from Mesos, allocate resource to run tasks, profile the task to data cluster and use that cluster model to predict success rates of their task shown in \textbf{Figure}~\ref{fig:flowDiagramPredict}.
 
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -767,7 +767,7 @@ RAM & random access memory
 \section{Data management}
 
 \subsection{Which dataset is use for training?}
-\hspace{10mm}This project uses simulation to create a large dataset, and typical usage of Mesos cluster. This project divides types of framework into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage, but it will cover only 2 types of framework. This project implements a job simulator to submit 5 frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and this project will run application job according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
+\hspace{10mm}The dataset is created by simulating frameworks that commonly use for Mesos cluster. The types of framework is devided into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage. it will cover only 2 types of framework. This project implements a job simulator to submit 5 frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and this project will run application job according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
 
 \begin{table}[!h]
   \caption{Framework of Apache Mesos.}\label{tbl:MesosFramework}
@@ -788,17 +788,17 @@ RAM & random access memory
     \hline
     \textbf{Framework} & \textbf{Application job}\\
     \hline
-    Chronos & Wordcount, Kmeans, Topk, InvertedIndex\\
+    Chronos & Wordcount, Kmeans, Topk, and InvertedIndex\\
     \hline
-    \multirow{2}{*}{Marathon} & Inline Shell Script, Docker based Application \\
+    \multirow{2}{*}{Marathon} & Inline Shell Script and Docker based Application \\
     & https://mesosphere.github.io/marathon/docs/application-basics.html\\
     \hline
-    \multirow{2}{*}{Spark} & Wordcount, Pi Estimation, Text search\\
+    \multirow{2}{*}{Spark} & Wordcount, Pi Estimation, and Text search\\
     & http://spark.apache.org/examples.html\\
     \hline
-    Dpark & Wordcount, Python program for data analysis\\
+    Dpark & Wordcount and Python program for data analysis\\
     \hline
-    Kafka & Broker, Topic, Producer, Consumer\\
+    Kafka & Broker, Topic, Producer, and Consumer\\
     \hline
   \end{tabular}
 \end{table}
@@ -825,14 +825,14 @@ This project uses log data that mentioned before to build models by using the fo
       \item \textbf{Normalization } Changing value of data into the same range, without distorting differences in the ranges of values.
       \item \textbf{Data selection with correlation } Finding correlation of each attribute and selecting high correlation to build a model.
     \end{itemize}
-  \item \textbf{Data Mining } There is plenty of data and we cannot see their relationship, so this project plugs them all into K-means clustering algorithm. It will find data patterns by grouping the data into clusters. We assumed that each cluster is pointed to be a subset of the same machines, task, or framework. Each data cluster will be further investigating. Then, the data will be input those same metrics into the machine learning model.
+  \item \textbf{Data Mining } There is plenty of data and we cannot see their relationship, so this project plugs them all into K-means clustering algorithm. It will find data patterns by grouping the data into clusters. We assumed that each cluster is pointed to be a subset of the same machines, task, or framework. Each data cluster will be further investigating. Trhe data will be input those same metrics into the machine learning model.
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Experiments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Experimental setup, results}
+\chapter{Experimental setup and results}
 
-\hspace{10mm} In this chapter details about experimental setup that are the control variables in cluster for this experiment, results of simulated data, model for predict success rate and result from test run on each policy.
+\hspace{10mm} In this chapter details about experimental setup that are the control variables in cluster for this experiment, results of simulated data, model for predict success rate ,and result from test run on each policy.
 
 %%%%%%%%%% Setup cluster, framework application, and parameter %%%%%%%%%%%%
 \section{Setup cluster, framework application, and parameter}
@@ -862,7 +862,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
   \end{tabular}
 \end{table}
 
-\hspace{10mm}From \textbf{Table}~\ref{tbl:SimulatedTaskConfiguration} show the number of tasks running in system to perform simulated task. The details about simulated task in each framework, Firstly, Spark consists of tasks that are implemented in Python-based. There are 2 basic tasks that use to query database and perform left and right join. Secondly, Chronos and marathons have 3 types of tasks running in this system. All tasks consist of vary workload from minimum workload of text classification to maximum workload of training model and genetic algorithm. The result of submitted task is shown in \textbf{Figure}~\ref{fig:task0}.
+\hspace{10mm}From \textbf{Table}~\ref{tbl:SimulatedTaskConfiguration} show the number of tasks running in system to perform simulated task. The details about simulated task in each framework. Firstly, Spark consists of tasks that are implemented in Python-based. There are 2 basic tasks that use to query database and perform left and right join. Secondly, Chronos and marathons have 3 types of tasks running in this system. All tasks consist of vary workload from minimum workload of text classification to maximum workload of training model and genetic algorithm. The result of submitted task is shown in \textbf{Figure}~\ref{fig:task0}.
 
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -950,7 +950,7 @@ Simulated data was created by running sample jobs in a cluster following in \tex
     \caption{Number of tasks for each framework after using FDP}\label{fig:task1}
 \end{figure}
 
-\hspace{10mm}From \textbf{Figure}~\ref{fig:task0}, Marathon and Chronos could not launch a fair number of tasks because Spark could hold on to offer more than the others. After comparing with normal Mesos, there is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task1}. Each framework had almost the same approximate number of tasks, which is 1 task. The values that use to compare between before and after applied first policy was following with these values (0.77914, 1.1656, 0.90797). After calculating the average of difference, the result is 0.257. So, this policy can improve fairness compared to the default policy 0.3736. The result is increased by 31.2\%
+\hspace{10mm}From \textbf{Figure}~\ref{fig:task0}, Marathon and Chronos could not launch a fair number of tasks because Spark could hold on to offer more than the others. After comparing with normal Mesos, there is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task1}. Each framework had almost the same approximate number of tasks, which is 1 task. The values that use to compare between before and after applied first policy was following with these values (0.77914, 1.1656, and 0.90797). After calculating the average of difference, the result is 0.257. So, this policy can improve fairness compared to the default policy 0.3736. The result is increased by 31.2\%
 \newline
 This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
@@ -983,9 +983,9 @@ The result of finished and failed tasks for each framework before and after appl
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
-   \textbf{CPU} & 79.82\% & 8.33\% \\ 
+   \textbf{CPU} & 80.23\% & 80.53\% \\ 
    \hline
-   \textbf{Memory} & 39.46\% & 44.4\% \\ 
+   \textbf{Memory} & 39.46\% & 44.40\% \\ 
    \hline                     
   \end{tabular}
 \end{table}
@@ -1030,7 +1030,7 @@ The result of finished and failed tasks for each framework before and after appl
     \caption{Number of tasks for each framework after using Success Rate Prediction}\label{fig:task2}
 \end{figure}
 
-\hspace{10mm}There is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task2}. Each framework had almost the same approximate number of tasks, which is 0.97. After calculating different average, the values are (0.7512,0.9725,0.7762), the result is 0.147. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 60\% and the fairness increased by 67.18\%
+\hspace{10mm}There is a little improvement in fairness as shown in \textbf{Figure}~\ref{fig:task2}. Each framework had almost the same approximate number of tasks, which is 0.97. After calculating different average, the values are (0.7512, 0.9725, and 0.7762), the result is 0.147. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 60\% and the fairness increased by 42.8\%
 \newline
 This project also considered these other matrices after applying this policy:  
 \begin{enumerate}
@@ -1063,9 +1063,9 @@ This project also considered these other matrices after applying this policy:
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
-   \textbf{CPU} & 79.82\% & 43.73\% \\ 
+   \textbf{CPU} & 80.23\% & 43.73\% \\ 
    \hline
-   \textbf{Memory} & 39.46\% & 22.05\% \\ 
+   \textbf{Memory} & 39.46\% & 22.04\% \\ 
    \hline                     
   \end{tabular}
 \end{table}
@@ -1096,7 +1096,7 @@ This project also considered these other matrices after applying this policy:
 %%% po2 conclusion
 \textbf{Conclusion of Success Rate Prediction}
 \newline
-\hspace{10mm}Success Rate Prediction can improve fairness of running tasks by only 60\%. The number of failed tasks is reduced by 7.3\%. Also, failure rate of failed tasks, resource utilization and system load are improved.
+\hspace{10mm}Success Rate Prediction can improve fairness of running tasks by only 60\%. The number of failed tasks is reduced by 7.3\%. Also, failure rate of failed tasks, resource utilization, and system load are improved.
 
 %%%%%%%%%% Policy 3: Hybrid Policy %%%%%%%%%%%%
 \section{Policy 3: Hybrid Policy}  
@@ -1109,7 +1109,7 @@ This project also considered these other matrices after applying this policy:
     \caption{Number of tasks for each framework after using Hybrid Policy}\label{fig:task3}
 \end{figure}
 
-\hspace{10mm}In \textbf{Figure}~\ref{fig:task3}, There is a little improvement in fairness as shown. Each framework had almost the same approximate number of tasks, which is 0.74. After calculated different average, the values are (0.823,0.7927,0.6298), the result is 0.1293. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 65.4\%, compared to the first policy, the fairness improved by 71.1\% and compared to the second policy, the fairness improved by 12\%
+\hspace{10mm}In \textbf{Figure}~\ref{fig:task3}, There is a little improvement in fairness as shown. Each framework had almost the same approximate number of tasks, which is 0.74. After calculated different average, the values are (0.823, 0.7927, and 0.6298), the result is 0.1293. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 65.40\%, compared to the first policy, the fairness improved by 49.68\% and compared to the second policy, the fairness improved by 12\%
 \newline
 This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
@@ -1141,7 +1141,7 @@ The averages of CPU and memory utilization of cluster framework before and after
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
-   \textbf{CPU} & 79.82\% & 45.73\% \\ 
+   \textbf{CPU} & 80.23\% & 45.73\% \\ 
    \hline
    \textbf{Memory} & 39.46\% & 26.33\% \\ 
    \hline                     
@@ -1184,11 +1184,11 @@ The averages of CPU and memory utilization of cluster framework before and after
   \caption{Failure task and other metrics.}\label{tbl:chap4Sum}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|}
    \hline
-   \textbf{Policy} & \textbf{Different average of tasks number} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load} & \textbf{Running Time(min)} \\
+   \textbf{Policy} & \textbf{Different average of tasks number} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
    \hline
-   \textbf{Original Apache Mesos}& 0.3736 & 34& 79.82\% & 39.46\% &2.083& 24.26 \\
+   \textbf{Original Apache Mesos}& 0.3736 & 34& 80.23\% & 39.46\% &2.083& 24.26 \\
    \hline
-   \textbf{First demand policy} & 0.257& 35& 80.33\% & 40.4\% & 3.067& 24.26\\
+   \textbf{First demand policy} & 0.257& 35& 80.75\% & 40.40\% & 3.067& 24.26\\
    \hline
    \textbf{Success Rate Prediction}& 0.147& 20& 43.73\% & 22.04\%& 1.188& 34.37 \\
    \hline
@@ -1211,7 +1211,7 @@ The averages of CPU and memory utilization of cluster framework before and after
 
 %%%%%%%%%% Conclusion %%%%%%%%%%%%
 \section{Conclusion}
-\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the failure task by 15.3\%
+\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction, and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the failure task by 15.3\%
 
 %%%%%%%%%% Future work %%%%%%%%%%%%
 \section{Future work}
