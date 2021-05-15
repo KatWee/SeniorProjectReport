@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  15 MAY 2021 00:28
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  16 MAY 2021 01:40
 entering extended mode
 **./undergrad-sample-english.tex
 (undergrad-sample-english.tex
@@ -1303,24 +1303,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ./image/SequenceDiagram.png Graphic file (type bmp)
 <./image/SequenceDiagram.png>
 
-Overfull \hbox (21.62408pt too wide) in paragraph at lines 550--551
+Overfull \hbox (21.62408pt too wide) in paragraph at lines 548--549
  [][] 
  []
 
 [13
 
 ]
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 568--577
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 566--575
 [][] 
  []
 
 
-Overfull \hbox (37.59334pt too wide) in paragraph at lines 583--594
+Overfull \hbox (37.59334pt too wide) in paragraph at lines 581--592
 [][] 
  []
 
 
-Overfull \hbox (37.59334pt too wide) in paragraph at lines 600--611
+Overfull \hbox (25.19998pt too wide) in paragraph at lines 599--608
 [][] 
  []
 
@@ -1328,12 +1328,12 @@ Overfull \hbox (37.59334pt too wide) in paragraph at lines 600--611
 File: ./image/ArchitectureDiagram.png Graphic file (type bmp)
 <./image/ArchitectureDiagram.png>
 
-Overfull \hbox (21.62408pt too wide) in paragraph at lines 624--625
+Overfull \hbox (21.62408pt too wide) in paragraph at lines 623--624
  [][] 
  []
 
 
-Overfull \hbox (25.19997pt too wide) in paragraph at lines 632--649
+Overfull \hbox (25.19997pt too wide) in paragraph at lines 631--648
 [][] 
  []
 
@@ -1345,7 +1345,7 @@ File: ./image/flowDiagram.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (6.6353pt too wide) in paragraph at lines 689--698
+Overfull \hbox (6.6353pt too wide) in paragraph at lines 688--697
 [][] 
  []
 
@@ -1356,7 +1356,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./image/flowDiagramPredict.png Graphic file (type bmp)
 <./image/flowDiagramPredict.png>
 
-Overfull \hbox (21.62408pt too wide) in paragraph at lines 711--712
+Overfull \hbox (21.62408pt too wide) in paragraph at lines 710--711
  [][] 
  []
 
@@ -1364,7 +1364,7 @@ Overfull \hbox (21.62408pt too wide) in paragraph at lines 711--712
 File: ./image/database.png Graphic file (type bmp)
 <./image/database.png>
 
-Overfull \hbox (6.62868pt too wide) in paragraph at lines 732--762
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 731--761
 [][] 
  []
 
@@ -1372,7 +1372,7 @@ Overfull \hbox (6.62868pt too wide) in paragraph at lines 732--762
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18]
-Overfull \hbox (6.62868pt too wide) in paragraph at lines 774--783
+Overfull \hbox (6.62868pt too wide) in paragraph at lines 773--782
 [][] 
  []
 
@@ -1387,7 +1387,7 @@ Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 833.
+(hyperref)                removed on input line 828.
 
 File: ./image/resourcesCluster.png Graphic file (type bmp)
 <./image/resourcesCluster.png>
@@ -1460,77 +1460,72 @@ File: ./image/chap4/po3-load.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
-[]|\TU/TimesNewRoman(0)/b/n/10 Different
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
-\TU/TimesNewRoman(0)/b/n/10 average
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
-\TU/TimesNewRoman(0)/b/n/10 of tasks
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 []|\TU/TimesNewRoman(0)/b/n/10 Number
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 \TU/TimesNewRoman(0)/b/n/10 of failed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 \TU/TimesNewRoman(0)/b/n/10 tasks
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 []|\TU/TimesNewRoman(0)/b/n/10 Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 \TU/TimesNewRoman(0)/b/n/10 of CPU
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 []|\TU/TimesNewRoman(0)/b/n/10 Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 \TU/TimesNewRoman(0)/b/n/10 of Mem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 \TU/TimesNewRoman(0)/b/n/10 ory
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
 []|\TU/TimesNewRoman(0)/b/n/10 Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(0)/b/n/10 of Sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(0)/b/n/10 tem load
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
 []|\TU/TimesNewRoman(0)/b/n/10 Running
  []
 
 
-Overfull \hbox (2.00157pt too wide) in paragraph at lines 1187--1188
+Overfull \hbox (2.00157pt too wide) in paragraph at lines 1182--1183
 \TU/TimesNewRoman(0)/b/n/10 Time(min)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1184--1184
 []|\TU/TimesNewRoman(0)/b/n/10 Original Apache
  []
 
@@ -1539,7 +1534,7 @@ Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 1204.
+(hyperref)                removed on input line 1199.
 
 (undergrad-sample-english.bbl [35
 
@@ -1623,12 +1618,12 @@ LaTeX Info: Redefining \ttfamily on input line 19.
 )
 Package rerunfilecheck Info: File `undergrad-sample-english.out' has not change
 d.
-(rerunfilecheck)             Checksum: D0F8243F5632928B96752011ACAA8835;3915.
+(rerunfilecheck)             Checksum: BF06A153EC09EB2F5A2F9D80A98F27BA;3921.
  ) 
 Here is how much of TeX's memory you used:
  17510 strings out of 412016
- 310755 string characters out of 2845349
- 722493 words of memory out of 3000000
+ 310751 string characters out of 2845349
+ 722515 words of memory out of 3000000
  36917 multiletter control sequences out of 15000+200000
  406103 words of font info for 76 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191

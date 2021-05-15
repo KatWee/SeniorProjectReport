@@ -174,7 +174,7 @@
 %%%%%%%%%%%%%%%%%%%%%%% Acknowledgments %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \preface
-\hspace{10mm}We could not complete this project without Asst. Prof. Rajchawit Sarochawikasit, an advisor of our project, for helping and supporting us to accomplish this project smoothly. He shared his time to guide us from the beginning about how to do a research and he also helped us check about the format and the grammar in the report writing. We learned a lot from him and very pleased to thank him. We also would like to thank our committee for suggesting and giving some comments for us, without their comments we would not find the other views to evaluate and improve this project. 
+\hspace{10mm}We could not complete this project without Asst. Prof. Rajchawit Sarochawikasit, an advisor of our project, for helping and supporting us to accomplish it smoothly. He shared his time to guide us from the beginning about how to do a research and he also helped us check about the format and the grammar in the report writing. We learned a lot from him and very pleased to thank him. We also would like to thank our committee for suggesting and giving some comments for us, without their comments we would not find the other views to evaluate and improve this project. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -534,13 +534,11 @@ RAM & random access memory
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Methodology and Design}
 
-\hspace{10mm}In the previous chapter, it explained background knowledge that is important for better understanding of this project. This chapter covers how this work designs an architecture of meta-scheduler, how config to simulating and setting, how a policy scheduling a task, how this work designs a model, and how to achieve the hypothesis that needs to answer.
+\hspace{10mm}This chapter covers how this work designs an architecture of meta-scheduler, how config to simulating and setting, how a policy scheduling a task, how this work designs a model, and how to achieve the hypothesis that needs to answer.
 
 %%%%%%%%%% Project Functionality %%%%%%%%%%%%
 \section{Project Functionality}
-\hspace{10mm}This project is based on the hypothesis If the dominant share and demand awareness is known by meta-scheduler, the failure job in each framework will be reduced.
-
-\hspace{10mm}This project aims to design additional architecture (meta-scheduler) of Apache Mesos to prove the hypothesis above. The user submits the task directly to the meta-scheduler. When the meta-scheduler accepts tasks, it aggregates all tasks based on data from cluster master for a better fairness and utilization.
+\hspace{10mm}This project is based on the hypothesis If the dominant share and demand awareness is known by meta-scheduler, the failure job in each framework will be reduced.It aims to design additional architecture (meta-scheduler) of Apache Mesos to prove the hypothesis above. The user submits the task directly to the meta-scheduler. When the meta-scheduler accepts tasks, it aggregates all tasks based on data from cluster master for a better fairness and utilization.
 
 %%% sqquence diagram
 \subsection{Sequence diagram} 
@@ -555,12 +553,12 @@ RAM & random access memory
 
 %%% Hypothesis Testing
 \subsection{Hypothesis Testing} 
-\hspace{10mm}Hypothesis Testing was set up in order to proof that NKR-scheduler can reduce task failure in each framework. This project separates into 2 experiments because it considers both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. This project uses three frameworks which are Marathon, Chronos, and Spark for the test.  The results were compared using 4 criteria for executing framework;
+\hspace{10mm}Hypothesis Testing was set up in order to proof that NKR-scheduler can reduce number of failed task and improve fairness in each framework by considering both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. There are three frameworks which are Marathon, Chronos, and Spark for the test. The results were compared using 4 criteria for executing framework;
 \begin{enumerate}
   \item \textbf{Normal Cluster Setting}: not using NKR-scheduler 
   \item \textbf{NKR-scheduler}: apply with Policy 1 (First Demand Share Policy)
-  \item \textbf{NKR-scheduler}: apply with Policy 2 (Success rate prediction)
-  \item \textbf{NKR-scheduler}: apply with both Policies
+  \item \textbf{NKR-scheduler}: apply with Policy 2 (Success Rate Prediction)
+  \item \textbf{NKR-scheduler}: apply with both Policies (Hybrid Policy)
 \end{enumerate}
 
 \begin{table}[!h]
@@ -576,42 +574,43 @@ RAM & random access memory
   \end{tabular}
 \end{table}
 
-\textbf{Experiment 1:} Framework with different arrival rate and all tasks are identical in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment1}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Both policies.
+\textbf{Experiment:} Frameworks with same arrival rate and all tasks are vary in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Hybrid Policy.
 
 \begin{table}[!h]
-  \caption{Variable description.}\label{tbl:Experiment1}
+  \caption{Variable description.}\label{tbl:Experiment}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
     \hline
     & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
     \hline
-    \textbf{Marathon} & 100 & 5\\
+    \textbf{Marathon} & 33 & 2\\
     \hline
-    \textbf{Chronos} & 100 & 2 \\
+    \textbf{Chronos} & 33 & 2 \\
     \hline
-    \textbf{Spark} & 100 & 1 \\
+    \textbf{Spark} & 33 & 2 \\
     \hline
 \end{tabular}
 \end{table}
 
-\textbf{Experiment 2:} Framework with different arrival rate and all tasks are vary in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment2}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Both policies.
-
-\begin{table}[!h]
-  \caption{Variable description.}\label{tbl:Experiment2}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
-    \hline
-    & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
-    \hline
-    \textbf{Marathon} & 100 & 5\\
-    \hline
-    \textbf{Chronos} & 100 & 2 \\
-    \hline
-    \textbf{Spark} & 100 & 1 \\
-    \hline
-  \end{tabular}
-\end{table}
+\hspace{10mm}The evaluation metrics are 
+\begin{enumerate}
+  \item \textbf{Improving of fariness:} It is evaluated by Average different task number of each framework. Lower different number is better fairness among frameworks.The formular to it is  shown in \textbf{Table}~\ref{tbl:formular}
+    \begin{table}[!h]
+    \caption{Parameter Formula and Description.}\label{tbl:formular}
+    \begin{tabular}{@{}|p{0.5\textwidth}|p{0.5\textwidth}|}
+      \hline
+      \textbf{Formula} & \textbf{Description} \\ 
+      \hline
+      \multirow{3}{*}{$fairness = \frac{|t_m-t_c|+|t_m-t_s|+|t_c-t_s|}{3} $} & $t_m$ average number of Marathon task\\ 
+      & $t_c$ average number of Chronos task\\ 
+      & $t_s$ average number of Spark task\\ 
+      \hline
+    \end{tabular}
+  \end{table}
+  \item \textbf{Reduction of failed tasks:} It is evaluated by number of failed tasks.
+  \item \textbf{Additional:} CPU and memory utilization, number of processes were waiting for the CPU (system load), and running time of each frameworks.
+\end{enumerate}
 
 \newpage
-
 %%%%%%%%%% System Architecture %%%%%%%%%%%%
 \section{System Architecture}
 
@@ -767,7 +766,7 @@ RAM & random access memory
 \section{Data management}
 
 \subsection{Which dataset is use for training?}
-\hspace{10mm}The dataset is created by simulating frameworks that commonly use for Mesos cluster. The types of framework is devided into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage. it will cover only 2 types of framework. This project implements a job simulator to submit 5 frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and this project will run application job according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
+\hspace{10mm}The dataset is created by simulating frameworks that commonly use for Mesos cluster. The types of framework is devided into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage. it will cover only 2 types of framework. This project implements a job simulator to submit frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and the application job will run according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
 
 \begin{table}[!h]
   \caption{Framework of Apache Mesos.}\label{tbl:MesosFramework}
@@ -777,7 +776,7 @@ RAM & random access memory
     \hline
     1. Application management and batch scheduling & Chronos & Marathon & \\
     \hline
-    2. Data processing & Spark & Dpark & Kafka\\
+    2. Data processing &  & & Spark\\
     \hline
   \end{tabular}
 \end{table}
@@ -795,10 +794,6 @@ RAM & random access memory
     \hline
     \multirow{2}{*}{Spark} & Wordcount, Pi Estimation, and Text search\\
     & http://spark.apache.org/examples.html\\
-    \hline
-    Dpark & Wordcount and Python program for data analysis\\
-    \hline
-    Kafka & Broker, Topic, Producer, and Consumer\\
     \hline
   \end{tabular}
 \end{table}
@@ -1184,7 +1179,7 @@ The averages of CPU and memory utilization of cluster framework before and after
   \caption{Failure task and other metrics.}\label{tbl:chap4Sum}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|}
    \hline
-   \textbf{Policy} & \textbf{Different average of tasks number} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
+   \textbf{Policy} & \textbf{Fairness} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
    \hline
    \textbf{Original Apache Mesos}& 0.3736 & 34& 80.23\% & 39.46\% &2.083& 24.26 \\
    \hline
@@ -1211,7 +1206,7 @@ The averages of CPU and memory utilization of cluster framework before and after
 
 %%%%%%%%%% Conclusion %%%%%%%%%%%%
 \section{Conclusion}
-\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction, and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks in this project are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the failure task by 15.3\%
+\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction, and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the failure task by 15.3\%
 
 %%%%%%%%%% Future work %%%%%%%%%%%%
 \section{Future work}

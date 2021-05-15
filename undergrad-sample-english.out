@@ -40,7 +40,7 @@
 \BOOKMARK [1][-]{section.3.3}{Data\040management}{chapter.3}% 40
 \BOOKMARK [2][-]{subsection.3.3.1}{Which\040dataset\040is\040use\040for\040training?}{section.3.3}% 41
 \BOOKMARK [2][-]{subsection.3.3.2}{Transform\040data\040pipeline}{section.3.3}% 42
-\BOOKMARK [0][-]{chapter.4}{Experimental\040setup,\040results}{}% 43
+\BOOKMARK [0][-]{chapter.4}{Experimental\040setup\040and\040results}{}% 43
 \BOOKMARK [1][-]{section.4.1}{Setup\040cluster,\040framework\040application,\040and\040parameter}{chapter.4}% 44
 \BOOKMARK [1][-]{section.4.2}{Model\040for\040predict\040success\040rate}{chapter.4}% 45
 \BOOKMARK [2][-]{subsection.4.2.1}{Clustering}{section.4.2}% 46

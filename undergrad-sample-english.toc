@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {3.3}Data management}{19}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Which dataset is use for training?}{19}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Transform data pipeline}{20}{subsection.3.3.2}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Experimental setup, results}}}{21}{chapter.4}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {{\numberline {4.}\hskip -0.5em Experimental setup and results}}}{21}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Setup cluster, framework application, and parameter}{21}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Model for predict success rate}{23}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Clustering}{23}{subsection.4.2.1}%
