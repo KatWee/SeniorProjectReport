@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  15 MAY 2021 23:41
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 21.1) (preloaded format=xelatex 2021.2.1)  16 MAY 2021 00:12
 entering extended mode
 **./undergrad-sample-english.tex
 (undergrad-sample-english.tex
@@ -1387,7 +1387,7 @@ Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 831.
+(hyperref)                removed on input line 827.
 
 File: ./image/resourcesCluster.png Graphic file (type bmp)
 <./image/resourcesCluster.png>
@@ -1460,87 +1460,87 @@ File: ./image/chap4/po3-load.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 []|\TU/TimesNewRoman(0)/b/n/10 Different
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 of tasks
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 []|\TU/TimesNewRoman(0)/b/n/10 Number
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 of failed
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 tasks
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 []|\TU/TimesNewRoman(0)/b/n/10 Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 of CPU
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 []|\TU/TimesNewRoman(0)/b/n/10 Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 of Mem-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 ory
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 []|\TU/TimesNewRoman(0)/b/n/10 Average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 of Sys-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1185
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
 \TU/TimesNewRoman(0)/b/n/10 tem load
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1185--1186
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1182
 []|\TU/TimesNewRoman(0)/b/n/10 Running
  []
 
 
-Overfull \hbox (2.00157pt too wide) in paragraph at lines 1185--1186
+Overfull \hbox (2.00157pt too wide) in paragraph at lines 1181--1182
 \TU/TimesNewRoman(0)/b/n/10 Time(min)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1187--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1183--1183
 []|\TU/TimesNewRoman(0)/b/n/10 Original Apache
  []
 
@@ -1549,7 +1549,7 @@ Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -5.0pt
-(hyperref)                removed on input line 1202.
+(hyperref)                removed on input line 1198.
 
 (undergrad-sample-english.bbl [35
 

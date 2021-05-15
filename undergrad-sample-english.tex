@@ -765,7 +765,7 @@ RAM & random access memory
 \section{Data management}
 
 \subsection{Which dataset is use for training?}
-\hspace{10mm}The dataset is created by simulating frameworks that commonly use for Mesos cluster. The types of framework is devided into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage. it will cover only 2 types of framework. This project implements a job simulator to submit 5 frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and the application job will run according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
+\hspace{10mm}The dataset is created by simulating frameworks that commonly use for Mesos cluster. The types of framework is devided into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage. it will cover only 2 types of framework. This project implements a job simulator to submit frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and the application job will run according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
 
 \begin{table}[!h]
   \caption{Framework of Apache Mesos.}\label{tbl:MesosFramework}
@@ -775,7 +775,7 @@ RAM & random access memory
     \hline
     1. Application management and batch scheduling & Chronos & Marathon & \\
     \hline
-    2. Data processing & Spark & Dpark & Kafka\\
+    2. Data processing &  & & Spark\\
     \hline
   \end{tabular}
 \end{table}
@@ -793,10 +793,6 @@ RAM & random access memory
     \hline
     \multirow{2}{*}{Spark} & Wordcount, Pi Estimation, and Text search\\
     & http://spark.apache.org/examples.html\\
-    \hline
-    Dpark & Wordcount and Python program for data analysis\\
-    \hline
-    Kafka & Broker, Topic, Producer, and Consumer\\
     \hline
   \end{tabular}
 \end{table}
