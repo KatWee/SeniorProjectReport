@@ -534,7 +534,7 @@ RAM & random access memory
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Methodology and Design}
 
-\hspace{10mm}In the previous chapter, it explained background knowledge that is important for better understanding of this project. This chapter covers how this work designs an architecture of meta-scheduler, how config to simulating and setting, how a policy scheduling a task, how this work designs a model, and how to achieve the hypothesis that needs to answer.
+\hspace{10mm}This chapter covers how this work designs an architecture of meta-scheduler, how config to simulating and setting, how a policy scheduling a task, how this work designs a model, and how to achieve the hypothesis that needs to answer.
 
 %%%%%%%%%% Project Functionality %%%%%%%%%%%%
 \section{Project Functionality}
@@ -553,12 +553,12 @@ RAM & random access memory
 
 %%% Hypothesis Testing
 \subsection{Hypothesis Testing} 
-\hspace{10mm}Hypothesis Testing was set up in order to proof that NKR-scheduler can reduce task failure in each framework. The experiments is separated into two parts because it considers both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. There are three frameworks which are Marathon, Chronos, and Spark for the test.  The results were compared using 4 criteria for executing framework;
+\hspace{10mm}Hypothesis Testing was set up in order to proof that NKR-scheduler can reduce number of failed task and improve fairness in each framework by considering both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. There are three frameworks which are Marathon, Chronos, and Spark for the test. The results were compared using 4 criteria for executing framework;
 \begin{enumerate}
   \item \textbf{Normal Cluster Setting}: not using NKR-scheduler 
   \item \textbf{NKR-scheduler}: apply with Policy 1 (First Demand Share Policy)
-  \item \textbf{NKR-scheduler}: apply with Policy 2 (Success rate prediction)
-  \item \textbf{NKR-scheduler}: apply with both Policies
+  \item \textbf{NKR-scheduler}: apply with Policy 2 (Success Rate Prediction)
+  \item \textbf{NKR-scheduler}: apply with both Policies (Hybrid Policy)
 \end{enumerate}
 
 \begin{table}[!h]
@@ -574,42 +574,43 @@ RAM & random access memory
   \end{tabular}
 \end{table}
 
-\textbf{Experiment 1:} Framework with different arrival rate and all tasks are identical in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment1}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Both policies.
+\textbf{Experiment:} Frameworks with same arrival rate and all tasks are vary in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Hybrid Policy.
 
 \begin{table}[!h]
-  \caption{Variable description.}\label{tbl:Experiment1}
+  \caption{Variable description.}\label{tbl:Experiment}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
     \hline
     & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
     \hline
-    \textbf{Marathon} & 100 & 5\\
+    \textbf{Marathon} & 33 & 2\\
     \hline
-    \textbf{Chronos} & 100 & 2 \\
+    \textbf{Chronos} & 33 & 2 \\
     \hline
-    \textbf{Spark} & 100 & 1 \\
+    \textbf{Spark} & 33 & 2 \\
     \hline
 \end{tabular}
 \end{table}
 
-\textbf{Experiment 2:} Framework with different arrival rate and all tasks are vary in a resource consumption as shown in \textbf{Table}~\ref{tbl:Experiment2}. This experiment will run 3 times consist of 1) First Demand Share Policy, 2) Success rate prediction, and 3) Both policies.
-
-\begin{table}[!h]
-  \caption{Variable description.}\label{tbl:Experiment2}
-  \begin{tabular}{@{}|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
-    \hline
-    & \textbf{Number os tasks} & \textbf{Arrival rate (sec)}\\
-    \hline
-    \textbf{Marathon} & 100 & 5\\
-    \hline
-    \textbf{Chronos} & 100 & 2 \\
-    \hline
-    \textbf{Spark} & 100 & 1 \\
-    \hline
-  \end{tabular}
-\end{table}
+\hspace{10mm}The evaluation metrics are 
+\begin{enumerate}
+  \item \textbf{Improving of fariness:} It is evaluated by Average different task number of each framework. Lower different number is better fairness among frameworks.The formular to it is  shown in \textbf{Table}~\ref{tbl:formular}
+    \begin{table}[!h]
+    \caption{Parameter Formula and Description.}\label{tbl:formular}
+    \begin{tabular}{@{}|p{0.5\textwidth}|p{0.5\textwidth}|}
+      \hline
+      \textbf{Formula} & \textbf{Description} \\ 
+      \hline
+      \multirow{3}{*}{$fairness = \frac{|t_m-t_c|+|t_m-t_s|+|t_c-t_s|}{3} $} & $t_m$ average number of Marathon task\\ 
+      & $t_c$ average number of Chronos task\\ 
+      & $t_s$ average number of Spark task\\ 
+      \hline
+    \end{tabular}
+  \end{table}
+  \item \textbf{Reduction of failed tasks:} It is evaluated by number of failed tasks.
+  \item \textbf{Additional:} CPU and memory utilization, number of processes were waiting for the CPU (system load), and running time of each frameworks.
+\end{enumerate}
 
 \newpage
-
 %%%%%%%%%% System Architecture %%%%%%%%%%%%
 \section{System Architecture}
 
@@ -1178,7 +1179,7 @@ The averages of CPU and memory utilization of cluster framework before and after
   \caption{Failure task and other metrics.}\label{tbl:chap4Sum}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|}
    \hline
-   \textbf{Policy} & \textbf{Different average of tasks number} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
+   \textbf{Policy} & \textbf{Fairness} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
    \hline
    \textbf{Original Apache Mesos}& 0.3736 & 34& 80.23\% & 39.46\% &2.083& 24.26 \\
    \hline
