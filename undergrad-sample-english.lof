@@ -5,7 +5,7 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Virtual machine vs Container}}{5}{figure.2.2}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Neural networks.}}{6}{figure.2.3}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The Mesos architecture consists of one or more masters, slaves, and frameworks.}}{7}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Mesos and Chronos provide a dynamic, fault-tolerant environment to run time-based jobs.}}{9}{figure.2.5}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Mesos and Chronos provide a dynamic and fault-tolerant environment to run time-based jobs.}}{9}{figure.2.5}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Mesos managing cluster resources for two applications.}}{10}{figure.2.6}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Overview of Kafka.}}{11}{figure.2.7}%
 \addvspace {0em}
