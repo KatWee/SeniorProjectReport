@@ -220,6 +220,7 @@ FDP & First Demand Policy \\
 GB & GigaByte \\ 
 I/O & Input and Output \\
 IaaS & Infrastructure as a Service  \\
+MPI & Message Passing Interface \\
 PaaS & Platform as a Service \\
 RAM & random access memory
 \end{tabular}
@@ -233,12 +234,12 @@ RAM & random access memory
 
 \chapter{Introduction}
 
-\hspace{10mm}In this chapter details about the problem of Apache Mesos and the approach that this project will slove this problem. The objectives and scopes clearify what this project be. Lastly, tasks and schedule show the overall processes to do it.
+\hspace{10mm}This chapter will discuss the problem of Apache Mesos, the approach using in this project to slove the problem, the objectives and scopes to clearify what it does, and lastly tasks and schedule showing the overall processes to do it.
 
 %%%%%%%%%% Problem Statement and Approach %%%%%%%%%%%%
 \section{Problem Statement and Approach} 
 
-\hspace{10mm}Nowadays, several different types of applications, which are short or long-lived jobs, container orchestration, or MPI jobs, are executed in clouds or large computer clusters. Multiple users can demand difference resources to execute their tasks. Apache Mesos is a Middleware for the data center by introducing an abstraction layer that provides an entire data centers as a single large server. Instead of focusing on one application that running on a specific server. Mesos resource-isolation allows multi-tenant — the ability to run multiple applications on a single machine. Default sharing for multiple resources in this multi-tenant environment is defined by the Dominant Resource Fairness (DRF). Mesos receives the resources based on their current usage, which are responsible for scheduling their tasks within the allocation. In multiple schedulers can cause the fairness-imbalance in a multi-user environment, liked a greedy scheduler. It consumes more than its share of resources. Running multiple small tasks is better than launching large ones in terms of time spent waiting for enough resources. 
+\hspace{10mm}At present several different types of applications are executed in clouds or large computer clusters. There are short or long time processing jobs, container orchestration, or MPI jobs. Multiple users can demand difference resources to execute their tasks. Apache Mesos is a Middleware for the data center. It introduce an abstraction layer that provides an entire data center as a single large server. Instead of focusing on one application that running on a specific server, Apache Mesos resource-isolation allows multi-tenant (the ability to run multiple applications on a single machine). Default sharing of multiple resources in this multi-tenant environment is defined by the Dominant Resource Fairness (DRF) policy. Mesos frameworks receive the resources based on their current usage, which are responsible for scheduling their tasks within the allocation. In case of multiple schedulers, they can cause the fairness-imbalance in a multi-user environment. For example greedy scheduler may consumes more than its share of resources. Running multiple small tasks is better than launching large tasks in terms of waiting time of resource allocation. 
 
 \hspace{10mm}Therefore, this project aims to improve the fairness of the scheduler by reducing the unfair waiting time due to higher resource demand in a pending task list and use log data to improve the whole cluster.
 
@@ -246,7 +247,7 @@ RAM & random access memory
 \section{Objectives}
 
 \begin{itemize}
-  \item  To study about job scheduling in Apache Mesos
+  \item  To study how job scheduling in Apache Mesos
   \item  To study how to develop an algorithm to improve performance of scheduler in large-scale clustered environments.
   \item  To evaluate result and compare with Apache Mesos scheduler by using difference job types in the list (short job, long job, MPI)
 \end{itemize}
@@ -257,7 +258,7 @@ RAM & random access memory
 \begin{itemize}
   \item  This project focuses on the reduction of job failed. 
   \item  Design and develop an add-on architecture on top of the Apache Mesos scheduler, to track and distribute the incoming tasks.
-  \item  What are the limitations of existing approaches? 
+  \item  Find the limitations of existing approaches.
 \end{itemize}
 
 \newpage
@@ -360,7 +361,7 @@ RAM & random access memory
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Background Knowledge and Literature Review}
 
-\hspace{10mm}This chapter details background knowldege about Apache Mesos. Theoretical and core concepts that important to understand this work sush as, Tasks Failures Detection, Container Technology, machine learning, AI, and Deep learning. Technologies that might be used, Apache Mesos, Zookeeperm Elasticsearch, Chronos, Marathon, Spark and Apache Kafka. The researchs that relate to this work to explain that what the other researcher do to solve the problem.
+\hspace{10mm}This chapter will discuss background knowldege about Apache Mesos. There are theoretical and core concepts that is important to understand this project such as, Tasks Failures Detection, Container Technology, Machine Learning, AI, and Deep Learning. The related technologies that might be used are Apache Mesos, Zookeeper, Elasticsearch, Chronos, Marathon, Spark, and Apache Kafka. Last topic is the related researchs that explain how other researchers solve this kind of problem.
 
 %%%%%%%%%% Knowledge Background %%%%%%%%%%%%
 \section{Knowledge Background}
@@ -407,9 +408,9 @@ RAM & random access memory
 \hspace{10mm}There is a lot of overhead on virtual machine.  In contrast, with container technology, the server runs a single operating system.  Each container can share this single operating system with other containers on server.  Containers require less resource of server with less overhead and more efficient than virtual machines. \cite{container}   Containers are set up to accomplish work in a multiple container architecture (container cluster).  They also enable a program to be broken down into smaller pieces, which are known as microservices.  So, the program can work on each of the containers separately.
 
 %%% Overview of machine learning
-\subsection{Overview of machine learning}
+\subsection{Overview of Machine Learning}
 
-\hspace{10mm}Machine learning is a branch of artificial intelligence (AI).  It is the machine’s ability to learn from data provided without human intervention and able to improve decision from experience.  Without human directed programming instructions, the machine accesses data, observes and finds data pattern.  The more data input the better data pattern learning and better decision making.\cite{ml}
+\hspace{10mm}Machine Learning is a branch of artificial intelligence (AI).  It is the machine’s ability to learn from data provided without human intervention and able to improve decision from experience.  Without human directed programming instructions, the machine accesses data, observes and finds data pattern. The more data input the better data pattern learning and better decision making.\cite{ml}
 
 %%% AI - Artificial Neural network
 \subsection{AI - Artificial Neural network}
@@ -419,7 +420,7 @@ RAM & random access memory
 \hspace{10mm}ANN use rules and guidelines to generate result/ output. The set of these learning rules is called backpropagation because it uses backward propagation of error to learn or improve the better result. ANN learns data patterns in training phase. It compares actual output with the desired output that is expected result in supervised phase. The difference between actual and expected result are worked backward to adjust the weight of its connections between the units. The purpose is to make the lowest possible error. \cite{ann}
 
 %%% Deep learning
-\subsection{Deep learning}
+\subsection{Deep Learning}
 
 \hspace{10mm}Nowadays, there are collections of vast unlabeled and unstructured data gathering from various sources that is difficult to analyses useful information by traditional programs in a linear way.  The hierarchical level of artificial neural network that work in web form to process data with a nonlinear approach is called Deep Learning.  The first layer of the neural network processes a raw data and pass output on to the next layer. The second layer processes first layer output plus additional information and pass output to next layer again. This continues across all levels of the neuron network to make information more meaningful information. \cite{deepLearning}
 
@@ -554,12 +555,12 @@ RAM & random access memory
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Methodology and Design}
 
-\hspace{10mm}This chapter show how NKR-scheduler works with Apache Mesos. The mothodology of experiment and evaluation metric to proof hypothesis. The details about how componets and policies are designed. Lastly, The details about the data sush as, how to get and keep the data and data pipline.
+\hspace{10mm}This chapter show how NKR-scheduler works with Apache Mesos. The NKR-scheduler consist of two policies, First Demand Policy and Success Rate Prediction. First Demand Policy consider both demands of each framework and dominant share from cluster to improve the fairness. Success Rate Prediction use log data to predict success rate of incoming task to reduce number of failed task. The hypothesis are proved by running three frameworks of Marathon, Chronos, and Spark with Normal Cluster Setting and NKR-scheduler. The evaluation metrics are fainess, number of failed task, CPU and memory utilization, system load, and running time.
 
 %%%%%%%%%% Project Functionality %%%%%%%%%%%%
 \section{Project Functionality}
 
-\hspace{10mm}This project is based on the hypothesis If the dominant share and demand awareness is known by meta-scheduler, the failure job in each framework will be reduced.It aims to design additional architecture (meta-scheduler) of Apache Mesos to prove the hypothesis above. The user submits the task directly to the meta-scheduler. When the meta-scheduler accepts tasks, it aggregates all tasks based on data from cluster master for a better fairness and utilization.
+\hspace{10mm}This project is based on the hypothesis If the dominant share and demand awareness is known by meta-scheduler, the failure job in each framework will be reduced. It aims to design additional architecture (meta-scheduler) of Apache Mesos to prove the hypothesis above. The user submits the task directly to the meta-scheduler. When the meta-scheduler accepts tasks, it aggregates all tasks based on data from cluster master for a better fairness and utilization.
 
 %%% sqquence diagram
 \subsection{Sequence diagram} 
@@ -576,7 +577,7 @@ RAM & random access memory
 %%% Hypothesis Testing
 \subsection{Hypothesis Testing} 
 
-\hspace{10mm}Hypothesis Testing was set up in order to proof that NKR-scheduler can reduce number of failed task and improve fairness in each framework by considering both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. There are three frameworks which are Marathon, Chronos, and Spark for the test. The results were compared using 4 criteria for executing framework;
+\hspace{10mm}Hypothesis Testing was set up in order to prove that NKR-scheduler can reduce number of failed task and improve fairness in each framework by considering both Dominant share and Demand awareness which describes more detail in \textbf{Table}~\ref{tbl:VariableDescription}. There are three frameworks which are Marathon, Chronos, and Spark for the test. The results were compared using four criteria for executing framework;
 
 \begin{enumerate}
   \item \textbf{Normal Cluster Setting}: not using NKR-scheduler 
@@ -726,7 +727,7 @@ RAM & random access memory
   
 \newpage
 %%%%% 2.Success rate prediction
-\item \textbf{Success rate prediction}There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, and etc. These metrics are able to identify anomalies (task failed, task killed, and etc.) by using the pipeline provided in \textbf{Topic} 3.3.2
+\item \textbf{Success rate prediction} There are many metrics in this policy that affect system or task performance, such as CPU utilization, free memory, storage in use, message send information, message queue length, average execution time, and etc. These metrics are able to identify anomalies (task failed, task killed, and etc.) by using the pipeline provided in \textbf{Topic} 3.3.2
   
 \hspace{10mm}Firstly, the log data need to be pre-processed by transforming and cleaning.  Secondly, the log data are clustered by K-means algorithm to separate the data that point into different metric groups or different machines.  The success rate prediction of given task will use the Random Forest. Random Forest is a set of interconnected decision tree that uses the majority voting to provide classification or regression result. It is robust to noise and able to provide highly accurate prediction. \cite{adaptiveScheduling} In each cluster, the model will be trained by active and terminated tasks information. 
 
@@ -793,7 +794,7 @@ RAM & random access memory
 %%%%%%%%%% Data management %%%%%%%%%%%%
 \section{Data management}
 
-\subsection{Which dataset is use for training?}
+\subsection{Training dataset}
 
 \hspace{10mm}The dataset is created by simulating frameworks that commonly use for Mesos cluster. The types of framework is devided into 3 types 1) Application management and batch scheduling, 2) Data processing, and 3) Distributed databases and storage. it will cover only 2 types of framework. This project implements a job simulator to submit frameworks that work well with Apache Mesos and used by many organizations. Nowadays, the simulator simulates based on following example typically job, shown in \textbf{Table}~\ref{tbl:MesosFramework} and the application job will run according to \textbf{Table}~\ref{tbl:ApplicationData} for one week, and the minimum task for a day is 50 for each framework.
 
@@ -829,7 +830,7 @@ RAM & random access memory
 
 \newpage
 
-\subsection{Transform data pipeline}
+\subsection{Data pipeline}
 
 \begin{figure}[!h]\centering
   \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -856,7 +857,7 @@ This project uses log data that mentioned before to build models by using the fo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Experimental setup and results}
 
-\hspace{10mm}This chapter details about experimental setup that are the control variables for this experiment. The result from clustering data and result from random forest model to predict success rate of each task. The result from each policy to show fairness, number of failed task, CPU and memory utilization, and system load to show if each policy improve the performance.
+\hspace{10mm}This chapter will discuss experimental environment setup for this experiment. The result from clustering data and result from random forest model to predict success rate of incoming task. The result from each policy to show fairness, number of failed task, CPU and memory utilization, and system load to show if each policy improve the performance.
 
 %%%%%%%%%% Setup cluster, framework application, and parameter %%%%%%%%%%%%
 \section{Setup cluster, framework application, and parameter}
@@ -1277,7 +1278,7 @@ The averages of CPU and memory utilization of cluster framework before and after
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusions}
 
-\hspace{10mm}This chapter, there are results from test run without NKR-scheduler and with each policy. Discussion to explain the result. There are conclusion the overall of this work to summarize what it do and if it can achieve the goal. Lastly, The future work that could be done to improve this project.
+\hspace{10mm}This chapter shows the results and discussion from test run without NKR-scheduler and with each policy. There are the improvement step to imporve fairness and reduce number of failed task. However, there is more studies needed to understand the mathematics model underlie each policy.
 
 %%%%%%%%%% Result and Discussion %%%%%%%%%%%%
 \section{Result and Discussion}
@@ -1285,7 +1286,7 @@ The averages of CPU and memory utilization of cluster framework before and after
 
 %%%%%%%%%% Conclusion %%%%%%%%%%%%
 \section{Conclusion}
-\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction, and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the failure task by 15.3\%
+\hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction, and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy improved the number of failed task by 15.3\%
 
 %%%%%%%%%% Future work %%%%%%%%%%%%
 \section{Future work}
