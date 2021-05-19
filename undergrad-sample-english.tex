@@ -619,7 +619,7 @@ RAM & random access memory
 \hspace{10mm}The evaluation metrics are 
 
 \begin{enumerate}
-  \item \textbf{Improving of fairness:}It is evaluated by averaging different task number of each framework. The lower different number is the better fairness among frameworks. The formular to it is shown in \textbf{Table}~\ref{tbl:formular}
+  \item \textbf{Improving of fairness:} It is evaluated by averaging different task number of each framework. The lower different number is the better fairness among frameworks. The formular to it is shown in \textbf{Table}~\ref{tbl:formular}
   
     \begin{table}[!h]
     \caption{Parameter Formula and Description.}\label{tbl:formular}
@@ -992,7 +992,6 @@ This project also considered these other matrices after applying this policy:
 
 %%% po1 fail task
   \item \textbf{Failed task}
-  \newline
 
 \hspace{10mm}The result of finished and failed tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-1}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of Chronos failed tasks was increased, but the number of Marathon and Spark failed tasks was the same. In \textbf{Figure}~\ref{fig:fail1} shows that growth rate of failed tasks is upward when used this policy. The slope was increased from 0.258 to 0.265. So, this policy not only cannot reduce the number of failed tasks but also increase its failure rate.
 
@@ -1014,9 +1013,8 @@ This project also considered these other matrices after applying this policy:
 % po1 CPU and mem
 \newpage
   \item \textbf{CPU and memory utilization}
-  \newline
-  
-  The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po1CPUMem}. From the table, both CPU and memory utilization average were increased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu1} and \textbf{Figure}~\ref{fig:mem1}. 
+
+\hspace{10mm}The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po1CPUMem}. From the table, both CPU and memory utilization average were increased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu1} and \textbf{Figure}~\ref{fig:mem1}. 
   
   \begin{table}[!h]
   \caption{Average of CPU and memory utilization before and after using FDP.}\label{tbl:po1CPUMem}
@@ -1047,9 +1045,8 @@ This project also considered these other matrices after applying this policy:
 
 %%% po1 load
   \item \textbf{System load}
-  \newline
   
-  The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load1}. System load average before using FDP is 2.085 and after is 3.033. So, system is busier when applied this policy.
+\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load1}. System load average before using FDP is 2.085 and after is 3.033. So, system is busier when applied this policy.
   
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1086,9 +1083,8 @@ This project also considered these other matrices after applying this policy:
 
 %%% po2 fail task
   \item \textbf{Failed task}
-  \newline
   
-  The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2}.The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is downward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy can reduce the number of failed tasks in every framework and decrease its failure rate.
+\hspace{10mm}The result of failed and finished tasks for each framework before and after applied this policy is shown in \textbf{Figure}~\ref{fig:finfail0-2}.The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased. In \textbf{Figure}~\ref{fig:fail2} shows that growth rate of failed tasks is downward when used this policy. The slope was decreased from 0.258 to 0.152. So, this policy can reduce the number of failed tasks in every framework and decrease its failure rate.
   
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1108,9 +1104,8 @@ This project also considered these other matrices after applying this policy:
 %%% po2 CPU and mem
 \newpage
   \item \textbf{CPU and memory utilization}
-  \newline
-  
-  The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po2CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu2} and \textbf{Figure}~\ref{fig:mem2}. 
+
+\hspace{10mm}The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po2CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu2} and \textbf{Figure}~\ref{fig:mem2}. 
   
   \begin{table}[!h]
   \caption{Average of CPU and memory utilization before and after using FDP.}\label{tbl:po2CPUMem}
@@ -1139,11 +1134,11 @@ This project also considered these other matrices after applying this policy:
     \caption{Memory utilization before and after using Success Rate Prediction}\label{fig:mem2}
 \end{figure}
 
+\newpage
 %%% po2 load
   \item \textbf{System load}
-  \newline
   
-  The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load2}. System load average before using FDP is 2.058 and after is 1.188. So, system is less busy when applied this policy.
+\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load2}. System load average before using FDP is 2.058 and after is 1.188. So, system is less busy when applied this policy.
   
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1160,9 +1155,10 @@ This project also considered these other matrices after applying this policy:
 \hspace{10mm}Success Rate Prediction can improve fairness of running tasks by only 60.65\%. The number of failed tasks is decreased by 7.3\%. Also, failure rate of failed tasks, resource utilization, and system load are improved.
 
 %%%%%%%%%% Policy 3: Hybrid Policy %%%%%%%%%%%%
-\section{Policy 3: Hybrid Policy}  
+\section{Policy 3: Hybrid Policy}
 
-\hspace{10mm}Hybrid Policy is combined FDP and Success Rate Prediction. The result of submitted task is shown in \textbf{Figure}~\ref{fig:task3}.
+\hspace{10mm}Hybrid Policy is combined FDP and Success Rate Prediction. The result of submitted task is shown in \textbf{Figure}~\ref{fig:task3}. In \textbf{Figure}~\ref{fig:task3}, There is a little improvement in fairness as shown. Each framework had almost the same approximate number of tasks, which is 0.74. After calculated different average, the values are (0.823, 0.7927, and 0.6298), the result is 0.1293. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 65.40\%, compared to the first policy, the fairness improved by 49.68\% and compared to the second policy, the fairness improved by 12\%
+\newpage
 
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1171,17 +1167,13 @@ This project also considered these other matrices after applying this policy:
     \caption{Number of tasks for each framework after using Hybrid Policy}\label{fig:task3}
 \end{figure}
 
-\hspace{10mm}In \textbf{Figure}~\ref{fig:task3}, There is a little improvement in fairness as shown. Each framework had almost the same approximate number of tasks, which is 0.74. After calculated different average, the values are (0.823, 0.7927, and 0.6298), the result is 0.1293. So, this policy can improve fairness compared to the default policy 0.3736. Then it comes to the result of fairness improvement by 65.40\%, compared to the first policy, the fairness improved by 49.68\% and compared to the second policy, the fairness improved by 12\%
-\newline
-
 This project also considered these other matrices after applying this policy: 
 \begin{enumerate}
 
 %%% po3 fail task
   \item \textbf{Failed task}
-  \newline
   
-  The result of failed and finished tasks for each framework before and after applied both policies is shown in  \textbf{Figure}~\ref{fig:finfail0-3}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased by this policy. In \textbf{Figure}~\ref{fig:fail3} shows that growth rate of failed tasks is upward when used this policy. The slope decreased from 0.258 to 0.06. So, this policy cannot reduce the number of failed tasks in every framework and its failure rate.
+\hspace{10mm}The result of failed and finished tasks for each framework before and after applied both policies is shown in  \textbf{Figure}~\ref{fig:finfail0-3}. The orange color shows percent of finished tasks and the blue one shows percent of failed tasks. The number of failed tasks in every framework was decreased by this policy. In \textbf{Figure}~\ref{fig:fail3} shows that growth rate of failed tasks is upward when used this policy. The slope decreased from 0.258 to 0.06. So, this policy cannot reduce the number of failed tasks in every framework and its failure rate.
   
   \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1198,11 +1190,11 @@ This project also considered these other matrices after applying this policy:
     \caption{Growth rate of fail task before and after using Hybrid Policy}\label{fig:fail3}
 \end{figure}
 
+\newpage
 %%%po3 CPU and mem
   \item \textbf{CPU and memory utilization}
-  \newline
   
-The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po3CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in Figure \textbf{Figure}~\ref{fig:cpu3} and\textbf{Figure}~\ref{fig:mem3}.    
+\hspace{10mm}The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po3CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in Figure \textbf{Figure}~\ref{fig:cpu3} and\textbf{Figure}~\ref{fig:mem3}.    
 
   \begin{table}[!h]
   \caption{Average of CPU and memory utilization before and after using both FDP and success rate prediction.}\label{tbl:po3CPUMem}
@@ -1231,11 +1223,11 @@ The averages of CPU and memory utilization of cluster framework before and after
     \caption{Memory utilization before and after using Hybrid Policy}\label{fig:mem3}
 \end{figure}
 
+\newpage
 %%%po3 load
   \item \textbf{System load}
-  \newline
   
-  The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load3}. System load average before using FDP is 2.058 and after is 0.579. So, system is less busy when applied this policy.
+\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load3}. System load average before using FDP is 2.058 and after is 0.579. So, system is less busy when applied this policy.
   
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1245,6 +1237,7 @@ The averages of CPU and memory utilization of cluster framework before and after
 \end{figure}
 \end{enumerate}
 
+\newpage
 %%% po3 conclusion
 \textbf{Conclusion of Hybrid Policy}
 \newline
