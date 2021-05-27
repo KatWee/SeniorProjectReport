@@ -1022,9 +1022,9 @@ This project also considered these other matrices after applying this policy:
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
-   \textbf{CPU} & 80.23\% & 80.53\% \\ 
+   \textbf{CPU} & 78.31\% & 77.30\% \\ 
    \hline
-   \textbf{Memory} & 39.46\% & 44.40\% \\ 
+   \textbf{Memory} & 37.83\% & 40.43\% \\ 
    \hline                     
   \end{tabular}
 \end{table}
@@ -1046,7 +1046,7 @@ This project also considered these other matrices after applying this policy:
 %%% po1 load
   \item \textbf{System load}
   
-\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load1}. System load average before using FDP is 2.085 and after is 3.033. So, system is busier when applied this policy.
+\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load1}. System load average before using FDP is 2.033 and after is 2.781. So, system is busier when applied this policy.
   
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1108,14 +1108,14 @@ This project also considered these other matrices after applying this policy:
 \hspace{10mm}The averages of CPU and memory utilization of cluster framework before and after used this policy is shown in \textbf{Table}~\ref{tbl:po2CPUMem}. From the table, both CPU and memory utilization average were decreased after used this policy. The amounts of CPU and memory utilization before and after used this policy in each time is shown in \textbf{Figure}~\ref{fig:cpu2} and \textbf{Figure}~\ref{fig:mem2}. 
   
   \begin{table}[!h]
-  \caption{Average of CPU and memory utilization before and after using FDP.}\label{tbl:po2CPUMem}
+  \caption{Average of CPU and memory utilization before and after using Success Rate Prediction.}\label{tbl:po2CPUMem}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.35\textwidth}|p{0.35\textwidth}|}
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
-   \textbf{CPU} & 80.23\% & 43.73\% \\ 
+   \textbf{CPU} & 78.31\% & 41.67\% \\ 
    \hline
-   \textbf{Memory} & 39.46\% & 22.04\% \\ 
+   \textbf{Memory} & 37.93\% & 23.32\% \\ 
    \hline                     
   \end{tabular}
 \end{table}
@@ -1138,7 +1138,7 @@ This project also considered these other matrices after applying this policy:
 %%% po2 load
   \item \textbf{System load}
   
-\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load2}. System load average before using FDP is 2.058 and after is 1.188. So, system is less busy when applied this policy.
+\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load2}. System load average before using Success Rate Prediction is 2.033 and after is 1.169. So, system is less busy when applied this policy.
   
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1202,9 +1202,9 @@ This project also considered these other matrices after applying this policy:
    \hline
    \textbf{} & \textbf{Before} & \textbf{After} \\ 
    \hline
-   \textbf{CPU} & 80.23\% & 45.73\% \\ 
+   \textbf{CPU} & 78.31\% & 39.12\% \\ 
    \hline
-   \textbf{Memory} & 39.46\% & 26.33\% \\ 
+   \textbf{Memory} & 37.93\% & 24.21\% \\ 
    \hline                     
   \end{tabular}
 \end{table}
@@ -1227,7 +1227,7 @@ This project also considered these other matrices after applying this policy:
 %%%po3 load
   \item \textbf{System load}
   
-\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load3}. System load average before using FDP is 2.058 and after is 0.579. So, system is less busy when applied this policy.
+\hspace{10mm}The result of system load in this cluster before and after used this policy is shown in \textbf{Figure}~\ref{fig:load3}. System load average before using FDP is 2.033 and after is 0.635. So, system is less busy when applied this policy.
   
 \begin{figure}[!h]\centering
     \setlength{\fboxrule}{0mm} % can define this in the preamble
@@ -1255,13 +1255,13 @@ This project also considered these other matrices after applying this policy:
    \hline
    \textbf{Policy} & \textbf{Fairness} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
    \hline
-   \textbf{Original Apache Mesos}& 0.3736 & 34& 80.23\% & 39.46\% &2.083& 24.26 \\
+   \textbf{Original Apache Mesos}& 0.3736 & 36& 78.31\% & 37.93\% &2.033& 24.26 \\
    \hline
-   \textbf{First demand policy} & 0.257& 35& 80.75\% & 40.40\% & 3.067& 24.26\\
+   \textbf{First demand policy} & 0.257& 40& 77.30\% & 40.43\% & 2.781& 24.26\\
    \hline
-   \textbf{Success Rate Prediction}& 0.147& 20& 43.73\% & 22.04\%& 1.188& 34.37 \\
+   \textbf{Success Rate Prediction}& 0.147& 25& 41.67\% & 23.32\%& 1.169& 34.37 \\
    \hline
-   \textbf{Hybrid Policy} & 0.1293 & 8 & 45.73\% & 26.33\% & 0.579  & 35.17 \\ 
+   \textbf{Hybrid Policy} & 0.1293 & 11 & 39.12\% & 24.21\% & 0.635  & 35.17 \\ 
    \hline                   
   \end{tabular}
 \end{table}
@@ -1277,15 +1277,22 @@ This project also considered these other matrices after applying this policy:
 \section{Result and Discussion}
 \hspace{10mm}Three policies attached to NKR-scheduler have been evaluated in this project. The tasks were submitted to NKR-scheduler. After \textbf{First Demand Policy}was applied, the fairness in system was improved by 31.2\% and the other metrics such as CPU utilization, memory utilization, failure rate, etc., had no improvement. The result did not show performance improvement as expected, and it was found that fairness has a correlation with failure task. The second experiment applied \textbf{Success Rate Prediction}. The failure rate was decreased by nearly 7.3\% and the other metrics were significantly improved. However, the failure rate reduction did not meet the criteria as expected, and the improvement of fairness was insignificant. Therefore, the last policy called \textbf{Hybrid Policy} was developed. The result shown that the failure rate was decreased by 15.3\% and the other metric were also improved. After simulated task were scheduling, it was found that Spark was configured with a relatively greedier scheduling policy compared to the other frameworks. This type of scheduling can significantly affect the other frameworks to manage resources utilization. As a result, Spark can run more tasks at the beginning and come with the highest number of success tasks compared to other frameworks, whereas other frameworks required much more time to complete and caused higher failure rate. 
 
-\hspace{10mm}In the result of First Demand Policy, it was found that the success  rate decreased along with the decreasing of fairness. Success Rate Prediction focused on predicting the failure rate of incoming tasks, and the result of this policy shown the improvement of success rate and fairness.   If incoming tasks have high probability to be failed tasks, it will have more time to classify the type of tasks and modify the resources utilization. Therefore, both time and fairness are two factors that affect the failure rate. The result of Hybrid Policy proved that these two factors can improve the success rate of tasks.
+\hspace{10mm}In the result of First Demand Policy, it shown that the success rate decreased along with the decreasing of fairness. Success Rate Prediction focused on predicting the failure rate of incoming tasks, and the result of this policy shown the improvement of success rate and fairness. If incoming tasks have high probability to be failed tasks, it will have more time to classify the type of tasks and modify the resources utilization. Therefore, both increased time and fairness are two factors that directly affect to failure rate. The result of Hybrid Policy proved that these two factors can improve the success rate of tasks
 
 %%%%%%%%%% Conclusion %%%%%%%%%%%%
 \section{Conclusion}
 \hspace{10mm}There are many factors that can cause task failure, for example, lack of resources or greedy framework receive resources more than its fair share resources. In this project, it proposes NKR-scheduler that can be used with adaptive policies. The policies mainly classify into three parts, fairness algorithm called First Demand Policy (FDP), AI for failure detection called Success Rate Prediction, and Hybrid Policy. FDP considers both demands of each framework and their dominant share that come from cluster monitoring to decide which task to be dispatched. Success Rate Prediction dispatch the incoming task based on random forest model by predicting the failure rate of task. Hybrid Policy combines previous two policies together. The simulation tasks are building model, genetic algorithm, SQL query and text classification with vary the resource on each task randomly. These tasks are typical data science tasks of each framework. So, this work found that Hybrid Policy decreased the number of failed tasks by 15.3\%
 
+\newpage
 %%%%%%%%%% Future work %%%%%%%%%%%%
 \section{Future work}
-\hspace{10mm}To improve this project, finding the mathematics formula that can explain how time and fairness affect to failure rate of task is one thing that could do, and extended the project by building new policy that design to check the available resources or using AI to check another metrics on each agent is the other thing. It would be useful for those who want to study about the trade-offs between demand aware scheduling in a production environment, where hundreds of agents configured.
+\hspace{10mm}There are some questions that was found along the test run but not include in this project report. Future works are needed to clarify the following issues. 
+\begin{itemize}
+  \item Finding the mathematics formula to prove how time and fairness factors affect the failure rate
+  \item Building new policy to check the available resources
+  \item Using AI to check additional metrics on each agent
+  \item Finding total run time when reconfigure Apache Mesos to resubmitted the failed task and comparing the result with Hybrid policy in order to find trade-off between resubmitted time and time using to predict incoming task. 
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
