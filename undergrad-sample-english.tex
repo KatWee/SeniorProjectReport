@@ -1242,29 +1242,29 @@ This project also considered these other matrices after applying this policy:
 \textbf{Conclusion of Hybrid Policy}
 \newline
 
-\hspace{10mm}Hybrid Policy can achieve the best results in terms of failure task and other metrics. Fairness of running tasks is improve by only 65.4\%. The number of failed tasks is reduced by 15.3\%. Also, failure rate of failed tasks, resource utilization and system load are improved.
+\hspace{10mm}Hybrid Policy can achieve the best results in terms of failure task and other metrics. Fairness of running tasks is improved by 65.4\%. The number of failed tasks is reduced by 15.3\%. Also, failure rate of failed tasks, resource utilization, and system load are improved.
 
 %%%%%%%%%% Summary of Result %%%%%%%%%%%%
 \section{Summary of Result}  
-
-\hspace{10mm}The \textbf{Table}~\ref{tbl:chap4Sum} is shown result of all metrics from original Apache Mesos, Apache Mesos applied with First demand policy, Apache Mesos applied with Success Rate Prediction and apache Mesos applied with Hybrid Policy.
 
   \begin{table}[!h]
   \caption{Result of all metrics from Apache Mesos with and without apply each policy of NKR-scheduler.}\label{tbl:chap4Sum}
   \begin{tabular}{@{}|p{0.2\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|}
    \hline
-   \textbf{Policy} & \textbf{Fairness} & \textbf{Number of failed tasks (tasks)} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
+   \textbf{Policy} & \textbf{Number of failed tasks (tasks)} & \textbf{Fairness} & \textbf{Average of CPU utilization} & \textbf{Average of Memory utilization} & \textbf{Average of System load (tasks)} & \textbf{Running Time(min)} \\
    \hline
-   \textbf{Original Apache Mesos}& 0.3736 & 36& 78.31\% & 37.93\% &2.033& 24.26 \\
+   \textbf{Original Apache Mesos}& 36 &  0.3736& 78.31\% & 37.93\% &2.033& 24.26 \\
    \hline
-   \textbf{First demand policy} & 0.257& 40& 77.30\% & 40.43\% & 2.781& 24.26\\
+   \textbf{First demand policy} & 40& 0.257& 77.30\% & 40.43\% & 2.781& 24.26\\
    \hline
-   \textbf{Success Rate Prediction}& 0.147& 25& 41.67\% & 23.32\%& 1.169& 34.37 \\
+   \textbf{Success Rate Prediction}& 25& 0.147& 41.67\% & 23.32\%& 1.169& 34.37 \\
    \hline
-   \textbf{Hybrid Policy} & 0.1293 & 11 & 39.12\% & 24.21\% & 0.635  & 35.17 \\ 
+   \textbf{Hybrid Policy} & 11 & 0.1293 & 39.12\% & 24.21\% & 0.635  & 35.17 \\ 
    \hline                   
   \end{tabular}
 \end{table}
+
+\hspace{10mm}The \textbf{Table}~\ref{tbl:chap4Sum} is shown result of all metrics from original Apache Mesos and Apache Mesos applied with  each policy of NKR-scheduler. When FDP was applied, the fairness algorithm not only improves fairness from 0.3736 to 0.2570 but also increases unfavorable failed tasks and average CPU utilization. In order to reduce the failed tasks, Random forest model in Success Rate Prediction was applied instead. The results are improved by reducing number of failed tasks, increasing fairness to 0.1470, and lowering memory utilization to 23.32\%, but in the other hand, the running time is extended which is the trade-off between running time and the other metrics. The improvement of fairness causes CPU utilization and system load to be decreased because tasks can be distributed better. After combine both policies to be Hybrid Policy, the tasks in queue will be run by fairness algorithm to reduce failed tasks and the resource will be modified by model that predicts success rate. This Hybrid Policy can reduce number of failed tasks significantly. The running time of Success Rate Prediction and Hybrid Policy is more than the others because they need more time to predict success rate of every incoming task before submitting. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Conclusions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1277,7 +1277,7 @@ This project also considered these other matrices after applying this policy:
 \section{Result and Discussion}
 \hspace{10mm}Three policies attached to NKR-scheduler have been evaluated in this project. The tasks were submitted to NKR-scheduler. After \textbf{First Demand Policy}was applied, the fairness in system was improved by 31.2\% and the other metrics such as CPU utilization, memory utilization, failure rate, etc., had no improvement. The result did not show performance improvement as expected, and it was found that fairness has a correlation with failure task. The second experiment applied \textbf{Success Rate Prediction}. The failure rate was decreased by nearly 7.3\% and the other metrics were significantly improved. However, the failure rate reduction did not meet the criteria as expected, and the improvement of fairness was insignificant. Therefore, the last policy called \textbf{Hybrid Policy} was developed. The result shown that the failure rate was decreased by 15.3\% and the other metric were also improved. After simulated task were scheduling, it was found that Spark was configured with a relatively greedier scheduling policy compared to the other frameworks. This type of scheduling can significantly affect the other frameworks to manage resources utilization. As a result, Spark can run more tasks at the beginning and come with the highest number of success tasks compared to other frameworks, whereas other frameworks required much more time to complete and caused higher failure rate. 
 
-\hspace{10mm}In the result of First Demand Policy, it shown that the success rate decreased along with the decreasing of fairness. Success Rate Prediction focused on predicting the failure rate of incoming tasks, and the result of this policy shown the improvement of success rate and fairness. If incoming tasks have high probability to be failed tasks, it will have more time to classify the type of tasks and modify the resources utilization. Therefore, both increased time and fairness are two factors that directly affect to failure rate. The result of Hybrid Policy proved that these two factors can improve the success rate of tasks
+\hspace{10mm}In the result of First Demand Policy, it shown that the success rate decreased while the fairness still improve. Success Rate Prediction focused on predicting the failure rate of incoming tasks, and the result of this policy shown the improvement of success rate and fairness.   Incoming tasks will have more time to classify the type of tasks and modify the resources utilization. Therefore, both increased time and fairness are two factors that directly affect to failure rate. The result of Hybrid Policy proved that these two factors can improve the success rate of tasks.
 
 %%%%%%%%%% Conclusion %%%%%%%%%%%%
 \section{Conclusion}
@@ -1286,13 +1286,9 @@ This project also considered these other matrices after applying this policy:
 \newpage
 %%%%%%%%%% Future work %%%%%%%%%%%%
 \section{Future work}
-\hspace{10mm}There are some questions that was found along the test run but not include in this project report. Future works are needed to clarify the following issues. 
-\begin{itemize}
-  \item Finding the mathematics formula to prove how time and fairness factors affect the failure rate
-  \item Building new policy to check the available resources
-  \item Using AI to check additional metrics on each agent
-  \item Finding total run time when reconfigure Apache Mesos to resubmitted the failed task and comparing the result with Hybrid policy in order to find trade-off between resubmitted time and time using to predict incoming task. 
-\end{itemize}
+\hspace{10mm}There are some questions was found along the test run but still cannot find the answer in this project report. To clarify these questions, the future works are needed to do two things. First, finding the mathematics formula to prove how time and fairness factors affect the failure rate. Second, find the total run time when reconfigure Apache Mesos to resubmit the failed task and compare the result with Hybrid policy in order to find trade-off between resubmitted time and time using to predict incoming task. 
+
+\hspace{10mm}To improve this project, extended the project by building new policy that design to check the available resources or using AI to check another metrics on each agent are the things that could do. Moreover, it would be useful for those who want to study about the trade-offs between demand aware scheduling in a production environment, where hundreds of agents configured.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
